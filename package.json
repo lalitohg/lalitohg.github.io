@@ -1,0 +1,32 @@
+{
+  "name": "lalitohg.github.io",
+  "version": "1.0.0",
+  "description": "personal Github pages web site",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "./node_modules/.bin/http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lalitohg/lalitohg.github.io.git"
+  },
+  "keywords": [
+    "lalitohg",
+    "developer",
+    "website",
+    "Github",
+    "pages"
+  ],
+  "author": "lalitohg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lalitohg/lalitohg.github.io/issues"
+  },
+  "homepage": "https://github.com/lalitohg/lalitohg.github.io#readme"
+}
