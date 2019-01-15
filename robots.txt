@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://lalitohg.github.io//sitemap.xml
+Sitemap: https://www.dalerun.com//sitemap.xml

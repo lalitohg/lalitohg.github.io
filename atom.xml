@@ -2,9 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="//assets/xslt/atom.xslt" ?>
 <?xml-stylesheet type="text/css" href="//assets/css/atom.css" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>https://lalitohg.github.io//</id>
+	<id>https://www.dalerun.com//</id>
 	<title>Dále run</title>
-	<updated>2019-01-13T22:21:32-06:00</updated>
+	<updated>2019-01-15T11:59:25-06:00</updated>
 
 	<subtitle>»Dále run« explica términos y herramientas de desarollo en español. Así es más fácil</subtitle>
 
@@ -21,16 +21,16 @@
 		</author>
 	
 
-	<link href="https://lalitohg.github.io//atom.xml" rel="self" type="application/rss+xml" />
-	<link href="https://lalitohg.github.io//" rel="alternate" type="text/html" />
+	<link href="https://www.dalerun.com//atom.xml" rel="self" type="application/rss+xml" />
+	<link href="https://www.dalerun.com//" rel="alternate" type="text/html" />
 
 	<generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator>
 
 	
 		<entry>
-			<id>https://lalitohg.github.io//fundamentos/variables-en-js/</id>
+			<id>https://www.dalerun.com//fundamentos/variables-en-js/</id>
 			<title>Variables en javascript</title>
-			<link href="https://lalitohg.github.io//fundamentos/variables-en-js/" rel="alternate" type="text/html" title="Variables en javascript" />
+			<link href="https://www.dalerun.com//fundamentos/variables-en-js/" rel="alternate" type="text/html" title="Variables en javascript" />
 			<updated>2018-12-02T00:00:00-06:00</updated>
 
 			
@@ -46,7 +46,7 @@
 				</author>
 			
 			<summary>El uso correcto de variables en el código es fundamental para un desarrollador</summary>
-			<content type="html" xml:base="https://lalitohg.github.io//fundamentos/variables-en-js/">&lt;p&gt;Las variables son un elemento esencial de un programa. Hasta el código más pequeño necesita hacer buen uso de variables para ser claro y funcional.&lt;/p&gt;
+			<content type="html" xml:base="https://www.dalerun.com//fundamentos/variables-en-js/">&lt;p&gt;Las variables son un elemento esencial de un programa. Hasta el código más pequeño necesita hacer buen uso de variables para ser claro y funcional.&lt;/p&gt;
 
 &lt;h2 id=&quot;qué-son&quot;&gt;¿Qué son?&lt;/h2&gt;
 

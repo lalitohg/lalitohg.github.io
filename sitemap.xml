@@ -5,9 +5,9 @@
 
 	
 	<url>
-	<loc>https://lalitohg.github.io//404.html</loc>
+	<loc>https://www.dalerun.com//404.html</loc>
 	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -20,26 +20,9 @@
 
 	
 	<url>
-	<loc>https://lalitohg.github.io//blog/archive/</loc>
+	<loc>https://www.dalerun.com//blog/archive/</loc>
 	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-	<url>
-	<loc>https://lalitohg.github.io//atom.xml</loc>
-	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -54,9 +37,26 @@
 
 	
 	<url>
-	<loc>https://lalitohg.github.io//changelog/</loc>
+	<loc>https://www.dalerun.com//atom.xml</loc>
 	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//changelog/</loc>
+	
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -69,24 +69,9 @@
 
 	
 	<url>
-	<loc>https://lalitohg.github.io//contacto/</loc>
+	<loc>https://www.dalerun.com//contacto/</loc>
 	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>https://lalitohg.github.io//design/</loc>
-	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -99,24 +84,9 @@
 
 	
 	<url>
-	<loc>https://lalitohg.github.io//documentation/</loc>
+	<loc>https://www.dalerun.com//design/</loc>
 	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>https://lalitohg.github.io//feed.xml</loc>
-	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -129,24 +99,9 @@
 
 	
 	<url>
-	<loc>https://lalitohg.github.io//getting-started/</loc>
+	<loc>https://www.dalerun.com//documentation/</loc>
 	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>https://lalitohg.github.io//headers/</loc>
-	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -159,24 +114,9 @@
 
 	
 	<url>
-	<loc>https://lalitohg.github.io//humans.txt</loc>
+	<loc>https://www.dalerun.com//feed.xml</loc>
 	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>https://lalitohg.github.io//blog/</loc>
-	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -189,24 +129,9 @@
 
 	
 	<url>
-	<loc>https://lalitohg.github.io//</loc>
+	<loc>https://www.dalerun.com//getting-started/</loc>
 	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>https://lalitohg.github.io//info/</loc>
-	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -219,43 +144,9 @@
 
 	
 	<url>
-	<loc>https://lalitohg.github.io//redirect-page/</loc>
+	<loc>https://www.dalerun.com//headers/</loc>
 	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>https://lalitohg.github.io//robots.txt</loc>
-	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-
-	
-	<url>
-	<loc>https://lalitohg.github.io//search/</loc>
-	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -268,9 +159,118 @@
 
 	
 	<url>
-	<loc>https://lalitohg.github.io//sitemap.xml</loc>
+	<loc>https://www.dalerun.com//humans.txt</loc>
 	
-		<lastmod>2019-01-13T22:21:32-06:00</lastmod>
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//blog/</loc>
+	
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//</loc>
+	
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//info/</loc>
+	
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//redirect-page/</loc>
+	
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//robots.txt</loc>
+	
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//search/</loc>
+	
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//sitemap.xml</loc>
+	
+		<lastmod>2019-01-15T11:59:25-06:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -288,7 +288,7 @@
 
 	
 	<url>
-	<loc>https://lalitohg.github.io//fundamentos/variables-en-js/</loc>
+	<loc>https://www.dalerun.com//fundamentos/variables-en-js/</loc>
 	
 		<lastmod>2018-12-02T00:00:00-06:00</lastmod>
 	
