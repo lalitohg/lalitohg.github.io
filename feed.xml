@@ -9,8 +9,71 @@
 		<atom:link href="https://www.dalerun.com//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Empieza a usar npx hoy</title>
+				<link>https://www.dalerun.com//empieza-a-usar-NPX/</link>
+				<pubDate>Mon, 18 Feb 2019 00:00:00 -0600</pubDate>
+				<description>&lt;p&gt;Aunque no es una noticia nueva, todavía hay mucha gente que no ha adoptado el uso de esta nueva herramienta del ecosistema de NodeJS.&lt;/p&gt;
+
+&lt;p&gt;NPX viene incluído en la instalación de NPM desde la versión @5.2.0 y es la solución que muchos habíamos estado esperando para complementar nuestro entorno de desarrollo, ya que ahora es posible ejecutar paquetes del repositorio de NPM sin tener que instalarlos de forma global, por ejemplo. Vaya. Incluso puedes ejecutar paquetes sin tener que instalarlos de forma permanente, por lo que ahora puedes correr ejecutables y herramientas de línea de comandos de forma más conveniente como en los siguientes casos:&lt;/p&gt;
+
+&lt;h2 id=&quot;ejecutar-comandos-de-forma-local&quot;&gt;Ejecutar comandos de forma local&lt;/h2&gt;
+
+&lt;p&gt;Personalmente yo encuentro NPX muy útil para resolver este problema. Por ejemplo, Gulp o Mocha son herramientas geniales que casi seguro vas a usar en tu proyecto. El problema es que tienes que instalarlas de forma global. Así que cuando quieres tener más de un proyecto que dependa de ellas tienes que decidir si vas a actualizar tu versión instalada o si te vas a quedar con la versión que tienes actualmente.&lt;/p&gt;
+
+&lt;p&gt;Esto dificulta trabajar en más de un proyecto a la vez y hace que me tome más tiempo empezar a colaborar en un proyecto con el que tengo que seguir un proceso de pre instalación muy largo. Me gusta cuando tengo todo lo que necesito solamente al ejecutar npm install en la raíz del proyecto.&lt;/p&gt;
+
+&lt;p&gt;Aquí es donde NPX hace su magia, ya que te permite tener una instalación local de tus herramientas por cada proyecto y mantener el control del versionamiento de forma independiente.&lt;/p&gt;
+
+&lt;p&gt;Con NPX solamente necesitas hacer algo como:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install --save-dev mocha&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Y luego, cada vez que necesites correr tus pruebas ejecutas tu versión local así:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npx mocha&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;¡Y listo! Ya no tienes que imaginar soluciones como buscar la ruta local hacia el ejecutable al estilo: ./node_modules/.bin/mocha o usando trucos de bash como: &lt;strong&gt;&lt;em&gt;alias npm=PATH=$(npm bin):$PATH&lt;/em&gt;&lt;/strong&gt;, incluso es más corto que ejecutar el script de test con npm como: &lt;strong&gt;&lt;em&gt;npm run test&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;ejecutar-comandos-desechables&quot;&gt;Ejecutar comandos desechables&lt;/h2&gt;
+
+&lt;p&gt;¿Te ha pasado que necesitas instalar una herramienta para ejecutarla una vez y luego pasan meses sin que la vuelvas a usar? Un ejemplo común es create-react-app. Lo necesitas un par de veces cuando estás aprendiendo react pero honestamente no hay razón para mantenerlo instalado después de eso.&lt;/p&gt;
+
+&lt;p&gt;Con npx solo haces &lt;code class=&quot;highlighter-rouge&quot;&gt;npx &amp;lt;comando&amp;gt;&lt;/code&gt; y si el comando no está instalado entonces se instalará automáticamente desde el repositorio de npm y se ejecutará de inmediato. Al terminar el comando ya no estará ahí y no tendrás que preocuparte por haber dejado archivos de instalación olvidados en algún lado.&lt;/p&gt;
+
+&lt;h2 id=&quot;puedes-usar-varias-versiones-de-node&quot;&gt;Puedes usar varias versiones de Node&lt;/h2&gt;
+
+&lt;p&gt;Resulta que node es también un paquete que puedes descargar desde el repositorio de npm. Y con eso es suficiente para que puedas usar npx con él también. Una forma de solucionar el problema de cambiar entre versiones de node es usar un manejador de versiones como &lt;em&gt;nvm&lt;/em&gt;, &lt;em&gt;nave&lt;/em&gt; o &lt;em&gt;n&lt;/em&gt;. Otra alternativa es usar Docker para ejecutar la versión de node con la que quieres publicar tu proyecto. Aún así, puede que esas opciones sean demasiado para tu caso. Y aquí viene npx otra vez al rescate:&lt;/p&gt;
+
+&lt;p&gt;Supongamos que el archivo index.js de tu proyecto tiene este contenido&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;console.log(&quot;hello word from&quot;, process.version)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Si ejecutas tu proyecto con node 6 a través de npx de esta forma&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npx -p node@6 node index.js&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;El resultado sería algo como: &lt;strong&gt;&lt;em&gt;hello word from v6.16.0&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Y si ejecutaras tu proyecto con node 8 con npx de esta forma:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npx -p node@6 node index.js&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Obtendrás un resultado como esto: &lt;strong&gt;&lt;em&gt;hello word from v8.15.0&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Más información.&lt;/p&gt;
+
+&lt;p&gt;Espero haber ilustrado el poder de npx y que te animes a usarlo.&lt;/p&gt;
+
+&lt;p&gt;Si sientes curiosidad acerca del uso que puedes darle a esta herramienta puedes aprender más en su &lt;a href=&quot;https://www.npmjs.com/package/npx&quot;&gt;página de repositorio&lt;/a&gt;&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">https://www.dalerun.com//empieza-a-usar-NPX/</guid>
+			</item>
+		
+			<item>
 				<title>Variables en javascript</title>
-				<link>https://www.dalerun.com//fundamentos/variables-en-js/</link>
+				<link>https://www.dalerun.com//variables-en-js/</link>
 				<pubDate>Sun, 02 Dec 2018 00:00:00 -0600</pubDate>
 				<description>&lt;p&gt;Las variables son un elemento esencial de un programa. Hasta el código más pequeño necesita hacer buen uso de variables para ser claro y funcional.&lt;/p&gt;
 
@@ -170,7 +233,7 @@
 
 &lt;p&gt;Las variables son un recurso que te ayuda a escribir código legible, predecible, modificable y más fácil de probar. Usa las variables a tu favor para mantener tu código simple y expresivo, pero más importante, diviértete y que tengas mucho éxito.&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">https://www.dalerun.com//fundamentos/variables-en-js/</guid>
+				<guid isPermaLink="true">https://www.dalerun.com//variables-en-js/</guid>
 			</item>
 		
 	</channel>

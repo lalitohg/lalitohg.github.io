@@ -154,6 +154,20 @@
             
           
         
+
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a  href="https://www.dalerun.com//subscribirte/">Subscribirte</a></li>
+
+            
+            
+          
+        
         
       </ul>
 
@@ -198,6 +212,12 @@
               </li>
               <li class="divider"></li>
             
+          
+        
+
+              
+
+          
           
         
 
@@ -329,7 +349,7 @@
               
                 
                   <li >
-                    <a href="https://www.dalerun.com//contact/"  title="Contacto">Contacto</a>
+                    <a href="https://www.dalerun.com//contacto/"  title="Contacto">Contacto</a>
                   </li>
               
                 
