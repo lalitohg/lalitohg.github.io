@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.dalerun.com//</id>
 	<title>Dále run</title>
-	<updated>2019-02-18T11:46:53-06:00</updated>
+	<updated>2019-02-23T09:01:38-06:00</updated>
 
 	<subtitle>»Dále run« explica términos y herramientas de desarollo en español. Así es más fácil</subtitle>
 
@@ -26,6 +26,172 @@
 
 	<generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator>
 
+	
+		<entry>
+			<id>https://www.dalerun.com//tipos-de-bases-de-datos/</id>
+			<title>Tipos de bases de datos</title>
+			<link href="https://www.dalerun.com//tipos-de-bases-de-datos/" rel="alternate" type="text/html" title="Tipos de bases de datos" />
+			<updated>2019-02-22T00:00:00-06:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Eduardo Hernández Guerrero</name>
+					
+					
+					
+						<uri>http://daterun.com/</uri>
+					
+				</author>
+			
+			<summary>Existen distintos tipos de bases de datos y hay más de un proveedor ofreciendo una solución de cada tipo, así que vale la pena revisar de forma general las opciones disponibles.</summary>
+			<content type="html" xml:base="https://www.dalerun.com//tipos-de-bases-de-datos/">&lt;p&gt;Si le preguntas a un experto en el tema de la cerveza te dirá que es un error pensar que solamente puedes elegir entre la clara y la obscura. Algo similar pasaría con un experto en vino si le dices que sólo existen el tinto y el blanco.&lt;/p&gt;
+
+&lt;p&gt;Pues en el camino a convertirte en un experto en bases de datos vas a descubrir que hay más de un tipo de bases de datos; de hecho, es un error muy común pensar que sólo existen las bases de datos relacionales y las no relacionales; o también se dice que hay bases de datos SQL y las no SQL.&lt;/p&gt;
+
+&lt;p&gt;Vamos directamente al listado de opciones que tenemos hoy en día:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Relacionales o SQL&lt;/li&gt;
+  &lt;li&gt;Documentales&lt;/li&gt;
+  &lt;li&gt;Key-value&lt;/li&gt;
+  &lt;li&gt;Familia de columnas&lt;/li&gt;
+  &lt;li&gt;Grafos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No está mal. Digo, no es una lista enorme. Ahora vamos a ver de forma general cada uno de los tipos que hay&lt;/p&gt;
+
+&lt;h2 id=&quot;bases-de-datos-relacionales&quot;&gt;Bases de datos relacionales&lt;/h2&gt;
+
+&lt;p&gt;Las bases de datos relacionales son las que tienen más tiempo sirviendo como la opción de cabecera. Hasta hace algunos años, de hecho, eran la única opción seria si querías desarrollar algo y no tener problemas al lanzar una aplicación muy grande.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-guardan-la-información&quot;&gt;¿Cómo guardan la información?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dbtypes_rel.png&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Este tipo de bases de datos almacena la información en forma de &lt;strong&gt;tablas&lt;/strong&gt; que contienen &lt;strong&gt;columnas&lt;/strong&gt; y &lt;strong&gt;filas&lt;/strong&gt;. Las columnas representan los campos de información que cada registro debe tener y las filas representan los registros almacenados en cada tabla.&lt;/p&gt;
+
+&lt;p&gt;Cada tabla representa una entidad de nuestra aplicación, es decir, cada cosa de la que nos interesa guardar información.&lt;/p&gt;
+
+&lt;p&gt;Un detalle  muy característico de este tipo de bases de datos es que tienes que mezclar la información de las tablas mediante operaciones &lt;strong&gt;JOIN&lt;/strong&gt; para poder componer de nuevo la información que existe entre dos o más tablas que almacenan información relacionada.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-se-diseñan-los-datos&quot;&gt;¿Cómo se diseñan los datos?&lt;/h3&gt;
+
+&lt;p&gt;Para diseñar la estructura de datos de tu aplicación con una de estas bases de datos lo más importante es tener en mente el &lt;strong&gt;principio de normalización&lt;/strong&gt;, que básicamente nos dice que:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;debemos mantener en una sóla tabla los datos de una sóla entidad.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esto significa, por ejemplo, que si estamos almacenando datos de dueños de mascotas, necesitamos una tabla llamada mascotas que solamente guarda información de los animales registrados; por otro lado, necesitamos una tabla llamada dueños con la información de las personas que son dueñas de las mascotas.&lt;/p&gt;
+
+&lt;p&gt;Y aquí viene lo bueno ¿cómo sabemos quién es dueño de qué mascota? Y ¿cómo permitimos que la misma persona tenga registrado a más de un animalito?&lt;/p&gt;
+
+&lt;p&gt;Para eso usamos otra tabla que puede llamarse dueños_mascotas que almacene la relación que existe entre una persona en la tabla dueños y un animalito en la tabla mascotas.&lt;/p&gt;
+
+&lt;p&gt;Es una explicación muy simplificada y breve pero espero que ilustre el tema.&lt;/p&gt;
+
+&lt;h3 id=&quot;soluciones-de-este-tipo&quot;&gt;Soluciones de este tipo&lt;/h3&gt;
+
+&lt;p&gt;Aquí es donde probablemente tenemos las opciones con más tiempo en el mercado y cada una ofrece alguna ventaja o característica distintiva. Solamente por mencionar las más populares tenemos &lt;a href=&quot;https://www.postgresql.org/&quot;&gt;PostgreSQL&lt;/a&gt;, &lt;a href=&quot;&quot;&gt;MySQL&lt;/a&gt;, &lt;a href=&quot;https://mariadb.org/&quot;&gt;MariaDB&lt;/a&gt;, &lt;a href=&quot;https://www.microsoft.com/en-us/sql-server/&quot;&gt;MSSQL Server&lt;/a&gt;, &lt;a href=&quot;https://www.sqlite.org/index.html&quot;&gt;SQLite&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;bases-de-datos-de-familia-de-columnas&quot;&gt;Bases de datos de familia de columnas&lt;/h2&gt;
+
+&lt;p&gt;Estas bases de datos permiten consultas muy rápidas sobre colecciones de datos inmensas y generalmente son la opción a elegir cuando se almacenan datos de forma tabular con una estructura irregular en soluciones de big data.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-guardan-la-información-1&quot;&gt;¿Cómo guardan la información?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dbtypes_fam.png&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En estas bases de datos los registros se almacenan en tablas dispersas cuyas filas pueden contener una cantidad arbitraria de columnas y que están indexadas de forma natural por un dato que sirve como &lt;strong&gt;key&lt;/strong&gt; para la fila, o sea, todas las filas deben tener un mismo dato que sirva para identificar cada registro.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-se-diseñan-los-datos-1&quot;&gt;¿Cómo se diseñan los datos?&lt;/h3&gt;
+
+&lt;p&gt;Aquí debemos considerar que las columnas contienen piezas de información relacionada que pertenecen a cada fila.&lt;/p&gt;
+
+&lt;p&gt;Las columnas dentro de la fila pueden asociarse entre sí pero se mantienen agrupadas dentro de su fila correspondiente.&lt;/p&gt;
+
+&lt;h3 id=&quot;soluciones-de-este-tipo-1&quot;&gt;Soluciones de este tipo&lt;/h3&gt;
+
+&lt;p&gt;El ejemplo más popular de este tipo es tal vez &lt;a href=&quot;http://cassandra.apache.org/&quot;&gt;CassandraDB&lt;/a&gt; aunque no es la única. También podemos encontrarnos con otras como &lt;a href=&quot;https://hbase.apache.org/&quot;&gt;HBase&lt;/a&gt;, &lt;a href=&quot;http://druid.io/technology&quot;&gt;Druid&lt;/a&gt; o &lt;a href=&quot;https://cloud.google.com/bigtable/&quot;&gt;Bigtable&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;bases-de-datos-key-value&quot;&gt;Bases de datos key-value&lt;/h2&gt;
+
+&lt;p&gt;Este tipo de base de datos están basadas en la simplicidad y generalmente están orientadas a responder consultas tan rápido como sea posible al mismo tiempo que tratan de ser muy tolerantes a las fallas.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-guardan-la-información-2&quot;&gt;¿Cómo guardan la información?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dbtypes_key.png&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Estas bases de datos se conforman por grandes estructuras de datos distribuidas llamadas &lt;strong&gt;tablas hash&lt;/strong&gt; que almacenan y recuperan los valores organizados por identificadores llamados &lt;strong&gt;keys&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-se-diseñan-los-datos-2&quot;&gt;¿Cómo se diseñan los datos?&lt;/h3&gt;
+
+&lt;p&gt;Toda la estrategia de diseño se basa en encontrar el dato que servirá como &lt;strong&gt;key&lt;/strong&gt; para poder relacionar el resto de los datos de una entidad.&lt;/p&gt;
+
+&lt;p&gt;Los datos almacenados deben mantenerse en estructuras tan simples como sea posible tomando en cuenta que las entidades no se relacionan entre sí, a diferencia de lo que se hace al modelar bases de datos relacionales.&lt;/p&gt;
+
+&lt;h3 id=&quot;soluciones-de-este-tipo-2&quot;&gt;Soluciones de este tipo&lt;/h3&gt;
+
+&lt;p&gt;Por lo general estas bases de datos ofrecen una gran facilidad de funcionamiento y configuración con una gran resistencia a fallas y un manejo muy rápido de grandes colecciones de datos. Algunas soluciones de este tipo son &lt;a href=&quot;https://redis.io/&quot;&gt;Redis&lt;/a&gt;, &lt;a href=&quot;https://aws.amazon.com/es/dynamodb/&quot;&gt;DynamoDb&lt;/a&gt; y &lt;a href=&quot;https://memcached.org/&quot;&gt;Memcached&lt;/a&gt; por mencionar unas pocas.&lt;/p&gt;
+
+&lt;h2 id=&quot;bases-de-datos-documentales&quot;&gt;Bases de datos documentales&lt;/h2&gt;
+
+&lt;p&gt;Estas bases de datos pueden ser muy diferentes entre sí ya que el tipo de datos que almacena cada una puede ser muy diferente. Se están convirtiendo en el estándar alternativo a las bases de datos relacionales para guardar grandes cantidades de datos de una aplicación.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-guardan-la-información-3&quot;&gt;¿Cómo guardan la información?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dbtypes_doc.png&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aquí cada base de datos toma un enfoque diferente pero de forma simple podemos decir que en estas bases de datos la información se almacena en forma de documentos como si usaramos un archivero.&lt;/p&gt;
+
+&lt;p&gt;Cada documento puede tener una estructura distinta entre sí y se pueden ordenar los datos de forma jerárquica prácticamente de la misma forma en la que organizamos los datos dentro de nuestros programas.&lt;/p&gt;
+
+&lt;p&gt;Algunas bases de datos almacenan la información en formato &lt;em&gt;XML&lt;/em&gt;, otras usan &lt;em&gt;JSON&lt;/em&gt;, etc. La forma más común de identificar los documentos es por medio de un campo de &lt;strong&gt;ID&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-se-diseñan-los-datos-3&quot;&gt;¿Cómo se diseñan los datos?&lt;/h3&gt;
+
+&lt;p&gt;Aquí la estrategia para diseñar la base de datos consiste principalmente en identificar cómo se van a hacer las consultas de las entidades dentro de la aplicación. Si por ejemplo, en nuestra aplicación vamos a mostrar la información de facturas en una pantalla, lo más conveniente sería poner en cada documento la información completa de la factura junto con la información que necesitamos del cliente y de cada artículo vendido. Aquí se vale que los datos se repitan de forma redundante, ya que la idea detrás de la mayoría de estas bases de datos es que el almacenamiento suele ser más barato que el procesamiento.&lt;/p&gt;
+
+&lt;h3 id=&quot;soluciones-de-este-tipo-3&quot;&gt;Soluciones de este tipo&lt;/h3&gt;
+
+&lt;p&gt;Este tipo de bases de datos están gozando de mucha popularidad y hay muchas y muy buenas implementaciones con muy buen desempeño. Algunas opciones de este tipo son &lt;a href=&quot;https://www.mongodb.com/&quot;&gt;MongoDB&lt;/a&gt;, &lt;a href=&quot;http://couchdb.apache.org/&quot;&gt;CouchDB&lt;/a&gt; o &lt;a href=&quot;http://basex.org/&quot;&gt;Basex&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;bases-de-datos-de-grafos&quot;&gt;Bases de datos de grafos.&lt;/h2&gt;
+
+&lt;p&gt;Estas bases de datos se han vuelto cada vez más populares con la creciente demanda que hay de analizar grandes cantidades de datos. Permiten hacer consultas de información que simplemente no conviene o no se pueden resolver de forma práctica con la tecnología de bases de datos relacionales.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-guardan-la-información-4&quot;&gt;¿Cómo guardan la información?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dbtypes_gra.png&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Estas bases de datos almacenan la información en una estructura de datos llamada &lt;strong&gt;grafo&lt;/strong&gt;, que consiste en encapsular los datos en &lt;strong&gt;nodos&lt;/strong&gt; junto con las relaciones que tienen los nodos entre sí.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-se-diseñan-los-datos-4&quot;&gt;¿Cómo se diseñan los datos?&lt;/h3&gt;
+
+&lt;p&gt;Cuando se trata de bases de datos de este tipo, lo que más importa es definir qué relaciones tienen los nodos entre sí e ir agregando más y más nodos y sus relaciones a medida que se van encontrando nuevas formas de relacionar los datos.&lt;/p&gt;
+
+&lt;h3 id=&quot;soluciones-de-este-tipo-4&quot;&gt;Soluciones de este tipo&lt;/h3&gt;
+
+&lt;p&gt;Existen varias bases de datos de este tipo con diferentes características a tomar en cuenta. Algunas de las más populares son: &lt;a href=&quot;https://neo4j.com/&quot;&gt;Neo4J&lt;/a&gt;, &lt;a href=&quot;https://orientdb.com/&quot;&gt;OrientDB&lt;/a&gt; y &lt;a href=&quot;https://www.arangodb.com/&quot;&gt;ArangoDB&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Cómo puedes ver hay muchas tecnologías diferentes para resolver el problema de almacenar los datos de nuestra aplicación y no hay una respuesta inmediata a la pregunta ¿qué base de datos es mejor?. Hay que considerar las limitaciones y las ventajas que cada tipo de base de datos ofrece así como también las características que cada proveedor mantiene en sus productos. Pero eso será material para otro artículo.&lt;/p&gt;
+
+&lt;p&gt;Espero que esta información te sea útil y recuerda que puedes &lt;a href=&quot;https://www.dalerun.com/subscribirte&quot;&gt;subscribirte&lt;/a&gt; para no perderte de las actualizaciones del blog, y como siempre, puedes dejarme un saludo o decir lo que quieras a través de la página de &lt;a href=&quot;https://www.dalerun.com/contacto&quot;&gt;contacto&lt;/a&gt;.&lt;/p&gt;
+</content>
+
+			
+			
+				<category term="bases de datos" />
+			
+				<category term="fundamentos" />
+			
+
+			<published>2019-02-22T00:00:00-06:00</published>
+		</entry>
 	
 		<entry>
 			<id>https://www.dalerun.com//empieza-a-usar-NPX/</id>
@@ -142,7 +308,7 @@
 
 &lt;p&gt;Siendo más técnicos, las variables son una relación entre un dato almacenado en la memoria del programa y un nombre que identifica a ese dato en el código del programa. Básicamente es como ponerle tu nombre al envase donde guardas tu comida para poder encontrarlo después dentro del refrigerador de la oficina&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/office_fridge.jpeg&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/office_fridge.jpeg&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;para-qué-sirven&quot;&gt;¿Para qué sirven?&lt;/h2&gt;
 
