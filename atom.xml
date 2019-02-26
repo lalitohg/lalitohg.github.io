@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.dalerun.com//</id>
 	<title>Dále run</title>
-	<updated>2019-02-25T11:04:15-06:00</updated>
+	<updated>2019-02-26T11:10:27-06:00</updated>
 
 	<subtitle>»Dále run« explica términos y herramientas de desarollo en español. Así es más fácil</subtitle>
 
@@ -16,7 +16,7 @@
 			
 			
 			
-				<uri>http://daterun.com/</uri>
+				<uri>http://dalerun.com/</uri>
 			
 		</author>
 	
@@ -41,7 +41,7 @@
 					
 					
 					
-						<uri>http://daterun.com/</uri>
+						<uri>http://dalerun.com/</uri>
 					
 				</author>
 			
@@ -215,7 +215,7 @@
 					
 					
 					
-						<uri>http://daterun.com/</uri>
+						<uri>http://dalerun.com/</uri>
 					
 				</author>
 			
@@ -311,7 +311,7 @@
 					
 					
 					
-						<uri>http://daterun.com/</uri>
+						<uri>http://dalerun.com/</uri>
 					
 				</author>
 			
