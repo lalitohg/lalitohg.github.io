@@ -9,6 +9,83 @@
 		<atom:link href="https://www.dalerun.com//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Tres formas de optimizar el uso de la línea de comandos</title>
+				<link>https://www.dalerun.com//tres-formas-de-optimizar-el-uso-de-la-linea-de-comandos/</link>
+				<pubDate>Tue, 30 Apr 2019 00:00:00 -0500</pubDate>
+				<description>&lt;p&gt;Te voy a mostrar 3 formas en las que hago más eficiente el uso de mi línea de comandos para incrementar la productividad.&lt;/p&gt;
+
+&lt;p&gt;Al hacer desarrollo es inevitable usar la línea de comandos, pero no siempre es fácil teclear comandos con muchas opciones, con nombres muy largos o teclear varios comandos de forma secuencial.&lt;/p&gt;
+
+&lt;p&gt;La línea de comandos te puede ayudar a acelerar tus tareas de desarrollo y administración de forma increíble y aquí te voy a mostrar tres opciones para ayudarte a ser más productivo.&lt;/p&gt;
+
+&lt;h2 id=&quot;define-alias&quot;&gt;Define alias&lt;/h2&gt;
+
+&lt;p&gt;Los &lt;strong&gt;alias&lt;/strong&gt; de la línea de comandos pueden ser una herramienta que te ahorra mucho tiempo cuando necesitas usar mucho la línea de comandos.&lt;/p&gt;
+
+&lt;p&gt;Los alias son simplemente una forma de renombrar comandos o series de comandos de forma que puedas recordarlos más fácil, y sobre todo, escribiendo mucho menos.&lt;/p&gt;
+
+&lt;p&gt;Lo bueno de los &lt;strong&gt;alias&lt;/strong&gt; es que puedes nombrarlos casi como quieras y con ellos puedes hacer que un comando exageradamente largo se convierta en un comando de apenas unos pocos caracteres.&lt;/p&gt;
+
+&lt;p&gt;Basta con hacer algo como:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alias cls=clear&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Con esto ya puedo escribir &lt;strong&gt;cls&lt;/strong&gt; y sería lo mismo que escribir el comando &lt;strong&gt;clear&lt;/strong&gt; para limpiar la pantalla de la terminal. Esto va a ser válido por el resto de la sesión, lo que significa que cuando se cierre la terminal se perderá de definición de ese alias.&lt;/p&gt;
+
+&lt;p&gt;Cómo este artículo se trata de ser más productivo entonces el verdadero consejo aquí es &lt;strong&gt;define todos tus aliases en el archivo de inicio de sesión&lt;/strong&gt;. De esta forma estarán disponibles siempre que abras una nueva terminal.&lt;/p&gt;
+
+&lt;p&gt;En ubuntu, y casi cualquier otra distribución, vas a encontrar este archivo en tu directorio personal con el nombre &lt;strong&gt;.bashrc&lt;/strong&gt;. En Mac OS es probable que quieras modificar el archivo  &lt;strong&gt;.bash_profile&lt;/strong&gt; que también debería estar localizado en tu directorio personal.&lt;/p&gt;
+
+&lt;p&gt;Solamente tienes que abrir el archivo con cualquier procesador de texto y agregar nuevas líneas con la definición de tus &lt;strong&gt;aliases&lt;/strong&gt;. Observa que en el ejemplo que sigue estoy encerrando entre comillas los comandos que tienen espacios intermedios. Los comandos de una sola palabra no necesitan comillas.&lt;/p&gt;
+
+&lt;p&gt;Puede que te den ganas de añadir comentarios. Agrega &lt;strong&gt;’#’&lt;/strong&gt; y el resto de la línea será un comentario.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cls&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;cd ..&quot;&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;listar&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;archivos&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ocultos&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;con&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;detalle&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;en&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;forma&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;de&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;listado&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;indica&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;si&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;el&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nombre&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;es&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ejecutable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dirctorio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; o enlace simbólico&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)
+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;la&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ls -alF&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;personalizar-de-forma-modular&quot;&gt;Personalizar de forma modular.&lt;/h2&gt;
+
+&lt;p&gt;A veces tenemos que manejar proyectos distintos al mismo tiempo o tenemos que cambiar proyectos muy seguido.&lt;/p&gt;
+
+&lt;p&gt;Esto puede cambiar constantemente los requerimientos para configurar nuestro entorno de desarrollo. Por eso es que yo he decidido separar requerimientos distintos en archivos distintos. De esta forma puedo incluir variables de entorno, alias o invocar comandos específicos al iniciar sesión como sea necesario y lo mejor es que puedo conservar los archivos para después aun cuando no los estoy usando.&lt;/p&gt;
+
+&lt;p&gt;Lo que hago en mi caso es crear un archivo oculto por cada cliente &lt;strong&gt;.cliente1.bash&lt;/strong&gt;, &lt;strong&gt;.cliente2.bash&lt;/strong&gt; y otro para mis propios cambios, luego agrego en cada archivo lo que sea que necesite definir (variables de entorno, aliases, ejecutar un comando, etc). Con esto simplemente modifico mi archivo de inicio de sesión (&lt;strong&gt;.bashrc&lt;/strong&gt; para Linux o  &lt;strong&gt;.bash_profile&lt;/strong&gt; para Mac OS) con algo como esto:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;personal&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.me.bas&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;h
+&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ciente1&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;aliases&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;paths&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;etc&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.cliente1.bas&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;h
+&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ciente2&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;aliases&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;paths&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;etc&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.cliente2.bash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Ahora solo es cuestión de comentar cualquiera que no necesite usar y la siguiente vez que abra una terminal veré reflejados los cambios.&lt;/p&gt;
+
+&lt;h2 id=&quot;automatiza-las-tareas-repetitivas-con-scripts&quot;&gt;Automatiza las tareas repetitivas con scripts.&lt;/h2&gt;
+
+&lt;p&gt;A veces nos toca hacer tareas simples pero que nos quitan tiempo, cosas como actualizar campos en una tabla de la base de datos, borrar registros viejos, comprimir archivos de logs, etc. Es cierto que lo mejor sería modificar nuestros sistemas para que hagan esas tareas como parte de sus procesos, pero tal vez no sean una prioridad, no hay personal o simplemente “así es la vida”.&lt;/p&gt;
+
+&lt;p&gt;Yo siempre trato de usar el lenguaje interpretado que me ayude a automatizar esas tareas de forma más sencilla y los tengo a la mano ya sea en una carpeta de fácil acceso o en el mismo repositorio del proyecto en un directorio donde no estorben.&lt;/p&gt;
+
+&lt;p&gt;Dependiendo de las tareas a realizar uso distintos lenguajes. Para hacer conexiones a bases de datos MySQL me gusta &lt;strong&gt;PHP&lt;/strong&gt;, para analizar archivos de texto (sobre todo si tienen formato de tabla) me gusta &lt;strong&gt;Pearl&lt;/strong&gt;. Descubrí que es muy fácil hacer programas interactivos de línea de comandos con &lt;strong&gt;Node&lt;/strong&gt; y &lt;a href=&quot;https://www.npmjs.com/package/commander&quot;&gt;commander&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Aquí todo depende de las circunstancias. Eso sí, aprender algún lenguaje interpretado seguramente te va a salvar de muchas así que aprende bien al menos uno.&lt;/p&gt;
+
+&lt;h2 id=&quot;has-la-prueba&quot;&gt;Has la prueba.&lt;/h2&gt;
+
+&lt;p&gt;Si te parece que alguno de estos tips te puede ayudar entonces es tu turno de aplicarlos tú mismo y empezar a hacer mucho más en menos tiempo.&lt;/p&gt;
+
+&lt;p&gt;Espero que hayas disfrutado leyendo el artículo tanto como yo disfruté al escribirlo y que te ayude en tu carrera como desarrollador.&lt;/p&gt;
+
+&lt;p&gt;Hasta la próxima.&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">https://www.dalerun.com//tres-formas-de-optimizar-el-uso-de-la-linea-de-comandos/</guid>
+			</item>
+		
+			<item>
 				<title>Tipos de bases de datos</title>
 				<link>https://www.dalerun.com//tipos-de-bases-de-datos/</link>
 				<pubDate>Fri, 22 Feb 2019 00:00:00 -0600</pubDate>
