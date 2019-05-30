@@ -10,11 +10,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>RSS Feed (Styled)</title>
 
-    <link rel="stylesheet" type="text/css" href="https://www.dalerun.com//assets/css/styles_feeling_responsive.css">
+    <link rel="stylesheet" type="text/css" href="http://0.0.0.0:4000//assets/css/styles_feeling_responsive.css">
 
   
 
-	<script src="https://www.dalerun.com//assets/js/modernizr.min.js"></script>
+	<script src="http://0.0.0.0:4000//assets/js/modernizr.min.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 	<script>
@@ -38,13 +38,13 @@
 	<link rel="author" href="">
 	
 	
-	<link rel="canonical" href="https://www.dalerun.com//assets/xslt/rss.xslt">
+	<link rel="canonical" href="http://0.0.0.0:4000//assets/xslt/rss.xslt">
 
 
 	<!-- Facebook Open Graph -->
 	<meta property="og:title" content="RSS Feed (Styled)">
 	<meta property="og:description" content="»Dále run« explica términos y herramientas de desarollo en español. Así es más fácil">
-	<meta property="og:url" content="https://www.dalerun.com//assets/xslt/rss.xslt">
+	<meta property="og:url" content="http://0.0.0.0:4000//assets/xslt/rss.xslt">
 	<meta property="og:locale" content="es_MX">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Dále run">
@@ -62,34 +62,34 @@
 	
 	
 
-	<link type="text/plain" rel="author" href="https://www.dalerun.com//humans.txt">
+	<link type="text/plain" rel="author" href="http://0.0.0.0:4000//humans.txt">
 
 	
 
 	
 
-	<link rel="icon" sizes="32x32" href="https://www.dalerun.com//assets/img/favicon-32x32.png">
+	<link rel="icon" sizes="32x32" href="http://0.0.0.0:4000//assets/img/favicon-32x32.png">
 
-	<link rel="icon" sizes="192x192" href="https://www.dalerun.com//assets/img/touch-icon-192x192.png">
+	<link rel="icon" sizes="192x192" href="http://0.0.0.0:4000//assets/img/touch-icon-192x192.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://www.dalerun.com//assets/img/apple-touch-icon-180x180-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://0.0.0.0:4000//assets/img/apple-touch-icon-180x180-precomposed.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.dalerun.com//assets/img/apple-touch-icon-152x152-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://0.0.0.0:4000//assets/img/apple-touch-icon-152x152-precomposed.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.dalerun.com//assets/img/apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://0.0.0.0:4000//assets/img/apple-touch-icon-144x144-precomposed.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.dalerun.com//assets/img/apple-touch-icon-120x120-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://0.0.0.0:4000//assets/img/apple-touch-icon-120x120-precomposed.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.dalerun.com//assets/img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://0.0.0.0:4000//assets/img/apple-touch-icon-114x114-precomposed.png">
 
 	
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.dalerun.com//assets/img/apple-touch-icon-76x76-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://0.0.0.0:4000//assets/img/apple-touch-icon-76x76-precomposed.png">
 
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.dalerun.com//assets/img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://0.0.0.0:4000//assets/img/apple-touch-icon-72x72-precomposed.png">
 
-	<link rel="apple-touch-icon-precomposed" href="https://www.dalerun.com//assets/img/apple-touch-icon-precomposed.png">	
+	<link rel="apple-touch-icon-precomposed" href="http://0.0.0.0:4000//assets/img/apple-touch-icon-precomposed.png">	
 
-	<meta name="msapplication-TileImage" content="https://www.dalerun.com//assets/img/msapplication_tileimage.png">
+	<meta name="msapplication-TileImage" content="http://0.0.0.0:4000//assets/img/msapplication_tileimage.png">
 
 	<meta name="msapplication-TileColor" content="#fabb00">
 
@@ -105,7 +105,7 @@
   <nav class="top-bar" role="navigation" data-topbar>
     <ul class="title-area">
       <li class="name">
-      <h1 class="show-for-small-only"><a href="https://www.dalerun.com/" class="icon-home"> Dále run</a></h1>
+      <h1 class="show-for-small-only"><a href="http://0.0.0.0:4000/" class="icon-home"> Dále run</a></h1>
     </li>
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
@@ -134,7 +134,7 @@
             
             
               <li class="divider"></li>
-              <li><a  href="https://www.dalerun.com//search/">Buscar</a></li>
+              <li><a  href="http://0.0.0.0:4000//search/">Buscar</a></li>
 
             
             
@@ -148,7 +148,7 @@
             
             
               <li class="divider"></li>
-              <li><a  href="https://www.dalerun.com//contacto/">Contacto</a></li>
+              <li><a  href="http://0.0.0.0:4000//contacto/">Contacto</a></li>
 
             
             
@@ -162,7 +162,7 @@
             
             
               <li class="divider"></li>
-              <li><a  href="https://www.dalerun.com//subscribirte/">Subscribirte</a></li>
+              <li><a  href="http://0.0.0.0:4000//subscribirte/">Subscribirte</a></li>
 
             
             
@@ -181,7 +181,7 @@
 
             
             
-              <li><a  href="https://www.dalerun.com//">Inicio</a></li>
+              <li><a  href="http://0.0.0.0:4000//">Inicio</a></li>
               <li class="divider"></li>
 
             
@@ -198,14 +198,14 @@
             
 
               <li class="has-dropdown">
-                <a  href="https://www.dalerun.com//blog/">Blog</a>
+                <a  href="http://0.0.0.0:4000//blog/">Blog</a>
 
                   <ul class="dropdown">
                     
 
                       
 
-                      <li><a  href="https://www.dalerun.com//blog/archive/">Archivo</a></li>
+                      <li><a  href="http://0.0.0.0:4000//blog/archive/">Archivo</a></li>
                     
                   </ul>
 
@@ -243,8 +243,8 @@
 <div id="masthead-no-image-header">
 	<div class="row">
 		<div class="small-12 columns">
-			<a id="logo" href="https://www.dalerun.com//" title="Dále run – Explicado en español es más fácil">
-				<img src="https://www.dalerun.com//assets/img/logo.png" alt="Dále run – Explicado en español es más fácil">
+			<a id="logo" href="http://0.0.0.0:4000//" title="Dále run – Explicado en español es más fácil">
+				<img src="http://0.0.0.0:4000//assets/img/logo.png" alt="Dále run – Explicado en español es más fácil">
 			</a>
 		</div><!-- /.small-12.columns -->
 	</div><!-- /.row -->
@@ -322,7 +322,7 @@
 
             <p class="shadow-black">
               »Dále run« explica términos y herramientas de desarollo en español. Así es más fácil
-              <a href="https://www.dalerun.com//info/">Más ›</a>
+              <a href="http://0.0.0.0:4000//info/">Más ›</a>
             </p>
           </div><!-- /.large-6.columns -->
 
@@ -344,22 +344,22 @@
               
                 
                   <li >
-                    <a href="https://www.dalerun.com/"  title=""></a>
+                    <a href="http://0.0.0.0:4000/"  title=""></a>
                   </li>
               
                 
                   <li >
-                    <a href="https://www.dalerun.com//contacto/"  title="Contacto">Contacto</a>
+                    <a href="http://0.0.0.0:4000//contacto/"  title="Contacto">Contacto</a>
                   </li>
               
                 
                   <li >
-                    <a href="https://www.dalerun.com//feed.xml"  title="Suscríbete al RSS Feed">RSS</a>
+                    <a href="http://0.0.0.0:4000//feed.xml"  title="Suscríbete al RSS Feed">RSS</a>
                   </li>
               
                 
                   <li >
-                    <a href="https://www.dalerun.com//sitemap.xml"  title="Mapa del sitio">sitemap.xml</a>
+                    <a href="http://0.0.0.0:4000//sitemap.xml"  title="Mapa del sitio">sitemap.xml</a>
                   </li>
               
               </ul>
@@ -404,25 +404,13 @@
 		
 
 
-<script src="https://www.dalerun.com//assets/js/javascript.min.js"></script>
+<script src="http://0.0.0.0:4000//assets/js/javascript.min.js"></script>
 
 
 
 
 
 
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-135040717-1', 'auto');
-  ga('set', 'anonymizeIp', true);
-  ga('send', 'pageview');
-
-</script>
 
 
 
