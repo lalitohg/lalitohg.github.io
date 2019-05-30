@@ -1,0 +1,610 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Variables en javascript</title>
+
+    <link rel="stylesheet" type="text/css" href="https://www.dalerun.com//assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="https://www.dalerun.com//assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="El uso correcto de variables en el código es fundamental para un desarrollador">
+	<meta name="google-site-verification" content="">
+	<meta name="msvalidate.01" content="" >
+	
+	<link rel="author" href="">
+	
+	
+	<link rel="canonical" href="https://www.dalerun.com//variables-en-js/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="Variables en javascript">
+	<meta property="og:description" content="El uso correcto de variables en el código es fundamental para un desarrollador">
+	<meta property="og:url" content="https://www.dalerun.com//variables-en-js/">
+	<meta property="og:locale" content="es_MX">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Dále run">
+	<meta property="og:image" content="https://www.dalerun.com/images/office-header-30530-1024x300.jpg">
+	<meta property="article:author" content="https://www.facebook.com/eduardo.hernandezguerrero.58">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="codeninjalalo">
+	<meta name="twitter:creator" content="codeninjalalo">
+	<meta name="twitter:title" content="Variables en javascript">
+	<meta name="twitter:description" content="El uso correcto de variables en el código es fundamental para un desarrollador">
+	<meta name="twitter:image" content="https://www.dalerun.com/images/office-header-30530-1024x300.jpg">
+	
+
+	<link type="text/plain" rel="author" href="https://www.dalerun.com//humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="https://www.dalerun.com//assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="https://www.dalerun.com//assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://www.dalerun.com//assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.dalerun.com//assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.dalerun.com//assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.dalerun.com//assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.dalerun.com//assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.dalerun.com//assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.dalerun.com//assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="https://www.dalerun.com//assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="https://www.dalerun.com//assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="https://www.dalerun.com/" class="icon-home"> Dále run</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a  href="https://www.dalerun.com//search/">Buscar</a></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a  href="https://www.dalerun.com//contacto/">Contacto</a></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a  href="https://www.dalerun.com//subscribirte/">Subscribirte</a></li>
+
+            
+            
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://www.dalerun.com//">Inicio</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a  href="https://www.dalerun.com//blog/">Blog</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+
+                      <li><a  href="https://www.dalerun.com//blog/archive/">Archivo</a></li>
+                    
+                  </ul>
+
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+				<figure>
+					<img src="https://www.dalerun.com/images/office-header-30530-1024x300.jpg" width="970" alt="Variables en javascript" itemprop="image">
+
+					
+				</figure>
+				
+
+				<div itemprop="name">
+					<p class="subheadline">Qué son y como usar las variables en JS</p>
+					<h1>Variables en javascript</h1>
+				</div>
+			</header>
+
+
+			
+			<p class="teaser" itemprop="description">
+				El uso correcto de variables en el código es fundamental para un desarrollador
+			</p>
+			
+
+			<div itemprop="articleSection">
+			<p>Las variables son un elemento esencial de un programa. Hasta el código más pequeño necesita hacer buen uso de variables para ser claro y funcional.</p>
+
+<h2 id="qué-son">¿Qué son?</h2>
+
+<p>Podemos pensar en las variables como contenedores que nos van a ayudar a identificar y almacenar la información que nuestros programas van a manipular.</p>
+
+<p>Siendo más técnicos, las variables son una relación entre un dato almacenado en la memoria del programa y un nombre que identifica a ese dato en el código del programa. Básicamente es como ponerle tu nombre al envase donde guardas tu comida para poder encontrarlo después dentro del refrigerador de la oficina</p>
+
+<p><img src="/images/office_fridge.jpeg" alt=" " /></p>
+
+<h2 id="para-qué-sirven">¿Para qué sirven?</h2>
+
+<p>La pregunta ahora tal vez sea ¿para qué sirven? Es decir, ya sé que son una forma de identificar pedazos de información dentro del código y también sé que ocupan un lugar dentro de la memoria del programa, aún así eso no me deja claro qué uso darles.</p>
+
+<p>Pues bien. Las variables sirven a más de un propósito dentro de tu código:</p>
+
+<ul>
+  <li>Te ayudan a separar la información dentro del código de forma que sea más manejable</li>
+  <li>hacen que la lectura de tu código sea más sencilla</li>
+  <li>te ayudan a depurar (hacer debug) tu código cuando algo no te queda claro de la ejecución de tu programa o tratas de arreglar un bug.</li>
+</ul>
+
+<p>Veamos cómo nos ayudan las variables con este programa de ejemplo. El propósito del programa es almacenar un texto para luego transformarlo todo a minúsculas. Vamos a imaginar que pueden haber muchas más operaciones entre el momento de transformar el texto y el momento de mostrar la comparación entre el texto original y su transformación.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">originalText</span> <span class="o">=</span> <span class="s2">"Hola mundo"</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">lowerCaseText</span> <span class="o">=</span> <span class="nx">originalText</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+
+<span class="c1">//imagina que aqui hay como 50 lineas más de fabuloso código</span>
+
+<span class="nx">lowerCaseText</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Texto original"</span><span class="p">,</span> <span class="nx">originalText</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Texto en minúsculas"</span><span class="p">,</span> <span class="nx">originalText</span><span class="p">);</span></code></pre></figure>
+
+<p>Con este ejemplo de código podemos ver como el uso de las variables nos está ayudando aún en un programa tan cortito.</p>
+
+<p>Primero. Nos está ayudando a tener disponible la información que necesitamos ya que <code class="highlighter-rouge">originalText</code> y <code class="highlighter-rouge">lowerCaseText</code> nos ofrecen una forma breve de recuperar la información que contienen incluso después de haber escrito muchas líneas de código en el programa.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">originalText</span> <span class="o">=</span> <span class="s2">"Hola mundo"</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">lowerCaseText</span> <span class="o">=</span> <span class="nx">originalText</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+
+<span class="c1">//imagina que aqui hay como 50 lineas mas de fabuloso codigo</span></code></pre></figure>
+
+<p>Segundo. El código se vuelve más fácil de leer cuando la información que necesitamos está identificada de forma que sabemos que tipo de información está contenida en la variable. Aquí es importante mencionar que los nombres de las variables deben cumplir con ciertas guías para ser útiles. Veremos algunas más adelante.</p>
+
+<p>Por ahora, digamos que nombres de variables como <code class="highlighter-rouge">texto1</code> y <code class="highlighter-rouge">texto2</code> o <code class="highlighter-rouge">a</code> y <code class="highlighter-rouge">b</code> no logran describir ni al dato que contienen ni el uso que se les vamos a dar en el programa.</p>
+
+<p>Tercero. Intencionalmente he introducido un <strong>bug</strong> (<code class="highlighter-rouge">lowerCaseText = '';</code>). Si realmente éste ejemplo tuviera más de 50 líneas de código sería difícil saber en qué línea ocurrió el cambio si no pudiéramos buscar rápidamente todos los lugares donde se usa <code class="highlighter-rouge">lowerCaseText</code>.</p>
+
+<h2 id="tipos-de-variables">Tipos de variables.</h2>
+
+<p>Probablemente te has enterado que existen distintos tipos de variables en otros lenguajes de programación y javascript no es la excepción.</p>
+
+<p>En javascript la lista de tipos de datos es corta, en realidad.</p>
+
+<p>Vamos a dividir la lista en dos grupos. El grupo de los tipos que sólo pueden almacenar un valor a la vez y el grupo de los tipos que almacenan varios tipos de datos al mismo tiempo.</p>
+
+<p>Tipos que almacenan un valor a la vez:</p>
+
+<ul>
+  <li><strong>string</strong>: Este tipo almacena texto de una longitud variable. El texto que va a contener se encierra entre comillas simples o dobles.</li>
+  <li><strong>number</strong>: Este tipo sirve para almacenar números. Pueden ser enteros o fracciones y pueden estar expresados en sistema decimal, binario, octal o hexadecimal (por si te lo preguntabas).</li>
+  <li><strong>boolean</strong>: Este tipo almacena valores lógicos que sólo pueden ser <em>true</em>(cierto) o <em>false</em>(falso).</li>
+  <li><strong>null</strong>. Este es curioso, de hecho. Sirve para indicar que no hay valor de ningún tipo. Parece contradictorio pero muchas veces es necesario indicar que una variable no tiene valor.
+-<strong>NAN</strong>. Este tipo sirve para indicar que la variable no es un número; su nombre lo dice, Not A Number. Generalmente no lo usas en tu código sino que es el resultado de una operación matemática incorrecta como dividir una cantidad entre cero por ejemplo.</li>
+</ul>
+
+<p>Y así se ven en el código</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">//string</span>
+<span class="kd">var</span> <span class="nx">stringType</span> <span class="o">=</span> <span class="s2">"El texto puede incluir signos de puntuación, números y ¡otros símbolos!"</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">stringType2</span> <span class="o">=</span> <span class="s2">"También puedes usar 'comillas simples' dentro de las dobles y viceversa"</span><span class="p">;</span>
+
+<span class="c1">//number</span>
+<span class="kd">var</span> <span class="nx">integer</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span> <span class="c1">//un numero entero</span>
+<span class="kd">var</span> <span class="nx">fractional</span> <span class="o">=</span> <span class="mf">3.14159</span><span class="p">;</span> <span class="c1">//numero fraccional</span>
+<span class="kd">var</span> <span class="nx">binary</span> <span class="o">=</span> <span class="mi">0</span><span class="nx">b101</span><span class="p">;</span> <span class="c1">//el binario empieza con 0b y luego la cantidad en binario</span>
+<span class="kd">var</span> <span class="nx">octal</span> <span class="o">=</span> <span class="mi">0123</span><span class="p">;</span> <span class="c1">//el octal empieza con un 0 y luego la cantidad en octal</span>
+<span class="kd">var</span> <span class="nx">hexadecimal</span> <span class="o">=</span> <span class="mh">0x12ABCDEF</span><span class="p">;</span> <span class="c1">//el hexadecimal empieza con 0x y luego la cantidad hexadecimal. Las letras de A a F son mayúsculas.</span>
+
+<span class="c1">//boolean</span>
+<span class="kd">var</span> <span class="nx">boolType</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// esto es cierto</span>
+<span class="kd">var</span> <span class="nx">boolType2</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">// esto es falso</span></code></pre></figure>
+
+<p>Tipos que almacenan varios valores a la vez:</p>
+
+<ul>
+  <li><strong>object</strong>: Este tipo de dato sirve para almacenar juntos varios elementos de información. A cada elemento dentro del objeto se le da un nombre para identificarlo y cada elemento puede ser de cualquier tipo de dato (incluso de tipo object). Los elementos dentro del objeto no tienen un orden determinado al momento de almacenarlos ni al recuperarlos.</li>
+  <li><strong>array</strong>: Este tipo sirve para almacenar juntos varios elementos en secuencia. Los elementos almacenados dentro del array pueden ser de cualquier tipo (incluso de tipo array). Los elementos dentro del array están ordenados conforme se van agregando y se tiene acceso a ellos por medio de un índice que indica que posición ocupan dentro del array.</li>
+</ul>
+
+<p>Y así se ven en el código</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">objectType</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">name</span><span class="p">:</span> <span class="s2">"fulanito"</span><span class="p">,</span> <span class="c1">// el nombre es string</span>
+    <span class="na">age</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="c1">// la edad es number</span>
+    <span class="na">hobbies</span><span class="p">:</span> <span class="p">[</span><span class="s2">"fisica cuantica"</span><span class="p">,</span> <span class="s2">"pokemon"</span><span class="p">],</span> <span class="c1">// pasatiempos es array</span>
+    <span class="na">address</span><span class="p">:</span> <span class="p">{</span> <span class="c1">// la dirección es object</span>
+        <span class="na">street</span><span class="p">:</span> <span class="s2">"fighter"</span><span class="p">,</span>
+        <span class="na">city</span><span class="p">:</span> <span class="s2">"shadaloo"</span>
+    <span class="p">}</span>
+<span class="p">};</span></code></pre></figure>
+
+<h2 id="cómo-se-usan">¿Cómo se usan?</h2>
+
+<p>Ahora que sabemos qué son las variables vamos a ver cómo usarlas.</p>
+
+<p>Declaración y asignación.</p>
+
+<p>Declarar una variable significa crearla. A partir de ese momento se puede usar la variable como mejor nos convenga dentro del código.</p>
+
+<p>Para declarar una variable se usa la palabra especial <code class="highlighter-rouge">var</code> seguida de un espacio y el nombre que queremos darle a la variable.</p>
+
+<p>Las variables no sirven de mucho si no contienen ninguna información. Asignar una variable o asignar un valor a una variable significa que vamos a guardar un valor dentro de la variable. También puedes asignar una variable a otra. Es decir, puedes guardar una variable como el valor de otra.</p>
+
+<p>Algunos ejemplos lo explican mejor.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">foo</span><span class="p">;</span> <span class="c1">// declaramos la variable foo.</span>
+<span class="kd">var</span> <span class="nx">bar</span> <span class="o">=</span> <span class="s2">"Hola"</span><span class="p">;</span> <span class="c1">// asignamos a bar el string  "Hola"</span>
+
+<span class="nx">foo</span> <span class="o">=</span> <span class="nx">bar</span><span class="p">;</span> <span class="c1">// asignamos a foo la variable bar. Ahora foo es igual a "Hola" y bar = "Hola"</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">foo</span><span class="p">);</span> <span class="c1">// Hola</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">bar</span><span class="p">);</span> <span class="c1">// Hola</span></code></pre></figure>
+
+<h2 id="cambio-de-tipo-de-valor">Cambio de tipo de valor.</h2>
+
+<p>Las variables en javascript pueden ser reasignadas con cualquier tipo de valor a diferencia de otros lenguajes. Una variable puede tener un valor string y luego ser reasignada con un valor number por ejemplo.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="s2">"soy un string"</span><span class="p">;</span> <span class="c1">// se define la variable y se asigna un valor de tipo string</span>
+<span class="nx">foo</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span> <span class="c1">// ahora se le asigna un valor de tipo numérico</span></code></pre></figure>
+
+<p>La verdad yo no recomiendo hacer este tipo de cambios, ya que por buenas prácticas, las variables deben ayudarte a leer el código de forma clara. Si una variable cambia constantemente de tipo se vuelve más difícil predecir lo que el código hará después. Puedes simplemente declarar más variables del tipo adecuado a tus necesidades y así mantener un código más expresivo.</p>
+
+<h2 id="y-qué-nombre-le-ponemos">¿Y qué nombre le ponemos?</h2>
+
+<p>Esa pregunta me ha causado bloqueos de escritor muchas veces durante mi carrera. Para evitar que te pase trata de hacer las cosas simples y deja que el código sea el que te cuente la historia. Por ejemplo:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">lowerCaseTxt</span> <span class="o">=</span> <span class="nx">inputTxt</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span></code></pre></figure>
+
+<p>Se entiende que <code class="highlighter-rouge">lowerCaseTxt</code> va a almacenar un texto en minúsculas, mientras que <code class="highlighter-rouge">inputTxt</code> contiene texto que fue introducido por el usuario.</p>
+
+<p>Si le pongoun poco de imaginación es como si el código me contara lo que está pasando de forma casual:</p>
+
+<blockquote>
+  <p>“¿recuerdas ese texto que el usuario introdujo antes? Pues ahora hay que asegurarnos de que todo está en minúsculas y vamos a necesitar guardar ese texto en minúsculas para usarlo en otro momento.”</p>
+</blockquote>
+
+<p>Honestamente yo encuentro difícil leer algo como esto:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">txt2</span> <span class="o">=</span> <span class="nx">txt1</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">()</span></code></pre></figure>
+
+<p>Podríamos pensar que no está tan mal pero leer otras cien líneas de código como este no se parece mucho a leer una historia como en el primer ejemplo. Siempre es mejor elegir nombres cortos que te digan rápidamente qué información está contenida en las variables.</p>
+
+<h2 id="conclusión">Conclusión.</h2>
+
+<p>Las variables son un recurso que te ayuda a escribir código legible, predecible, modificable y más fácil de probar. Usa las variables a tu favor para mantener tu código simple y expresivo, pero más importante, diviértete y que tengas mucho éxito.</p>
+
+<div class="row">
+    <ul class="inline-list social-icons">
+        <li><a class="icon-twitter share-post-item" href="https://twitter.com/intent/tweet?text=Variables en javascript&amp;url=https://www.dalerun.com/variables-en-js/&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Compártelo en Twitter"></a></li>
+        <li><a class="icon-facebook share-post-item" href="https://facebook.com/sharer.php?u=https://www.dalerun.com/variables-en-js/" rel="nofollow" target="_blank" title="Compártelo en Facebook"></a></li>
+        <li><a class="icon-linkedin share-post-item" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=/variables-en-js/&amp;title=Variables en javascript&amp;summary=El uso correcto de variables en el código es fundamental para un desarrollador&amp;source=dalerun.com" rel="nofollow" target="_blank" title="Compártelo en LinkedIn"></a></li>
+    </ul>
+</div>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="http://dalerun.com/" target="_blank"> Eduardo Hernández Guerrero</a></span>
+				</span>
+				
+
+				
+				<time class="icon-calendar pr20" datetime="2018-12-02T00:00:00-06:00" itemprop="datePublished"> 2018-12-02</time>
+				
+
+				</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> javascript</span> <span class="icon-price-tag pr10"> fundamentos</span> <span class="icon-price-tag pr10"> programacion</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="https://www.dalerun.com//blog/archive/" title="Blog Archivo">Archivo</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="https://www.dalerun.com//empieza-a-usar-NPX/">Empieza a usar npx hoy &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Acerca de este sitio</h5>
+
+            <p class="shadow-black">
+              »Dále run« explica términos y herramientas de desarollo en español. Así es más fácil
+              <a href="https://www.dalerun.com//info/">Más ›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servicios</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="https://www.dalerun.com/"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://www.dalerun.com//contacto/"  title="Contacto">Contacto</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://www.dalerun.com//feed.xml"  title="Suscríbete al RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://www.dalerun.com//sitemap.xml"  title="Mapa del sitio">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+
+            <ul class="no-bullet shadow-black">
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            Powered by: <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> | <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive Template</a>.</p>
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="https://github.com/lalitohg" target="_blank" class="icon-github" title="lalitohg"></a></li>
+            
+              <li><a href="https://twitter.com/codeninjalalo" target="_blank" class="icon-twitter" title="Últimas noticias en twitter"></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/eduardo-hern%C3%A1ndez-568195a2/" target="_blank" class="icon-linkedin" title="LinkledIn"></a></li>
+            
+              <li><a href="http://www.facebook.com/eduardo.hernandezguerrero.58" target="_blank" class="icon-facebook" title="Facebook"></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="https://www.dalerun.com//assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-135040717-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+

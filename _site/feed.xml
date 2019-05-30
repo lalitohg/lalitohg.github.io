@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://www.dalerun.com//assets/xslt/rss.xslt" ?>
+<?xml-stylesheet type="text/css" href="https://www.dalerun.com//assets/css/rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Dále run</title>
+		<description>»Dále run« explica términos y herramientas de desarollo en español. Así es más fácil</description>
+		<link>https://www.dalerun.com//</link>
+		<atom:link href="https://www.dalerun.com//feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Conoce los términos comunes empleados con GIT.</title>
+				<link>https://www.dalerun.com//conoce-los-terminos-comunes-en-git/</link>
+				<pubDate>Thu, 30 May 2019 00:00:00 -0500</pubDate>
+				<description>&lt;p&gt;A veces resulta bastante útil hablar el mismo idioma que se usa en las fuentes de información que consultamos acerca del uso de GIT. Al menos a mi se me hace más fácil entender lo que significan las instrucciones y las explicaciones cuando entiendo lo que quieren decir los términos que se usan para explicar una herramienta o tecnología. Veamos algunos de los términos más comunes asociados con el uso de GIT.&lt;/p&gt;
+
+&lt;h2 id=&quot;git&quot;&gt;GIT&lt;/h2&gt;
+
+&lt;p&gt;Una explicación rápida de lo que es GIT no está de más, creo yo. En resumen, GIT es un programa que permite registrar los cambios que se hacen sobre una carpeta y todos sus contenidos. Una de sus principales ventajas es que almacena toda la información de los cambios en una base de datos que se puede compartir con otras personas o hasta con computadoras (en serio, sin un humano de por medio).&lt;/p&gt;
+
+&lt;h2 id=&quot;repositorio&quot;&gt;Repositorio&lt;/h2&gt;
+
+&lt;p&gt;Cuando configuramos una carpeta para que sea observada por GIT para registrar los cambios en su contenido a esa carpeta se le llama &lt;strong&gt;repositorio&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;commit&quot;&gt;Commit&lt;/h2&gt;
+
+&lt;p&gt;Si GIT va a guardar información de cambios en una base de datos, entonces podríamos decir que un &lt;strong&gt;commit&lt;/strong&gt; es un registro de los cambios que queremos guardar. El &lt;strong&gt;commit&lt;/strong&gt; es una especie de “paquete” que contiene la información del autor, los cambios de cada archivo a la hora de hacer el commit, un mensaje que describe el contenido del commit entre otras pocas cosas. Cada commit, sin falta, tiene asociado un identificador que se conoce como el &lt;strong&gt;hash&lt;/strong&gt;, &lt;strong&gt;SHA-1&lt;/strong&gt; o simplemente &lt;strong&gt;SHA&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;hash-sha-o-sha-1&quot;&gt;Hash, SHA o SHA-1&lt;/h2&gt;
+
+&lt;p&gt;Todos, los objetos que se guardan en la base de datos de GIT tienen un identificador único. Este identificador se genera a partir de la información del mismo objeto que se va a almacenar mediante un método de criptografía llamado &lt;strong&gt;SHA-1&lt;/strong&gt; que por definición se dice que es una función &lt;strong&gt;hash&lt;/strong&gt;. De ahí el nombre.&lt;/p&gt;
+
+&lt;h2 id=&quot;branch&quot;&gt;Branch&lt;/h2&gt;
+
+&lt;p&gt;Un &lt;strong&gt;branch&lt;/strong&gt; es simplemente una forma de ponerle nombre a una serie de &lt;strong&gt;commits&lt;/strong&gt; (cambios registrados en los archivos) en la base de datos de GIT. Generalmente se usan para poner juntos los commits asociados a un sólo cambio en el repositorio.&lt;/p&gt;
+
+&lt;h2 id=&quot;remote-o-también-origin&quot;&gt;Remote o también origin&lt;/h2&gt;
+
+&lt;p&gt;Esto es así: GIT tiene la capacidad de repartir copias de la base de datos de cambios del repositorio. Esas copias tienen que venir de algún lado o dirigirse a algún lado que no va a ser nuestra propia computadora. Esas &lt;strong&gt;”direcciones”&lt;/strong&gt; de donde podemos tomar una copia de la base de datos de cambios de GIT es a lo que se le llama &lt;strong&gt;remote&lt;/strong&gt; y podemos tener muchas direcciones distintas. GIT crea por defecto un remote llamado &lt;strong&gt;origin&lt;/strong&gt; por lo que a veces se asume que cuando se habla de direcciones &lt;strong&gt;remote&lt;/strong&gt; se trata de origin, pero cuidado, remote y origin no son sinónimos.&lt;/p&gt;
+
+&lt;h2 id=&quot;checkout&quot;&gt;Checkout&lt;/h2&gt;
+
+&lt;p&gt;Uno de los comandos más usados de GIT es el comando &lt;strong&gt;checkout&lt;/strong&gt;. En su forma básica nos permite cambiar el historial de un &lt;strong&gt;branch&lt;/strong&gt; a otro. El comando checkout tiene otros usos más poderosos pero sin duda el más común es este.&lt;/p&gt;
+
+&lt;h2 id=&quot;y-muchos-más&quot;&gt;Y muchos más&lt;/h2&gt;
+
+&lt;p&gt;GIT es una herramienta poderosa y requiere tiempo aprender todos los términos y comandos asociados a su uso.&lt;/p&gt;
+
+&lt;p&gt;Espero que este artículo te sirva como una referencia de supervicencia para poder navegar en el mar de documentación que hay disponible por todos lados.&lt;/p&gt;
+
+&lt;p&gt;Que te diviertas desarrollando y espero tenerte pronto por aquí.&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">https://www.dalerun.com//conoce-los-terminos-comunes-en-git/</guid>
+			</item>
+		
+			<item>
+				<title>Tres tips para escribir mejor código</title>
+				<link>https://www.dalerun.com//tres-tips-para-escribir-mejor-codigo/</link>
+				<pubDate>Sun, 26 May 2019 00:00:00 -0500</pubDate>
+				<description>&lt;p&gt;Hace unos días tuve una sesión de tutoría con un estudiante que recién empieza su carrera de desarrollo y durante el transcurso de la sesión nos dimos cuenta que el problema más grande no estaba en codificar los algoritmos sino en lograr que todo el proyecto tuviera sentido al momento de tener todo el código junto.&lt;/p&gt;
+
+&lt;p&gt;Esa sesión me hizo recordar muchos de los problemas que los desarrolladores enfrentamos a la hora de escribir programas y la forma en la que he ido superando algunos vicios asociados con mi proceso de escribir código gracias a la ayuda de libros y a los consejos de otros grandes desarrolladores que me han ayudado a mejorar.&lt;/p&gt;
+
+&lt;p&gt;Te comparto algunos tips que he adquirido con los años y espero que te ayuden tanto como a mi.&lt;/p&gt;
+
+&lt;h2 id=&quot;nuestra-habilidad-más-valiosa-es-leer-código&quot;&gt;Nuestra habilidad más valiosa es leer código.&lt;/h2&gt;
+
+&lt;p&gt;Suena contradictorio pero muchos grandes desarrolladores coinciden en que el principal papel de un desarrollador es leer código aún cuando uno podría pensar que los desarrolladores son mejores mientras más código escriben.&lt;/p&gt;
+
+&lt;p&gt;Honestamente yo también creía al inicio de mi carrera que me pagarían más si podía escribir más código y con el tiempo tuve que cambiar de estrategia por las exigencias del trabajo.&lt;/p&gt;
+
+&lt;p&gt;Un buen desarrollador lee el código una y otra vez, abriendo cualquier cantidad de archivos que sea necesaria hasta entender cómo funcionan los programas que está revisando.&lt;/p&gt;
+
+&lt;p&gt;La lógica de esto es en realidad simple. Si lo pensamos un momento, resulta que cualquier desarrollador puede lograr hacer que un programa funcione, pero cuando llegas a cubrir una vacante de desarrollador lo más seguro es que tengas que pasar mucho tiempo leyendo lo que otros desarrolladores ya escribieron. Mientras mejor seas leyendo el código de otros y entendiendo la necesidad que se resolvió con ése código, mejor será tu capacidad de escribir nuevo código.&lt;/p&gt;
+
+&lt;p&gt;En base a lo anterior te voy a compartir los siguientes tres tips para mejorar el código que escribes.&lt;/p&gt;
+
+&lt;h2 id=&quot;escribe-código-para-que-lo-entiendan-otros&quot;&gt;Escribe código para que lo entiendan otros.&lt;/h2&gt;
+
+&lt;p&gt;Es algo muy común, y confieso que a mi me pasa seguido, que al momento de que otro desarrollador revisa mi código los nombres que he usado para identificar variables y funciones no son muy descriptivos.&lt;/p&gt;
+
+&lt;p&gt;Es aquí donde nuestra habilidad de leer código se aprecia más, porque es importante que uno mismo se detenga a leer el código que está escribiendo para detectar posibles mejoras.&lt;/p&gt;
+
+&lt;p&gt;Al momento de escribir un programa puede parecer una obra maestra porque hemos añadido exitosamente la nueva funcionalidad que esperamos lograr, pero justo ahora es cuando uno debe darse un tiempo para leer el nuevo código y enfocarse solamente en eso; poder leer el código.&lt;/p&gt;
+
+&lt;p&gt;Recuerda que en unas semanas tú mismo ya no vas a ser la misma persona que ha escrito el código que acabas de terminar. La meta es escribir un código que cualquiera pueda leer fácilmente.&lt;/p&gt;
+
+&lt;h2 id=&quot;usa-verbos-y-sustantivos-de-forma-correcta&quot;&gt;Usa verbos y sustantivos de forma correcta.&lt;/h2&gt;
+
+&lt;p&gt;No hay mucha ciencia en esto pero es algo que se nos puede olvidar bajo la presión de terminar el programa en el que estamos trabajando.&lt;/p&gt;
+
+&lt;p&gt;Las &lt;strong&gt;variables deben ser sustantivos&lt;/strong&gt; (nombres de cosas) que describen rápidamente el significado de los datos que vamos a guardar en ellas sin mencionar directamente los valores que serán guardados.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, si estamos almacenando las direcciones de correo principal y de recuperación de un usuario podemos usar nombres de variable como:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;userMainEmailAddress&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// el correo principal&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;userRecoveryEmailAddress&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// el correo de recuperación&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Creo que estos nombres pueden leerse y entender qué significado tiene la información almacenada en estas variables. Es un texto mucho más expresivo que simplemente escribir algo como:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;mail1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;mail2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;En el caso de variables que indiquen si un dato es cierto o falso podemos expresar lo que el dato puede ser, hacer o tener como:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;emailAddressIsUnique&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// la dirección de correo es única&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;appCanUpdate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// la aplicación se puede actualizar&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;userHasAccess&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// el usuario tiene permiso de acceder&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Por definición, las funciones sirven para agrupar varias instrucciones juntas, o sea que son como la definición de tareas, lo que significa que se trata de ejecutar acciones. En otras palabras, &lt;strong&gt;se expresan usando verbos&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Digamos, por ejemplo, que queremos definir una función para ejecutar varias validaciones sobre una dirección de correo siguiendo estos pasos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Validar que el formato del email es correcto&lt;/li&gt;
+  &lt;li&gt;validar que el correo pertenece a un dominio de la lista de dominios aceptados por la aplicación&lt;/li&gt;
+  &lt;li&gt;validar que el email no ha sido registrado antes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sin entrar en los verdaderos detalles de la implementación podemos darle nombre a las funciones necesarias como;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// validar una dirección de correo implica:&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;validateEmailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;emailHasValidFormat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;validateEmailAddressFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// validar el formato&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;emailDomainIsAccepted&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;validateEmailAddressDomain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// validar que el dominio del email es aceptado por la aplicación&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;emailIsUnique&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;checkEmailAddressIsUnique&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// revisar que el email no está en uso&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;emailHasValidFormat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;emailDomainIsAccepted&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;emailIsUnique&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// sólo si todas las validaciones son correctas entonces la función regresará un valor verdadero&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Como puedes ver, la intención es hacer que al leer el código se explique que se están realizando acciones concretas y que el resultado de esas acciones nos están dando datos acerca del estado de la ejecución del programa.&lt;/p&gt;
+
+&lt;h2 id=&quot;escribe-de-forma-iterativa&quot;&gt;Escribe de forma iterativa&lt;/h2&gt;
+
+&lt;p&gt;La mejor manera que conozco para comerse un elefante es hacerlo un mordisco a la vez. Lo mismo aplica para escribir programas, escribe un cambio pequeño y lee lo que acabas de escribir para decidir si necesitas que tenga sentido ahora o si lo arreglas conforme tengas más partes del programa que escribes.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, para implementar la validación de direcciones de correo que mencionaba antes, podría comenzar con un nombre de función que solamente sirva como un contenedor temporal:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Ahora puede ser momento de pensar un poco en lo que quiero que la función haga y empezar a hacer notas sobre el código que tengo:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// validar el formato&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// validar el dominio&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// validar que el email es único&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;A estas alturas ya se me ocurrieron algunos cambios. Para empezar, me doy cuenta de que necesito un email sobre el cual hacer las validaciones necesarias; también me puedo imaginar un nombre para la función que estoy escribiendo. Finalmente se me ocurre que podría usar una variable para ir guardando el resultado de las validaciones.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;validateEmailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;emailIsValid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// validar el formato&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//  validar el dominio&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// validar que el email es único&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;emailIsValid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Confieso que no es mucho pero la verdad es que tampoco no me estoy deteniendo por mucho tiempo a pensar en los nombres “perfectos”. Esto es bueno porque mi intención es resolver un problema y no puedo perder mucho tiempo en los detalles estéticos ahora. Eso de los detalles lo podré hacer más adelante.&lt;/p&gt;
+
+&lt;p&gt;Ahora se me ocurren los nombres de las funciones que podría necesitar y mi código se ve así:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;validateEmailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;emailIsValid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;emailHasValidFormat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;validateEmailAddressFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// validar el formato&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;emailDomainIsAccepted&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;validateEmailAddressDomain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// validar el dominio&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;emailIsUnique&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;checkEmailAddressIsUnique&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// validar que el email es único&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;emailIsValid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Y en este punto es cuando me doy cuenta que no voy a necesitar una variable para guardar el resultado de la validación en general por lo que he llegado a la versión final:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// validar una dirección de correo implica:&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;validateEmailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;emailHasValidFormat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;validateEmailAddressFormat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// validar el formato&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;emailDomainIsAccepted&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;validateEmailAddressDomain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// validar que el dominio del email es aceptado por la aplicación&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;emailIsUnique&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;checkEmailAddressIsUnique&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;emailAddress&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// revisar que el email no está en uso&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;emailHasValidFormat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;emailDomainIsAccepted&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;emailIsUnique&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// sólo si todas las validaciones son correctas entonces la función regresará un valor verdadero&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Me ha tomado 5 iteraciones llegar a algo que se puede leer con suficiente claridad como para dejarlo así y la verdad es que me tomó apenas unos minutos pasar de la primera iteración a la última. Esto es mucho mejor que la media hora o más que me pudo haber tomado al intentar escribirlo todo bien desde el principio con todos los nombres correctos a la primera. Ya he he estado en esa situación y puedo decir que generalmente se pierde más tiempo del que tomaría hacerlo en partes. La verdad es que el proceso creativo no funciona de forma que se pueda hacer todo bien al primer intento.&lt;/p&gt;
+
+&lt;h2 id=&quot;es-todo-por-ahora&quot;&gt;Es todo por ahora&lt;/h2&gt;
+
+&lt;p&gt;Voy a dejarlo hasta aquí para no hacerlo más largo. Espero que te sirvan estos tips y que me escribas si tienes alguna pregunta o sugerencia.&lt;/p&gt;
+
+&lt;p&gt;Sigue practicando y que te diviertas en el proceso.&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">https://www.dalerun.com//tres-tips-para-escribir-mejor-codigo/</guid>
+			</item>
+		
+			<item>
+				<title>Tres formas de optimizar el uso de la línea de comandos</title>
+				<link>https://www.dalerun.com//tres-formas-de-optimizar-el-uso-de-la-linea-de-comandos/</link>
+				<pubDate>Tue, 30 Apr 2019 00:00:00 -0500</pubDate>
+				<description>&lt;p&gt;Te voy a mostrar 3 formas en las que hago más eficiente el uso de mi línea de comandos para incrementar la productividad.&lt;/p&gt;
+
+&lt;p&gt;Al hacer desarrollo es inevitable usar la línea de comandos, pero no siempre es fácil teclear comandos con muchas opciones, con nombres muy largos o teclear varios comandos de forma secuencial.&lt;/p&gt;
+
+&lt;p&gt;La línea de comandos te puede ayudar a acelerar tus tareas de desarrollo y administración de forma increíble y aquí te voy a mostrar tres opciones para ayudarte a ser más productivo.&lt;/p&gt;
+
+&lt;h2 id=&quot;define-alias&quot;&gt;Define alias&lt;/h2&gt;
+
+&lt;p&gt;Los &lt;strong&gt;alias&lt;/strong&gt; de la línea de comandos pueden ser una herramienta que te ahorra mucho tiempo cuando necesitas usar mucho la línea de comandos.&lt;/p&gt;
+
+&lt;p&gt;Los alias son simplemente una forma de renombrar comandos o series de comandos de forma que puedas recordarlos más fácil, y sobre todo, escribiendo mucho menos.&lt;/p&gt;
+
+&lt;p&gt;Lo bueno de los &lt;strong&gt;alias&lt;/strong&gt; es que puedes nombrarlos casi como quieras y con ellos puedes hacer que un comando exageradamente largo se convierta en un comando de apenas unos pocos caracteres.&lt;/p&gt;
+
+&lt;p&gt;Basta con hacer algo como:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alias cls=clear&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Con esto ya puedo escribir &lt;strong&gt;cls&lt;/strong&gt; y sería lo mismo que escribir el comando &lt;strong&gt;clear&lt;/strong&gt; para limpiar la pantalla de la terminal. Esto va a ser válido por el resto de la sesión, lo que significa que cuando se cierre la terminal se perderá la definición de ese alias.&lt;/p&gt;
+
+&lt;p&gt;Cómo este artículo se trata de ser más productivo entonces el verdadero consejo aquí es &lt;strong&gt;define todos tus aliases en el archivo de inicio de sesión&lt;/strong&gt;. De esta forma estarán disponibles siempre que abras una nueva terminal.&lt;/p&gt;
+
+&lt;p&gt;En ubuntu, y casi cualquier otra distribución, vas a encontrar este archivo en tu directorio personal con el nombre &lt;strong&gt;.bashrc&lt;/strong&gt;. En Mac OS es probable que quieras modificar el archivo  &lt;strong&gt;.bash_profile&lt;/strong&gt; que también debería estar localizado en tu directorio personal.&lt;/p&gt;
+
+&lt;p&gt;Solamente tienes que abrir el archivo con cualquier procesador de texto y agregar nuevas líneas con la definición de tus &lt;strong&gt;aliases&lt;/strong&gt;. Observa que en el ejemplo que sigue estoy encerrando entre comillas los comandos que tienen espacios intermedios. Los comandos de una sola palabra no necesitan comillas.&lt;/p&gt;
+
+&lt;p&gt;Puede que te den ganas de añadir comentarios. Agrega &lt;strong&gt;’#’&lt;/strong&gt; y el resto de la línea será un comentario.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cls&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clear&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;cd ..&quot;&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;listar&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;archivos&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ocultos&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;con&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;detalle&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;en&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;forma&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;de&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;listado&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;indica&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;si&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;el&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nombre&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;es&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ejecutable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dirctorio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; o enlace simbólico&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)
+&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;la&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;ls -alF&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;personalizar-de-forma-modular&quot;&gt;Personalizar de forma modular.&lt;/h2&gt;
+
+&lt;p&gt;A veces tenemos que manejar proyectos distintos al mismo tiempo o tenemos que cambiar proyectos muy seguido.&lt;/p&gt;
+
+&lt;p&gt;Esto puede cambiar constantemente los requerimientos para configurar nuestro entorno de desarrollo. Por eso es que yo he decidido separar requerimientos distintos en archivos distintos. De esta forma puedo incluir variables de entorno, alias o invocar comandos específicos al iniciar sesión como sea necesario y lo mejor es que puedo conservar los archivos para después aun cuando no los estoy usando.&lt;/p&gt;
+
+&lt;p&gt;Lo que hago en mi caso es crear un archivo oculto por cada cliente &lt;strong&gt;.cliente1.bash&lt;/strong&gt;, &lt;strong&gt;.cliente2.bash&lt;/strong&gt; y otro para mis propios cambios, luego agrego en cada archivo lo que sea que necesite definir (variables de entorno, aliases, ejecutar un comando, etc). Con esto simplemente modifico mi archivo de inicio de sesión (&lt;strong&gt;.bashrc&lt;/strong&gt; para Linux o  &lt;strong&gt;.bash_profile&lt;/strong&gt; para Mac OS) con algo como esto:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;personal&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.me.bas&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;h
+&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ciente1&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;aliases&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;paths&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;etc&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.cliente1.bas&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;h
+&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;#&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ciente2&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;aliases&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;paths&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;etc&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.cliente2.bash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Ahora solo es cuestión de comentar cualquiera que no necesite usar y la siguiente vez que abra una terminal veré reflejados los cambios.&lt;/p&gt;
+
+&lt;h2 id=&quot;automatiza-las-tareas-repetitivas-con-scripts&quot;&gt;Automatiza las tareas repetitivas con scripts.&lt;/h2&gt;
+
+&lt;p&gt;A veces nos toca hacer tareas simples pero que nos quitan tiempo, cosas como actualizar campos en una tabla de la base de datos, borrar registros viejos, comprimir archivos de logs, etc. Es cierto que lo mejor sería modificar nuestros sistemas para que hagan esas tareas como parte de sus procesos, pero tal vez no sean una prioridad, no hay personal o simplemente “así es la vida”.&lt;/p&gt;
+
+&lt;p&gt;Yo siempre trato de usar el lenguaje interpretado que me ayude a automatizar esas tareas de forma más sencilla y los tengo a la mano ya sea en una carpeta de fácil acceso o en el mismo repositorio del proyecto en un directorio donde no estorben.&lt;/p&gt;
+
+&lt;p&gt;Dependiendo de las tareas a realizar uso distintos lenguajes. Para hacer conexiones a bases de datos MySQL me gusta &lt;strong&gt;PHP&lt;/strong&gt;, para analizar archivos de texto (sobre todo si tienen formato de tabla) me gusta &lt;strong&gt;Pearl&lt;/strong&gt;. Descubrí que es muy fácil hacer programas interactivos de línea de comandos con &lt;strong&gt;Node&lt;/strong&gt; y &lt;a href=&quot;https://www.npmjs.com/package/commander&quot;&gt;commander&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Aquí todo depende de las circunstancias. Eso sí, aprender algún lenguaje interpretado seguramente te va a salvar de muchas así que aprende bien al menos uno.&lt;/p&gt;
+
+&lt;h2 id=&quot;has-la-prueba&quot;&gt;Has la prueba.&lt;/h2&gt;
+
+&lt;p&gt;Si te parece que alguno de estos tips te puede ayudar entonces es tu turno de aplicarlos tú mismo y empezar a hacer mucho más en menos tiempo.&lt;/p&gt;
+
+&lt;p&gt;Espero que hayas disfrutado leyendo el artículo tanto como yo disfruté al escribirlo y que te ayude en tu carrera como desarrollador.&lt;/p&gt;
+
+&lt;p&gt;Hasta la próxima.&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">https://www.dalerun.com//tres-formas-de-optimizar-el-uso-de-la-linea-de-comandos/</guid>
+			</item>
+		
+			<item>
+				<title>Tipos de bases de datos</title>
+				<link>https://www.dalerun.com//tipos-de-bases-de-datos/</link>
+				<pubDate>Fri, 22 Feb 2019 00:00:00 -0600</pubDate>
+				<description>&lt;p&gt;Si le preguntas a un experto en el tema de la cerveza te dirá que es un error pensar que solamente puedes elegir entre la clara y la obscura. Algo similar pasaría con un experto en vino si le dices que sólo existen el tinto y el blanco.&lt;/p&gt;
+
+&lt;p&gt;Pues en el camino a convertirte en un experto en bases de datos vas a descubrir que hay más de un tipo de bases de datos; de hecho, es un error muy común pensar que sólo existen las bases de datos relacionales y las no relacionales; o también se dice que hay bases de datos SQL y las no SQL.&lt;/p&gt;
+
+&lt;p&gt;Vamos directamente al listado de opciones que tenemos hoy en día:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Relacionales o SQL&lt;/li&gt;
+  &lt;li&gt;Documentales&lt;/li&gt;
+  &lt;li&gt;Key-value&lt;/li&gt;
+  &lt;li&gt;Familia de columnas&lt;/li&gt;
+  &lt;li&gt;Grafos&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No está mal. Digo, no es una lista enorme. Ahora vamos a ver de forma general cada uno de los tipos que hay&lt;/p&gt;
+
+&lt;h2 id=&quot;bases-de-datos-relacionales&quot;&gt;Bases de datos relacionales&lt;/h2&gt;
+
+&lt;p&gt;Las bases de datos relacionales son las que tienen más tiempo sirviendo como la opción de cabecera. Hasta hace algunos años, de hecho, eran la única opción seria si querías desarrollar algo y no tener problemas al lanzar una aplicación muy grande.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-guardan-la-información&quot;&gt;¿Cómo guardan la información?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dbtypes_rel.png&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Este tipo de bases de datos almacena la información en forma de &lt;strong&gt;tablas&lt;/strong&gt; que contienen &lt;strong&gt;columnas&lt;/strong&gt; y &lt;strong&gt;filas&lt;/strong&gt;. Las columnas representan los campos de información que cada registro debe tener y las filas representan los registros almacenados en cada tabla.&lt;/p&gt;
+
+&lt;p&gt;Cada tabla representa una entidad de nuestra aplicación, es decir, cada cosa de la que nos interesa guardar información.&lt;/p&gt;
+
+&lt;p&gt;Un detalle  muy característico de este tipo de bases de datos es que tienes que mezclar la información de las tablas mediante operaciones &lt;strong&gt;JOIN&lt;/strong&gt; para poder componer de nuevo la información que existe entre dos o más tablas que almacenan información relacionada.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-se-diseñan-los-datos&quot;&gt;¿Cómo se diseñan los datos?&lt;/h3&gt;
+
+&lt;p&gt;Para diseñar la estructura de datos de tu aplicación con una de estas bases de datos lo más importante es tener en mente el &lt;strong&gt;principio de normalización&lt;/strong&gt;, que básicamente nos dice que:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;debemos mantener en una sóla tabla los datos de una sóla entidad.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esto significa, por ejemplo, que si estamos almacenando datos de dueños de mascotas, necesitamos una tabla llamada mascotas que solamente guarda información de los animales registrados; por otro lado, necesitamos una tabla llamada dueños con la información de las personas que son dueñas de las mascotas.&lt;/p&gt;
+
+&lt;p&gt;Y aquí viene lo bueno ¿cómo sabemos quién es dueño de qué mascota? Y ¿cómo permitimos que la misma persona tenga registrado a más de un animalito?&lt;/p&gt;
+
+&lt;p&gt;Para eso usamos otra tabla que puede llamarse dueños_mascotas que almacene la relación que existe entre una persona en la tabla dueños y un animalito en la tabla mascotas.&lt;/p&gt;
+
+&lt;p&gt;Es una explicación muy simplificada y breve pero espero que ilustre el tema.&lt;/p&gt;
+
+&lt;h3 id=&quot;soluciones-de-este-tipo&quot;&gt;Soluciones de este tipo&lt;/h3&gt;
+
+&lt;p&gt;Aquí es donde probablemente tenemos las opciones con más tiempo en el mercado y cada una ofrece alguna ventaja o característica distintiva. Solamente por mencionar las más populares tenemos &lt;a href=&quot;https://www.postgresql.org/&quot;&gt;PostgreSQL&lt;/a&gt;, &lt;a href=&quot;&quot;&gt;MySQL&lt;/a&gt;, &lt;a href=&quot;https://mariadb.org/&quot;&gt;MariaDB&lt;/a&gt;, &lt;a href=&quot;https://www.microsoft.com/en-us/sql-server/&quot;&gt;MSSQL Server&lt;/a&gt;, &lt;a href=&quot;https://www.sqlite.org/index.html&quot;&gt;SQLite&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;bases-de-datos-de-familia-de-columnas&quot;&gt;Bases de datos de familia de columnas&lt;/h2&gt;
+
+&lt;p&gt;Estas bases de datos permiten consultas muy rápidas sobre colecciones de datos inmensas y generalmente son la opción a elegir cuando se almacenan datos de forma tabular con una estructura irregular en soluciones de big data.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-guardan-la-información-1&quot;&gt;¿Cómo guardan la información?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dbtypes_fam.png&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En estas bases de datos los registros se almacenan en tablas dispersas cuyas filas pueden contener una cantidad arbitraria de columnas y que están indexadas de forma natural por un dato que sirve como &lt;strong&gt;key&lt;/strong&gt; para la fila, o sea, todas las filas deben tener un mismo dato que sirva para identificar cada registro.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-se-diseñan-los-datos-1&quot;&gt;¿Cómo se diseñan los datos?&lt;/h3&gt;
+
+&lt;p&gt;Aquí debemos considerar que las columnas contienen piezas de información relacionada que pertenecen a cada fila.&lt;/p&gt;
+
+&lt;p&gt;Las columnas dentro de la fila pueden asociarse entre sí pero se mantienen agrupadas dentro de su fila correspondiente.&lt;/p&gt;
+
+&lt;h3 id=&quot;soluciones-de-este-tipo-1&quot;&gt;Soluciones de este tipo&lt;/h3&gt;
+
+&lt;p&gt;El ejemplo más popular de este tipo es tal vez &lt;a href=&quot;http://cassandra.apache.org/&quot;&gt;CassandraDB&lt;/a&gt; aunque no es la única. También podemos encontrarnos con otras como &lt;a href=&quot;https://hbase.apache.org/&quot;&gt;HBase&lt;/a&gt;, &lt;a href=&quot;http://druid.io/technology&quot;&gt;Druid&lt;/a&gt; o &lt;a href=&quot;https://cloud.google.com/bigtable/&quot;&gt;Bigtable&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;bases-de-datos-key-value&quot;&gt;Bases de datos key-value&lt;/h2&gt;
+
+&lt;p&gt;Este tipo de base de datos están basadas en la simplicidad y generalmente están orientadas a responder consultas tan rápido como sea posible al mismo tiempo que tratan de ser muy tolerantes a las fallas.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-guardan-la-información-2&quot;&gt;¿Cómo guardan la información?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dbtypes_key.png&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Estas bases de datos se conforman por grandes estructuras de datos distribuidas llamadas &lt;strong&gt;tablas hash&lt;/strong&gt; que almacenan y recuperan los valores organizados por identificadores llamados &lt;strong&gt;keys&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-se-diseñan-los-datos-2&quot;&gt;¿Cómo se diseñan los datos?&lt;/h3&gt;
+
+&lt;p&gt;Toda la estrategia de diseño se basa en encontrar el dato que servirá como &lt;strong&gt;key&lt;/strong&gt; para poder relacionar el resto de los datos de una entidad.&lt;/p&gt;
+
+&lt;p&gt;Los datos almacenados deben mantenerse en estructuras tan simples como sea posible tomando en cuenta que las entidades no se relacionan entre sí, a diferencia de lo que se hace al modelar bases de datos relacionales.&lt;/p&gt;
+
+&lt;h3 id=&quot;soluciones-de-este-tipo-2&quot;&gt;Soluciones de este tipo&lt;/h3&gt;
+
+&lt;p&gt;Por lo general estas bases de datos ofrecen una gran facilidad de funcionamiento y configuración con una gran resistencia a fallas y un manejo muy rápido de grandes colecciones de datos. Algunas soluciones de este tipo son &lt;a href=&quot;https://redis.io/&quot;&gt;Redis&lt;/a&gt;, &lt;a href=&quot;https://aws.amazon.com/es/dynamodb/&quot;&gt;DynamoDb&lt;/a&gt; y &lt;a href=&quot;https://memcached.org/&quot;&gt;Memcached&lt;/a&gt; por mencionar unas pocas.&lt;/p&gt;
+
+&lt;h2 id=&quot;bases-de-datos-documentales&quot;&gt;Bases de datos documentales&lt;/h2&gt;
+
+&lt;p&gt;Estas bases de datos pueden ser muy diferentes entre sí ya que el tipo de datos que almacena cada una puede ser muy diferente. Se están convirtiendo en el estándar alternativo a las bases de datos relacionales para guardar grandes cantidades de datos de una aplicación.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-guardan-la-información-3&quot;&gt;¿Cómo guardan la información?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dbtypes_doc.png&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aquí cada base de datos toma un enfoque diferente pero de forma simple podemos decir que en estas bases de datos la información se almacena en forma de documentos como si usaramos un archivero.&lt;/p&gt;
+
+&lt;p&gt;Cada documento puede tener una estructura distinta entre sí y se pueden ordenar los datos de forma jerárquica prácticamente de la misma forma en la que organizamos los datos dentro de nuestros programas.&lt;/p&gt;
+
+&lt;p&gt;Algunas bases de datos almacenan la información en formato &lt;em&gt;XML&lt;/em&gt;, otras usan &lt;em&gt;JSON&lt;/em&gt;, etc. La forma más común de identificar los documentos es por medio de un campo de &lt;strong&gt;ID&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-se-diseñan-los-datos-3&quot;&gt;¿Cómo se diseñan los datos?&lt;/h3&gt;
+
+&lt;p&gt;Aquí la estrategia para diseñar la base de datos consiste principalmente en identificar cómo se van a hacer las consultas de las entidades dentro de la aplicación. Si por ejemplo, en nuestra aplicación vamos a mostrar la información de facturas en una pantalla, lo más conveniente sería poner en cada documento la información completa de la factura junto con la información que necesitamos del cliente y de cada artículo vendido. Aquí se vale que los datos se repitan de forma redundante, ya que la idea detrás de la mayoría de estas bases de datos es que el almacenamiento suele ser más barato que el procesamiento.&lt;/p&gt;
+
+&lt;h3 id=&quot;soluciones-de-este-tipo-3&quot;&gt;Soluciones de este tipo&lt;/h3&gt;
+
+&lt;p&gt;Este tipo de bases de datos están gozando de mucha popularidad y hay muchas y muy buenas implementaciones con muy buen desempeño. Algunas opciones de este tipo son &lt;a href=&quot;https://www.mongodb.com/&quot;&gt;MongoDB&lt;/a&gt;, &lt;a href=&quot;http://couchdb.apache.org/&quot;&gt;CouchDB&lt;/a&gt; o &lt;a href=&quot;http://basex.org/&quot;&gt;Basex&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;bases-de-datos-de-grafos&quot;&gt;Bases de datos de grafos.&lt;/h2&gt;
+
+&lt;p&gt;Estas bases de datos se han vuelto cada vez más populares con la creciente demanda que hay de analizar grandes cantidades de datos. Permiten hacer consultas de información que simplemente no conviene o no se pueden resolver de forma práctica con la tecnología de bases de datos relacionales.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-guardan-la-información-4&quot;&gt;¿Cómo guardan la información?&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/dbtypes_gra.png&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Estas bases de datos almacenan la información en una estructura de datos llamada &lt;strong&gt;grafo&lt;/strong&gt;, que consiste en encapsular los datos en &lt;strong&gt;nodos&lt;/strong&gt; junto con las relaciones que tienen los nodos entre sí.&lt;/p&gt;
+
+&lt;h3 id=&quot;cómo-se-diseñan-los-datos-4&quot;&gt;¿Cómo se diseñan los datos?&lt;/h3&gt;
+
+&lt;p&gt;Cuando se trata de bases de datos de este tipo, lo que más importa es definir qué relaciones tienen los nodos entre sí e ir agregando más y más nodos y sus relaciones a medida que se van encontrando nuevas formas de relacionar los datos.&lt;/p&gt;
+
+&lt;h3 id=&quot;soluciones-de-este-tipo-4&quot;&gt;Soluciones de este tipo&lt;/h3&gt;
+
+&lt;p&gt;Existen varias bases de datos de este tipo con diferentes características a tomar en cuenta. Algunas de las más populares son: &lt;a href=&quot;https://neo4j.com/&quot;&gt;Neo4J&lt;/a&gt;, &lt;a href=&quot;https://orientdb.com/&quot;&gt;OrientDB&lt;/a&gt; y &lt;a href=&quot;https://www.arangodb.com/&quot;&gt;ArangoDB&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Cómo puedes ver hay muchas tecnologías diferentes para resolver el problema de almacenar los datos de nuestra aplicación y no hay una respuesta inmediata a la pregunta ¿qué base de datos es mejor?. Hay que considerar las limitaciones y las ventajas que cada tipo de base de datos ofrece así como también las características que cada proveedor mantiene en sus productos. Pero eso será material para otro artículo.&lt;/p&gt;
+
+&lt;p&gt;Espero que esta información te sea útil y recuerda que puedes &lt;a href=&quot;https://www.dalerun.com/subscribirte&quot;&gt;subscribirte&lt;/a&gt; para no perderte de las actualizaciones del blog, y como siempre, puedes dejarme un saludo o decir lo que quieras a través de la página de &lt;a href=&quot;https://www.dalerun.com/contacto&quot;&gt;contacto&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;ul class=&quot;inline-list social-icons&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-twitter share-post-item&quot; href=&quot;https://twitter.com/intent/tweet?text=Tipos de bases de datos&amp;amp;url=https://www.dalerun.com/tipos-de-bases-de-datos/&amp;amp;via=&amp;amp;related=&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-facebook share-post-item&quot; href=&quot;https://facebook.com/sharer.php?u=https://www.dalerun.com/tipos-de-bases-de-datos/&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-linkedin share-post-item&quot; href=&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=/tipos-de-bases-de-datos/&amp;amp;title=Tipos de bases de datos&amp;amp;summary=Existen distintos tipos de bases de datos y hay más de un proveedor ofreciendo una solución de cada tipo, así que vale la pena revisar de forma general las opciones disponibles.&amp;amp;source=dalerun.com&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en LinkedIn&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</description>
+				<guid isPermaLink="true">https://www.dalerun.com//tipos-de-bases-de-datos/</guid>
+			</item>
+		
+			<item>
+				<title>Empieza a usar npx hoy</title>
+				<link>https://www.dalerun.com//empieza-a-usar-NPX/</link>
+				<pubDate>Mon, 18 Feb 2019 00:00:00 -0600</pubDate>
+				<description>&lt;p&gt;Aunque no es una noticia nueva, todavía hay mucha gente que no ha adoptado el uso de esta nueva herramienta del ecosistema de NodeJS.&lt;/p&gt;
+
+&lt;p&gt;NPX viene incluído en la instalación de NPM desde la versión @5.2.0 y es la solución que muchos habíamos estado esperando para complementar nuestro entorno de desarrollo, ya que ahora es posible ejecutar paquetes del repositorio de NPM sin tener que instalarlos de forma global, por ejemplo. Vaya. Incluso puedes ejecutar paquetes sin tener que instalarlos de forma permanente, por lo que ahora puedes correr ejecutables y herramientas de línea de comandos de forma más conveniente como en los siguientes casos:&lt;/p&gt;
+
+&lt;h2 id=&quot;ejecutar-comandos-de-forma-local&quot;&gt;Ejecutar comandos de forma local&lt;/h2&gt;
+
+&lt;p&gt;Personalmente yo encuentro NPX muy útil para resolver este problema. Por ejemplo, Gulp o Mocha son herramientas geniales que casi seguro vas a usar en tu proyecto. El problema es que tienes que instalarlas de forma global. Así que cuando quieres tener más de un proyecto que dependa de ellas tienes que decidir si vas a actualizar tu versión instalada o si te vas a quedar con la versión que tienes actualmente.&lt;/p&gt;
+
+&lt;p&gt;Esto dificulta trabajar en más de un proyecto a la vez y hace que me tome más tiempo empezar a colaborar en un proyecto con el que tengo que seguir un proceso de pre instalación muy largo. Me gusta cuando tengo todo lo que necesito solamente al ejecutar npm install en la raíz del proyecto.&lt;/p&gt;
+
+&lt;p&gt;Aquí es donde NPX hace su magia, ya que te permite tener una instalación local de tus herramientas por cada proyecto y mantener el control del versionamiento de forma independiente.&lt;/p&gt;
+
+&lt;p&gt;Con NPX solamente necesitas hacer algo como:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install --save-dev mocha&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Y luego, cada vez que necesites correr tus pruebas ejecutas tu versión local así:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npx mocha&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;¡Y listo! Ya no tienes que imaginar soluciones como buscar la ruta local hacia el ejecutable al estilo: ./node_modules/.bin/mocha o usando trucos de bash como: &lt;strong&gt;&lt;em&gt;alias npm=PATH=$(npm bin):$PATH&lt;/em&gt;&lt;/strong&gt;, incluso es más corto que ejecutar el script de test con npm como: &lt;strong&gt;&lt;em&gt;npm run test&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;ejecutar-comandos-desechables&quot;&gt;Ejecutar comandos desechables&lt;/h2&gt;
+
+&lt;p&gt;¿Te ha pasado que necesitas instalar una herramienta para ejecutarla una vez y luego pasan meses sin que la vuelvas a usar? Un ejemplo común es create-react-app. Lo necesitas un par de veces cuando estás aprendiendo react pero honestamente no hay razón para mantenerlo instalado después de eso.&lt;/p&gt;
+
+&lt;p&gt;Con npx solo haces &lt;code class=&quot;highlighter-rouge&quot;&gt;npx &amp;lt;comando&amp;gt;&lt;/code&gt; y si el comando no está instalado entonces se instalará automáticamente desde el repositorio de npm y se ejecutará de inmediato. Al terminar el comando ya no estará ahí y no tendrás que preocuparte por haber dejado archivos de instalación olvidados en algún lado.&lt;/p&gt;
+
+&lt;h2 id=&quot;puedes-usar-varias-versiones-de-node&quot;&gt;Puedes usar varias versiones de Node&lt;/h2&gt;
+
+&lt;p&gt;Resulta que node es también un paquete que puedes descargar desde el repositorio de npm. Y con eso es suficiente para que puedas usar npx con él también. Una forma de solucionar el problema de cambiar entre versiones de node es usar un manejador de versiones como &lt;em&gt;nvm&lt;/em&gt;, &lt;em&gt;nave&lt;/em&gt; o &lt;em&gt;n&lt;/em&gt;. Otra alternativa es usar Docker para ejecutar la versión de node con la que quieres publicar tu proyecto. Aún así, puede que esas opciones sean demasiado para tu caso. Y aquí viene npx otra vez al rescate:&lt;/p&gt;
+
+&lt;p&gt;Supongamos que el archivo index.js de tu proyecto tiene este contenido&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;console.log(&quot;hello word from&quot;, process.version)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Si ejecutas tu proyecto con node 6 a través de npx de esta forma&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npx -p node@6 node index.js&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;El resultado sería algo como: &lt;strong&gt;&lt;em&gt;hello word from v6.16.0&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Y si ejecutaras tu proyecto con node 8 con npx de esta forma:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npx -p node@6 node index.js&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Obtendrás un resultado como esto: &lt;strong&gt;&lt;em&gt;hello word from v8.15.0&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Más información.&lt;/p&gt;
+
+&lt;p&gt;Espero haber ilustrado el poder de npx y que te animes a usarlo.&lt;/p&gt;
+
+&lt;p&gt;Si sientes curiosidad acerca del uso que puedes darle a esta herramienta puedes aprender más en su &lt;a href=&quot;https://www.npmjs.com/package/npx&quot;&gt;página de repositorio&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;ul class=&quot;inline-list social-icons&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-twitter share-post-item&quot; href=&quot;https://twitter.com/intent/tweet?text=Empieza a usar npx hoy&amp;amp;url=https://www.dalerun.com/empieza-a-usar-NPX/&amp;amp;via=&amp;amp;related=&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-facebook share-post-item&quot; href=&quot;https://facebook.com/sharer.php?u=https://www.dalerun.com/empieza-a-usar-NPX/&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-linkedin share-post-item&quot; href=&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=/empieza-a-usar-NPX/&amp;amp;title=Empieza a usar npx hoy&amp;amp;summary=Mejora tu proceso de desarrollo con el uso del comando npx&amp;amp;source=dalerun.com&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en LinkedIn&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</description>
+				<guid isPermaLink="true">https://www.dalerun.com//empieza-a-usar-NPX/</guid>
+			</item>
+		
+			<item>
+				<title>Variables en javascript</title>
+				<link>https://www.dalerun.com//variables-en-js/</link>
+				<pubDate>Sun, 02 Dec 2018 00:00:00 -0600</pubDate>
+				<description>&lt;p&gt;Las variables son un elemento esencial de un programa. Hasta el código más pequeño necesita hacer buen uso de variables para ser claro y funcional.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-son&quot;&gt;¿Qué son?&lt;/h2&gt;
+
+&lt;p&gt;Podemos pensar en las variables como contenedores que nos van a ayudar a identificar y almacenar la información que nuestros programas van a manipular.&lt;/p&gt;
+
+&lt;p&gt;Siendo más técnicos, las variables son una relación entre un dato almacenado en la memoria del programa y un nombre que identifica a ese dato en el código del programa. Básicamente es como ponerle tu nombre al envase donde guardas tu comida para poder encontrarlo después dentro del refrigerador de la oficina&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/office_fridge.jpeg&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;para-qué-sirven&quot;&gt;¿Para qué sirven?&lt;/h2&gt;
+
+&lt;p&gt;La pregunta ahora tal vez sea ¿para qué sirven? Es decir, ya sé que son una forma de identificar pedazos de información dentro del código y también sé que ocupan un lugar dentro de la memoria del programa, aún así eso no me deja claro qué uso darles.&lt;/p&gt;
+
+&lt;p&gt;Pues bien. Las variables sirven a más de un propósito dentro de tu código:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Te ayudan a separar la información dentro del código de forma que sea más manejable&lt;/li&gt;
+  &lt;li&gt;hacen que la lectura de tu código sea más sencilla&lt;/li&gt;
+  &lt;li&gt;te ayudan a depurar (hacer debug) tu código cuando algo no te queda claro de la ejecución de tu programa o tratas de arreglar un bug.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Veamos cómo nos ayudan las variables con este programa de ejemplo. El propósito del programa es almacenar un texto para luego transformarlo todo a minúsculas. Vamos a imaginar que pueden haber muchas más operaciones entre el momento de transformar el texto y el momento de mostrar la comparación entre el texto original y su transformación.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;originalText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hola mundo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lowerCaseText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;originalText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toLowerCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//imagina que aqui hay como 50 lineas más de fabuloso código&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;lowerCaseText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Texto original&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;originalText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Texto en minúsculas&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;originalText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Con este ejemplo de código podemos ver como el uso de las variables nos está ayudando aún en un programa tan cortito.&lt;/p&gt;
+
+&lt;p&gt;Primero. Nos está ayudando a tener disponible la información que necesitamos ya que &lt;code class=&quot;highlighter-rouge&quot;&gt;originalText&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;lowerCaseText&lt;/code&gt; nos ofrecen una forma breve de recuperar la información que contienen incluso después de haber escrito muchas líneas de código en el programa.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;originalText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hola mundo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lowerCaseText&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;originalText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toLowerCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//imagina que aqui hay como 50 lineas mas de fabuloso codigo&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Segundo. El código se vuelve más fácil de leer cuando la información que necesitamos está identificada de forma que sabemos que tipo de información está contenida en la variable. Aquí es importante mencionar que los nombres de las variables deben cumplir con ciertas guías para ser útiles. Veremos algunas más adelante.&lt;/p&gt;
+
+&lt;p&gt;Por ahora, digamos que nombres de variables como &lt;code class=&quot;highlighter-rouge&quot;&gt;texto1&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;texto2&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;b&lt;/code&gt; no logran describir ni al dato que contienen ni el uso que se les vamos a dar en el programa.&lt;/p&gt;
+
+&lt;p&gt;Tercero. Intencionalmente he introducido un &lt;strong&gt;bug&lt;/strong&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;lowerCaseText = '';&lt;/code&gt;). Si realmente éste ejemplo tuviera más de 50 líneas de código sería difícil saber en qué línea ocurrió el cambio si no pudiéramos buscar rápidamente todos los lugares donde se usa &lt;code class=&quot;highlighter-rouge&quot;&gt;lowerCaseText&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;tipos-de-variables&quot;&gt;Tipos de variables.&lt;/h2&gt;
+
+&lt;p&gt;Probablemente te has enterado que existen distintos tipos de variables en otros lenguajes de programación y javascript no es la excepción.&lt;/p&gt;
+
+&lt;p&gt;En javascript la lista de tipos de datos es corta, en realidad.&lt;/p&gt;
+
+&lt;p&gt;Vamos a dividir la lista en dos grupos. El grupo de los tipos que sólo pueden almacenar un valor a la vez y el grupo de los tipos que almacenan varios tipos de datos al mismo tiempo.&lt;/p&gt;
+
+&lt;p&gt;Tipos que almacenan un valor a la vez:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;string&lt;/strong&gt;: Este tipo almacena texto de una longitud variable. El texto que va a contener se encierra entre comillas simples o dobles.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;number&lt;/strong&gt;: Este tipo sirve para almacenar números. Pueden ser enteros o fracciones y pueden estar expresados en sistema decimal, binario, octal o hexadecimal (por si te lo preguntabas).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;boolean&lt;/strong&gt;: Este tipo almacena valores lógicos que sólo pueden ser &lt;em&gt;true&lt;/em&gt;(cierto) o &lt;em&gt;false&lt;/em&gt;(falso).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;null&lt;/strong&gt;. Este es curioso, de hecho. Sirve para indicar que no hay valor de ningún tipo. Parece contradictorio pero muchas veces es necesario indicar que una variable no tiene valor.
+-&lt;strong&gt;NAN&lt;/strong&gt;. Este tipo sirve para indicar que la variable no es un número; su nombre lo dice, Not A Number. Generalmente no lo usas en tu código sino que es el resultado de una operación matemática incorrecta como dividir una cantidad entre cero por ejemplo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Y así se ven en el código&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;c1&quot;&gt;//string&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;stringType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;El texto puede incluir signos de puntuación, números y ¡otros símbolos!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;stringType2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;También puedes usar 'comillas simples' dentro de las dobles y viceversa&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//number&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;integer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;123&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//un numero entero&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fractional&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;3.14159&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//numero fraccional&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;binary&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b101&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//el binario empieza con 0b y luego la cantidad en binario&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;octal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0123&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//el octal empieza con un 0 y luego la cantidad en octal&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hexadecimal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;0x12ABCDEF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//el hexadecimal empieza con 0x y luego la cantidad hexadecimal. Las letras de A a F son mayúsculas.&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;//boolean&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boolType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// esto es cierto&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boolType2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// esto es falso&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Tipos que almacenan varios valores a la vez:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;object&lt;/strong&gt;: Este tipo de dato sirve para almacenar juntos varios elementos de información. A cada elemento dentro del objeto se le da un nombre para identificarlo y cada elemento puede ser de cualquier tipo de dato (incluso de tipo object). Los elementos dentro del objeto no tienen un orden determinado al momento de almacenarlos ni al recuperarlos.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;array&lt;/strong&gt;: Este tipo sirve para almacenar juntos varios elementos en secuencia. Los elementos almacenados dentro del array pueden ser de cualquier tipo (incluso de tipo array). Los elementos dentro del array están ordenados conforme se van agregando y se tiene acceso a ellos por medio de un índice que indica que posición ocupan dentro del array.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Y así se ven en el código&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;objectType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;fulanito&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// el nombre es string&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// la edad es number&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;hobbies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;fisica cuantica&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;pokemon&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// pasatiempos es array&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// la dirección es object&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;street&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;fighter&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;city&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;shadaloo&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;cómo-se-usan&quot;&gt;¿Cómo se usan?&lt;/h2&gt;
+
+&lt;p&gt;Ahora que sabemos qué son las variables vamos a ver cómo usarlas.&lt;/p&gt;
+
+&lt;p&gt;Declaración y asignación.&lt;/p&gt;
+
+&lt;p&gt;Declarar una variable significa crearla. A partir de ese momento se puede usar la variable como mejor nos convenga dentro del código.&lt;/p&gt;
+
+&lt;p&gt;Para declarar una variable se usa la palabra especial &lt;code class=&quot;highlighter-rouge&quot;&gt;var&lt;/code&gt; seguida de un espacio y el nombre que queremos darle a la variable.&lt;/p&gt;
+
+&lt;p&gt;Las variables no sirven de mucho si no contienen ninguna información. Asignar una variable o asignar un valor a una variable significa que vamos a guardar un valor dentro de la variable. También puedes asignar una variable a otra. Es decir, puedes guardar una variable como el valor de otra.&lt;/p&gt;
+
+&lt;p&gt;Algunos ejemplos lo explican mejor.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// declaramos la variable foo.&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hola&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// asignamos a bar el string  &quot;Hola&quot;&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// asignamos a foo la variable bar. Ahora foo es igual a &quot;Hola&quot; y bar = &quot;Hola&quot;&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Hola&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Hola&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;cambio-de-tipo-de-valor&quot;&gt;Cambio de tipo de valor.&lt;/h2&gt;
+
+&lt;p&gt;Las variables en javascript pueden ser reasignadas con cualquier tipo de valor a diferencia de otros lenguajes. Una variable puede tener un valor string y luego ser reasignada con un valor number por ejemplo.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;soy un string&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// se define la variable y se asigna un valor de tipo string&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;123&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ahora se le asigna un valor de tipo numérico&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;La verdad yo no recomiendo hacer este tipo de cambios, ya que por buenas prácticas, las variables deben ayudarte a leer el código de forma clara. Si una variable cambia constantemente de tipo se vuelve más difícil predecir lo que el código hará después. Puedes simplemente declarar más variables del tipo adecuado a tus necesidades y así mantener un código más expresivo.&lt;/p&gt;
+
+&lt;h2 id=&quot;y-qué-nombre-le-ponemos&quot;&gt;¿Y qué nombre le ponemos?&lt;/h2&gt;
+
+&lt;p&gt;Esa pregunta me ha causado bloqueos de escritor muchas veces durante mi carrera. Para evitar que te pase trata de hacer las cosas simples y deja que el código sea el que te cuente la historia. Por ejemplo:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;lowerCaseTxt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;inputTxt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toLowerCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Se entiende que &lt;code class=&quot;highlighter-rouge&quot;&gt;lowerCaseTxt&lt;/code&gt; va a almacenar un texto en minúsculas, mientras que &lt;code class=&quot;highlighter-rouge&quot;&gt;inputTxt&lt;/code&gt; contiene texto que fue introducido por el usuario.&lt;/p&gt;
+
+&lt;p&gt;Si le pongoun poco de imaginación es como si el código me contara lo que está pasando de forma casual:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“¿recuerdas ese texto que el usuario introdujo antes? Pues ahora hay que asegurarnos de que todo está en minúsculas y vamos a necesitar guardar ese texto en minúsculas para usarlo en otro momento.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Honestamente yo encuentro difícil leer algo como esto:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;txt2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;txt1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toLowerCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Podríamos pensar que no está tan mal pero leer otras cien líneas de código como este no se parece mucho a leer una historia como en el primer ejemplo. Siempre es mejor elegir nombres cortos que te digan rápidamente qué información está contenida en las variables.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión.&lt;/h2&gt;
+
+&lt;p&gt;Las variables son un recurso que te ayuda a escribir código legible, predecible, modificable y más fácil de probar. Usa las variables a tu favor para mantener tu código simple y expresivo, pero más importante, diviértete y que tengas mucho éxito.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;ul class=&quot;inline-list social-icons&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-twitter share-post-item&quot; href=&quot;https://twitter.com/intent/tweet?text=Variables en javascript&amp;amp;url=https://www.dalerun.com/variables-en-js/&amp;amp;via=&amp;amp;related=&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-facebook share-post-item&quot; href=&quot;https://facebook.com/sharer.php?u=https://www.dalerun.com/variables-en-js/&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-linkedin share-post-item&quot; href=&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=/variables-en-js/&amp;amp;title=Variables en javascript&amp;amp;summary=El uso correcto de variables en el código es fundamental para un desarrollador&amp;amp;source=dalerun.com&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en LinkedIn&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</description>
+				<guid isPermaLink="true">https://www.dalerun.com//variables-en-js/</guid>
+			</item>
+		
+	</channel>
+</rss>

@@ -1,0 +1,577 @@
+<!doctype html>
+<html class="no-js" lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tres tips para escribir mejor código</title>
+
+    <link rel="stylesheet" type="text/css" href="https://www.dalerun.com//assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="https://www.dalerun.com//assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="Escribir un código que funcione puede resultar muy sencillo algunas veces pero el truco está en escribir código que cualquiera pueda leer y que funcione.">
+	<meta name="google-site-verification" content="">
+	<meta name="msvalidate.01" content="" >
+	
+	<link rel="author" href="">
+	
+	
+	<link rel="canonical" href="https://www.dalerun.com//tres-tips-para-escribir-mejor-codigo/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="Tres tips para escribir mejor código">
+	<meta property="og:description" content="Escribir un código que funcione puede resultar muy sencillo algunas veces pero el truco está en escribir código que cualquiera pueda leer y que funcione.">
+	<meta property="og:url" content="https://www.dalerun.com//tres-tips-para-escribir-mejor-codigo/">
+	<meta property="og:locale" content="es_MX">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Dále run">
+	<meta property="og:image" content="https://www.dalerun.com/images/writing-336370_1280.jpg">
+	<meta property="article:author" content="https://www.facebook.com/eduardo.hernandezguerrero.58">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="codeninjalalo">
+	<meta name="twitter:creator" content="codeninjalalo">
+	<meta name="twitter:title" content="Tres tips para escribir mejor código">
+	<meta name="twitter:description" content="Escribir un código que funcione puede resultar muy sencillo algunas veces pero el truco está en escribir código que cualquiera pueda leer y que funcione.">
+	<meta name="twitter:image" content="https://www.dalerun.com/images/writing-336370_1280.jpg">
+	
+
+	<link type="text/plain" rel="author" href="https://www.dalerun.com//humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="https://www.dalerun.com//assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="https://www.dalerun.com//assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://www.dalerun.com//assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.dalerun.com//assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.dalerun.com//assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.dalerun.com//assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.dalerun.com//assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.dalerun.com//assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.dalerun.com//assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="https://www.dalerun.com//assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="https://www.dalerun.com//assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="https://www.dalerun.com/" class="icon-home"> Dále run</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a  href="https://www.dalerun.com//search/">Buscar</a></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a  href="https://www.dalerun.com//contacto/">Contacto</a></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+            
+            
+              <li class="divider"></li>
+              <li><a  href="https://www.dalerun.com//subscribirte/">Subscribirte</a></li>
+
+            
+            
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://www.dalerun.com//">Inicio</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+
+              <li class="has-dropdown">
+                <a  href="https://www.dalerun.com//blog/">Blog</a>
+
+                  <ul class="dropdown">
+                    
+
+                      
+
+                      <li><a  href="https://www.dalerun.com//blog/archive/">Archivo</a></li>
+                    
+                  </ul>
+
+              </li>
+              <li class="divider"></li>
+            
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+				<figure>
+					<img src="https://www.dalerun.com/images/writing-336370_1280.jpg" width="970" alt="Tres tips para escribir mejor código" itemprop="image">
+
+					
+				</figure>
+				
+
+				<div itemprop="name">
+					<p class="subheadline">Puedes mejorar la calidad de tus programas fácilmente</p>
+					<h1>Tres tips para escribir mejor código</h1>
+				</div>
+			</header>
+
+
+			
+			<p class="teaser" itemprop="description">
+				Escribir un código que funcione puede resultar muy sencillo algunas veces pero el truco está en escribir código que cualquiera pueda leer y que funcione.
+			</p>
+			
+
+			<div itemprop="articleSection">
+			<p>Hace unos días tuve una sesión de tutoría con un estudiante que recién empieza su carrera de desarrollo y durante el transcurso de la sesión nos dimos cuenta que el problema más grande no estaba en codificar los algoritmos sino en lograr que todo el proyecto tuviera sentido al momento de tener todo el código junto.</p>
+
+<p>Esa sesión me hizo recordar muchos de los problemas que los desarrolladores enfrentamos a la hora de escribir programas y la forma en la que he ido superando algunos vicios asociados con mi proceso de escribir código gracias a la ayuda de libros y a los consejos de otros grandes desarrolladores que me han ayudado a mejorar.</p>
+
+<p>Te comparto algunos tips que he adquirido con los años y espero que te ayuden tanto como a mi.</p>
+
+<h2 id="nuestra-habilidad-más-valiosa-es-leer-código">Nuestra habilidad más valiosa es leer código.</h2>
+
+<p>Suena contradictorio pero muchos grandes desarrolladores coinciden en que el principal papel de un desarrollador es leer código aún cuando uno podría pensar que los desarrolladores son mejores mientras más código escriben.</p>
+
+<p>Honestamente yo también creía al inicio de mi carrera que me pagarían más si podía escribir más código y con el tiempo tuve que cambiar de estrategia por las exigencias del trabajo.</p>
+
+<p>Un buen desarrollador lee el código una y otra vez, abriendo cualquier cantidad de archivos que sea necesaria hasta entender cómo funcionan los programas que está revisando.</p>
+
+<p>La lógica de esto es en realidad simple. Si lo pensamos un momento, resulta que cualquier desarrollador puede lograr hacer que un programa funcione, pero cuando llegas a cubrir una vacante de desarrollador lo más seguro es que tengas que pasar mucho tiempo leyendo lo que otros desarrolladores ya escribieron. Mientras mejor seas leyendo el código de otros y entendiendo la necesidad que se resolvió con ése código, mejor será tu capacidad de escribir nuevo código.</p>
+
+<p>En base a lo anterior te voy a compartir los siguientes tres tips para mejorar el código que escribes.</p>
+
+<h2 id="escribe-código-para-que-lo-entiendan-otros">Escribe código para que lo entiendan otros.</h2>
+
+<p>Es algo muy común, y confieso que a mi me pasa seguido, que al momento de que otro desarrollador revisa mi código los nombres que he usado para identificar variables y funciones no son muy descriptivos.</p>
+
+<p>Es aquí donde nuestra habilidad de leer código se aprecia más, porque es importante que uno mismo se detenga a leer el código que está escribiendo para detectar posibles mejoras.</p>
+
+<p>Al momento de escribir un programa puede parecer una obra maestra porque hemos añadido exitosamente la nueva funcionalidad que esperamos lograr, pero justo ahora es cuando uno debe darse un tiempo para leer el nuevo código y enfocarse solamente en eso; poder leer el código.</p>
+
+<p>Recuerda que en unas semanas tú mismo ya no vas a ser la misma persona que ha escrito el código que acabas de terminar. La meta es escribir un código que cualquiera pueda leer fácilmente.</p>
+
+<h2 id="usa-verbos-y-sustantivos-de-forma-correcta">Usa verbos y sustantivos de forma correcta.</h2>
+
+<p>No hay mucha ciencia en esto pero es algo que se nos puede olvidar bajo la presión de terminar el programa en el que estamos trabajando.</p>
+
+<p>Las <strong>variables deben ser sustantivos</strong> (nombres de cosas) que describen rápidamente el significado de los datos que vamos a guardar en ellas sin mencionar directamente los valores que serán guardados.</p>
+
+<p>Por ejemplo, si estamos almacenando las direcciones de correo principal y de recuperación de un usuario podemos usar nombres de variable como:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">userMainEmailAddress</span> <span class="o">=</span> <span class="err">“”</span><span class="p">;</span> <span class="c1">// el correo principal</span>
+<span class="nx">userRecoveryEmailAddress</span> <span class="o">=</span> <span class="err">“”</span><span class="p">;</span> <span class="c1">// el correo de recuperación</span></code></pre></figure>
+
+<p>Creo que estos nombres pueden leerse y entender qué significado tiene la información almacenada en estas variables. Es un texto mucho más expresivo que simplemente escribir algo como:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">mail1</span> <span class="o">=</span> <span class="err">“”</span><span class="p">;</span>
+<span class="nx">mail2</span><span class="o">=</span> <span class="err">“”</span><span class="p">;</span></code></pre></figure>
+
+<p>En el caso de variables que indiquen si un dato es cierto o falso podemos expresar lo que el dato puede ser, hacer o tener como:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">emailAddressIsUnique</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// la dirección de correo es única</span>
+<span class="nx">appCanUpdate</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">// la aplicación se puede actualizar</span>
+<span class="nx">userHasAccess</span> <span class="o">=</span> <span class="kc">true</span> <span class="c1">// el usuario tiene permiso de acceder</span></code></pre></figure>
+
+<p>Por definición, las funciones sirven para agrupar varias instrucciones juntas, o sea que son como la definición de tareas, lo que significa que se trata de ejecutar acciones. En otras palabras, <strong>se expresan usando verbos</strong>.</p>
+
+<p>Digamos, por ejemplo, que queremos definir una función para ejecutar varias validaciones sobre una dirección de correo siguiendo estos pasos:</p>
+
+<ul>
+  <li>Validar que el formato del email es correcto</li>
+  <li>validar que el correo pertenece a un dominio de la lista de dominios aceptados por la aplicación</li>
+  <li>validar que el email no ha sido registrado antes</li>
+</ul>
+
+<p>Sin entrar en los verdaderos detalles de la implementación podemos darle nombre a las funciones necesarias como;</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// validar una dirección de correo implica:</span>
+<span class="kd">function</span> <span class="nx">validateEmailAddress</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">emailHasValidFormat</span> <span class="o">=</span> <span class="nx">validateEmailAddressFormat</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">);</span> <span class="c1">// validar el formato</span>
+    <span class="nx">emailDomainIsAccepted</span> <span class="o">=</span> <span class="nx">validateEmailAddressDomain</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">);</span> <span class="c1">// validar que el dominio del email es aceptado por la aplicación</span>
+    <span class="nx">emailIsUnique</span> <span class="o">=</span> <span class="nx">checkEmailAddressIsUnique</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">);</span> <span class="c1">// revisar que el email no está en uso</span>
+    <span class="k">return</span> <span class="nx">emailHasValidFormat</span> <span class="o">&amp;&amp;</span> <span class="nx">emailDomainIsAccepted</span> <span class="o">&amp;&amp;</span> <span class="nx">emailIsUnique</span> <span class="c1">// sólo si todas las validaciones son correctas entonces la función regresará un valor verdadero</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Como puedes ver, la intención es hacer que al leer el código se explique que se están realizando acciones concretas y que el resultado de esas acciones nos están dando datos acerca del estado de la ejecución del programa.</p>
+
+<h2 id="escribe-de-forma-iterativa">Escribe de forma iterativa</h2>
+
+<p>La mejor manera que conozco para comerse un elefante es hacerlo un mordisco a la vez. Lo mismo aplica para escribir programas, escribe un cambio pequeño y lee lo que acabas de escribir para decidir si necesitas que tenga sentido ahora o si lo arreglas conforme tengas más partes del programa que escribes.</p>
+
+<p>Por ejemplo, para implementar la validación de direcciones de correo que mencionaba antes, podría comenzar con un nombre de función que solamente sirva como un contenedor temporal:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">foo</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Ahora puede ser momento de pensar un poco en lo que quiero que la función haga y empezar a hacer notas sobre el código que tengo:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">foo</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// validar el formato</span>
+    <span class="c1">// validar el dominio</span>
+    <span class="c1">// validar que el email es único</span>
+    <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>A estas alturas ya se me ocurrieron algunos cambios. Para empezar, me doy cuenta de que necesito un email sobre el cual hacer las validaciones necesarias; también me puedo imaginar un nombre para la función que estoy escribiendo. Finalmente se me ocurre que podría usar una variable para ir guardando el resultado de las validaciones.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">validateEmailAddress</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">emailIsValid</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="c1">// validar el formato</span>
+    <span class="c1">//  validar el dominio</span>
+    <span class="c1">// validar que el email es único</span>
+    <span class="k">return</span> <span class="nx">emailIsValid</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Confieso que no es mucho pero la verdad es que tampoco no me estoy deteniendo por mucho tiempo a pensar en los nombres “perfectos”. Esto es bueno porque mi intención es resolver un problema y no puedo perder mucho tiempo en los detalles estéticos ahora. Eso de los detalles lo podré hacer más adelante.</p>
+
+<p>Ahora se me ocurren los nombres de las funciones que podría necesitar y mi código se ve así:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">validateEmailAddress</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">emailIsValid</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="nx">emailHasValidFormat</span> <span class="o">=</span> <span class="nx">validateEmailAddressFormat</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">);</span> <span class="c1">// validar el formato</span>
+    <span class="nx">emailDomainIsAccepted</span> <span class="o">=</span> <span class="nx">validateEmailAddressDomain</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">);</span> <span class="c1">// validar el dominio</span>
+    <span class="nx">emailIsUnique</span> <span class="o">=</span> <span class="nx">checkEmailAddressIsUnique</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">);</span> <span class="c1">// validar que el email es único</span>
+    <span class="k">return</span> <span class="nx">emailIsValid</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Y en este punto es cuando me doy cuenta que no voy a necesitar una variable para guardar el resultado de la validación en general por lo que he llegado a la versión final:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">// validar una dirección de correo implica:</span>
+<span class="kd">function</span> <span class="nx">validateEmailAddress</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">emailHasValidFormat</span> <span class="o">=</span> <span class="nx">validateEmailAddressFormat</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">);</span> <span class="c1">// validar el formato</span>
+    <span class="nx">emailDomainIsAccepted</span> <span class="o">=</span> <span class="nx">validateEmailAddressDomain</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">);</span> <span class="c1">// validar que el dominio del email es aceptado por la aplicación</span>
+    <span class="nx">emailIsUnique</span> <span class="o">=</span> <span class="nx">checkEmailAddressIsUnique</span><span class="p">(</span><span class="nx">emailAddress</span><span class="p">);</span> <span class="c1">// revisar que el email no está en uso</span>
+    <span class="k">return</span> <span class="nx">emailHasValidFormat</span> <span class="o">&amp;&amp;</span> <span class="nx">emailDomainIsAccepted</span> <span class="o">&amp;&amp;</span> <span class="nx">emailIsUnique</span> <span class="c1">// sólo si todas las validaciones son correctas entonces la función regresará un valor verdadero</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Me ha tomado 5 iteraciones llegar a algo que se puede leer con suficiente claridad como para dejarlo así y la verdad es que me tomó apenas unos minutos pasar de la primera iteración a la última. Esto es mucho mejor que la media hora o más que me pudo haber tomado al intentar escribirlo todo bien desde el principio con todos los nombres correctos a la primera. Ya he he estado en esa situación y puedo decir que generalmente se pierde más tiempo del que tomaría hacerlo en partes. La verdad es que el proceso creativo no funciona de forma que se pueda hacer todo bien al primer intento.</p>
+
+<h2 id="es-todo-por-ahora">Es todo por ahora</h2>
+
+<p>Voy a dejarlo hasta aquí para no hacerlo más largo. Espero que te sirvan estos tips y que me escribas si tienes alguna pregunta o sugerencia.</p>
+
+<p>Sigue practicando y que te diviertas en el proceso.</p>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="http://dalerun.com/" target="_blank"> Eduardo Hernández Guerrero</a></span>
+				</span>
+				
+
+				
+				<time class="icon-calendar pr20" datetime="2019-05-26T00:00:00-05:00" itemprop="datePublished"> 2019-05-26</time>
+				
+
+				</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> productividad</span> <span class="icon-price-tag pr10"> tips</span> <span class="icon-price-tag pr10"> programar</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="https://www.dalerun.com//tres-formas-de-optimizar-el-uso-de-la-linea-de-comandos/">&laquo; Tres formas de optimizar el uso de la línea de comandos</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="https://www.dalerun.com//blog/archive/" title="Blog Archivo">Archivo</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="https://www.dalerun.com//conoce-los-terminos-comunes-en-git/">Conoce los términos comunes empleados con GIT. &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Acerca de este sitio</h5>
+
+            <p class="shadow-black">
+              »Dále run« explica términos y herramientas de desarollo en español. Así es más fácil
+              <a href="https://www.dalerun.com//info/">Más ›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servicios</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="https://www.dalerun.com/"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://www.dalerun.com//contacto/"  title="Contacto">Contacto</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://www.dalerun.com//feed.xml"  title="Suscríbete al RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://www.dalerun.com//sitemap.xml"  title="Mapa del sitio">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+
+            <ul class="no-bullet shadow-black">
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            Powered by: <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> | <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive Template</a>.</p>
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="https://github.com/lalitohg" target="_blank" class="icon-github" title="lalitohg"></a></li>
+            
+              <li><a href="https://twitter.com/codeninjalalo" target="_blank" class="icon-twitter" title="Últimas noticias en twitter"></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/eduardo-hern%C3%A1ndez-568195a2/" target="_blank" class="icon-linkedin" title="LinkledIn"></a></li>
+            
+              <li><a href="http://www.facebook.com/eduardo.hernandezguerrero.58" target="_blank" class="icon-facebook" title="Facebook"></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="https://www.dalerun.com//assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-135040717-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
