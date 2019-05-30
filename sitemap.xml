@@ -5,9 +5,9 @@
 
 	
 	<url>
-	<loc>http://0.0.0.0:4000//404.html</loc>
+	<loc>https://www.dalerun.com//404.html</loc>
 	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -20,26 +20,9 @@
 
 	
 	<url>
-	<loc>http://0.0.0.0:4000//blog/archive/</loc>
+	<loc>https://www.dalerun.com//blog/archive/</loc>
 	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-	<url>
-	<loc>http://0.0.0.0:4000//atom.xml</loc>
-	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -54,148 +37,9 @@
 
 	
 	<url>
-	<loc>http://0.0.0.0:4000//contacto/</loc>
+	<loc>https://www.dalerun.com//atom.xml</loc>
 	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://0.0.0.0:4000//feed.xml</loc>
-	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://0.0.0.0:4000//humans.txt</loc>
-	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://0.0.0.0:4000//blog/</loc>
-	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://0.0.0.0:4000//</loc>
-	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://0.0.0.0:4000//info/</loc>
-	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://0.0.0.0:4000//redirect-page/</loc>
-	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://0.0.0.0:4000//robots.txt</loc>
-	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-
-	
-
-	
-	<url>
-	<loc>http://0.0.0.0:4000//search/</loc>
-	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.3</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://0.0.0.0:4000//sitemap.xml</loc>
-	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -210,9 +54,9 @@
 
 	
 	<url>
-	<loc>http://0.0.0.0:4000//subscribirte/</loc>
+	<loc>https://www.dalerun.com//contacto/</loc>
 	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -225,9 +69,165 @@
 
 	
 	<url>
-	<loc>http://0.0.0.0:4000//blog/page2/</loc>
+	<loc>https://www.dalerun.com//feed.xml</loc>
 	
-		<lastmod>2019-05-30T00:21:02-05:00</lastmod>
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//humans.txt</loc>
+	
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//blog/</loc>
+	
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//</loc>
+	
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//info/</loc>
+	
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//redirect-page/</loc>
+	
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//robots.txt</loc>
+	
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//search/</loc>
+	
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//sitemap.xml</loc>
+	
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//subscribirte/</loc>
+	
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.3</priority>
+	
+	</url>
+	
+
+	
+	<url>
+	<loc>https://www.dalerun.com//blog/page2/</loc>
+	
+		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -239,11 +239,11 @@
 	
 
 
-<!-- Posts: 7 links with priority=0.5, changefreq=monthly -->
+<!-- Posts: 6 links with priority=0.5, changefreq=monthly -->
 
 	
 	<url>
-	<loc>http://0.0.0.0:4000//conoce-los-terminos-comunes-en-git/</loc>
+	<loc>https://www.dalerun.com//conoce-los-terminos-comunes-en-git/</loc>
 	
 		<lastmod>2019-05-30T00:00:00-05:00</lastmod>
 	
@@ -258,22 +258,7 @@
 
 	
 	<url>
-	<loc>http://0.0.0.0:4000//zzz/</loc>
-	
-		<lastmod>2019-05-27T23:06:39-05:00</lastmod>
-	
-	
-		<changefreq>monthly</changefreq>
-	
-	
-		<priority>0.5</priority>
-	
-	</url>
-	
-
-	
-	<url>
-	<loc>http://0.0.0.0:4000//tres-tips-para-escribir-mejor-codigo/</loc>
+	<loc>https://www.dalerun.com//tres-tips-para-escribir-mejor-codigo/</loc>
 	
 		<lastmod>2019-05-26T00:00:00-05:00</lastmod>
 	
@@ -288,7 +273,7 @@
 
 	
 	<url>
-	<loc>http://0.0.0.0:4000//tres-formas-de-optimizar-el-uso-de-la-linea-de-comandos/</loc>
+	<loc>https://www.dalerun.com//tres-formas-de-optimizar-el-uso-de-la-linea-de-comandos/</loc>
 	
 		<lastmod>2019-04-30T00:00:00-05:00</lastmod>
 	
@@ -303,7 +288,7 @@
 
 	
 	<url>
-	<loc>http://0.0.0.0:4000//tipos-de-bases-de-datos/</loc>
+	<loc>https://www.dalerun.com//tipos-de-bases-de-datos/</loc>
 	
 		<lastmod>2019-02-22T00:00:00-06:00</lastmod>
 	
@@ -318,7 +303,7 @@
 
 	
 	<url>
-	<loc>http://0.0.0.0:4000//empieza-a-usar-NPX/</loc>
+	<loc>https://www.dalerun.com//empieza-a-usar-NPX/</loc>
 	
 		<lastmod>2019-02-18T00:00:00-06:00</lastmod>
 	
@@ -333,7 +318,7 @@
 
 	
 	<url>
-	<loc>http://0.0.0.0:4000//variables-en-js/</loc>
+	<loc>https://www.dalerun.com//variables-en-js/</loc>
 	
 		<lastmod>2018-12-02T00:00:00-06:00</lastmod>
 	

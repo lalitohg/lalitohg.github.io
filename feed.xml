@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://0.0.0.0:4000//assets/xslt/rss.xslt" ?>
-<?xml-stylesheet type="text/css" href="http://0.0.0.0:4000//assets/css/rss.css" ?>
+<?xml-stylesheet type="text/xsl" href="https://www.dalerun.com//assets/xslt/rss.xslt" ?>
+<?xml-stylesheet type="text/css" href="https://www.dalerun.com//assets/css/rss.css" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Dále run</title>
 		<description>»Dále run« explica términos y herramientas de desarollo en español. Así es más fácil</description>
-		<link>http://0.0.0.0:4000//</link>
-		<atom:link href="http://0.0.0.0:4000//feed.xml" rel="self" type="application/rss+xml" />
+		<link>https://www.dalerun.com//</link>
+		<atom:link href="https://www.dalerun.com//feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>Conoce los términos comunes empleados con GIT.</title>
-				<link>http://0.0.0.0:4000//conoce-los-terminos-comunes-en-git/</link>
+				<link>https://www.dalerun.com//conoce-los-terminos-comunes-en-git/</link>
 				<pubDate>Thu, 30 May 2019 00:00:00 -0500</pubDate>
 				<description>&lt;p&gt;A veces resulta bastante útil hablar el mismo idioma que se usa en las fuentes de información que consultamos acerca del uso de GIT. Al menos a mi se me hace más fácil entender lo que significan las instrucciones y las explicaciones cuando entiendo lo que quieren decir los términos que se usan para explicar una herramienta o tecnología. Veamos algunos de los términos más comunes asociados con el uso de GIT.&lt;/p&gt;
 
@@ -50,21 +50,12 @@
 
 &lt;p&gt;Que te diviertas desarrollando y espero tenerte pronto por aquí.&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">http://0.0.0.0:4000//conoce-los-terminos-comunes-en-git/</guid>
-			</item>
-		
-			<item>
-				<title>Zzz</title>
-				<link>http://0.0.0.0:4000//zzz/</link>
-				<pubDate>Mon, 27 May 2019 23:06:39 -0500</pubDate>
-				<description>
-</description>
-				<guid isPermaLink="true">http://0.0.0.0:4000//zzz/</guid>
+				<guid isPermaLink="true">https://www.dalerun.com//conoce-los-terminos-comunes-en-git/</guid>
 			</item>
 		
 			<item>
 				<title>Tres tips para escribir mejor código</title>
-				<link>http://0.0.0.0:4000//tres-tips-para-escribir-mejor-codigo/</link>
+				<link>https://www.dalerun.com//tres-tips-para-escribir-mejor-codigo/</link>
 				<pubDate>Sun, 26 May 2019 00:00:00 -0500</pubDate>
 				<description>&lt;p&gt;Hace unos días tuve una sesión de tutoría con un estudiante que recién empieza su carrera de desarrollo y durante el transcurso de la sesión nos dimos cuenta que el problema más grande no estaba en codificar los algoritmos sino en lograr que todo el proyecto tuviera sentido al momento de tener todo el código junto.&lt;/p&gt;
 
@@ -197,12 +188,12 @@
 
 &lt;p&gt;Sigue practicando y que te diviertas en el proceso.&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">http://0.0.0.0:4000//tres-tips-para-escribir-mejor-codigo/</guid>
+				<guid isPermaLink="true">https://www.dalerun.com//tres-tips-para-escribir-mejor-codigo/</guid>
 			</item>
 		
 			<item>
 				<title>Tres formas de optimizar el uso de la línea de comandos</title>
-				<link>http://0.0.0.0:4000//tres-formas-de-optimizar-el-uso-de-la-linea-de-comandos/</link>
+				<link>https://www.dalerun.com//tres-formas-de-optimizar-el-uso-de-la-linea-de-comandos/</link>
 				<pubDate>Tue, 30 Apr 2019 00:00:00 -0500</pubDate>
 				<description>&lt;p&gt;Te voy a mostrar 3 formas en las que hago más eficiente el uso de mi línea de comandos para incrementar la productividad.&lt;/p&gt;
 
@@ -274,12 +265,12 @@
 
 &lt;p&gt;Hasta la próxima.&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">http://0.0.0.0:4000//tres-formas-de-optimizar-el-uso-de-la-linea-de-comandos/</guid>
+				<guid isPermaLink="true">https://www.dalerun.com//tres-formas-de-optimizar-el-uso-de-la-linea-de-comandos/</guid>
 			</item>
 		
 			<item>
 				<title>Tipos de bases de datos</title>
-				<link>http://0.0.0.0:4000//tipos-de-bases-de-datos/</link>
+				<link>https://www.dalerun.com//tipos-de-bases-de-datos/</link>
 				<pubDate>Fri, 22 Feb 2019 00:00:00 -0600</pubDate>
 				<description>&lt;p&gt;Si le preguntas a un experto en el tema de la cerveza te dirá que es un error pensar que solamente puedes elegir entre la clara y la obscura. Algo similar pasaría con un experto en vino si le dices que sólo existen el tinto y el blanco.&lt;/p&gt;
 
@@ -415,22 +406,22 @@
 
 &lt;p&gt;Cómo puedes ver hay muchas tecnologías diferentes para resolver el problema de almacenar los datos de nuestra aplicación y no hay una respuesta inmediata a la pregunta ¿qué base de datos es mejor?. Hay que considerar las limitaciones y las ventajas que cada tipo de base de datos ofrece así como también las características que cada proveedor mantiene en sus productos. Pero eso será material para otro artículo.&lt;/p&gt;
 
-&lt;p&gt;Espero que esta información te sea útil y recuerda que puedes &lt;a href=&quot;http://0.0.0.0:4000/subscribirte&quot;&gt;subscribirte&lt;/a&gt; para no perderte de las actualizaciones del blog, y como siempre, puedes dejarme un saludo o decir lo que quieras a través de la página de &lt;a href=&quot;http://0.0.0.0:4000/contacto&quot;&gt;contacto&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Espero que esta información te sea útil y recuerda que puedes &lt;a href=&quot;https://www.dalerun.com/subscribirte&quot;&gt;subscribirte&lt;/a&gt; para no perderte de las actualizaciones del blog, y como siempre, puedes dejarme un saludo o decir lo que quieras a través de la página de &lt;a href=&quot;https://www.dalerun.com/contacto&quot;&gt;contacto&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;ul class=&quot;inline-list social-icons&quot;&gt;
-        &lt;li&gt;&lt;a class=&quot;icon-twitter share-post-item&quot; href=&quot;https://twitter.com/intent/tweet?text=Tipos de bases de datos&amp;amp;url=http://0.0.0.0:4000/tipos-de-bases-de-datos/&amp;amp;via=&amp;amp;related=&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class=&quot;icon-facebook share-post-item&quot; href=&quot;https://facebook.com/sharer.php?u=http://0.0.0.0:4000/tipos-de-bases-de-datos/&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-twitter share-post-item&quot; href=&quot;https://twitter.com/intent/tweet?text=Tipos de bases de datos&amp;amp;url=https://www.dalerun.com/tipos-de-bases-de-datos/&amp;amp;via=&amp;amp;related=&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-facebook share-post-item&quot; href=&quot;https://facebook.com/sharer.php?u=https://www.dalerun.com/tipos-de-bases-de-datos/&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a class=&quot;icon-linkedin share-post-item&quot; href=&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=/tipos-de-bases-de-datos/&amp;amp;title=Tipos de bases de datos&amp;amp;summary=Existen distintos tipos de bases de datos y hay más de un proveedor ofreciendo una solución de cada tipo, así que vale la pena revisar de forma general las opciones disponibles.&amp;amp;source=dalerun.com&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en LinkedIn&quot;&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-				<guid isPermaLink="true">http://0.0.0.0:4000//tipos-de-bases-de-datos/</guid>
+				<guid isPermaLink="true">https://www.dalerun.com//tipos-de-bases-de-datos/</guid>
 			</item>
 		
 			<item>
 				<title>Empieza a usar npx hoy</title>
-				<link>http://0.0.0.0:4000//empieza-a-usar-NPX/</link>
+				<link>https://www.dalerun.com//empieza-a-usar-NPX/</link>
 				<pubDate>Mon, 18 Feb 2019 00:00:00 -0600</pubDate>
 				<description>&lt;p&gt;Aunque no es una noticia nueva, todavía hay mucha gente que no ha adoptado el uso de esta nueva herramienta del ecosistema de NodeJS.&lt;/p&gt;
 
@@ -490,18 +481,18 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;ul class=&quot;inline-list social-icons&quot;&gt;
-        &lt;li&gt;&lt;a class=&quot;icon-twitter share-post-item&quot; href=&quot;https://twitter.com/intent/tweet?text=Empieza a usar npx hoy&amp;amp;url=http://0.0.0.0:4000/empieza-a-usar-NPX/&amp;amp;via=&amp;amp;related=&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class=&quot;icon-facebook share-post-item&quot; href=&quot;https://facebook.com/sharer.php?u=http://0.0.0.0:4000/empieza-a-usar-NPX/&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-twitter share-post-item&quot; href=&quot;https://twitter.com/intent/tweet?text=Empieza a usar npx hoy&amp;amp;url=https://www.dalerun.com/empieza-a-usar-NPX/&amp;amp;via=&amp;amp;related=&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-facebook share-post-item&quot; href=&quot;https://facebook.com/sharer.php?u=https://www.dalerun.com/empieza-a-usar-NPX/&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a class=&quot;icon-linkedin share-post-item&quot; href=&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=/empieza-a-usar-NPX/&amp;amp;title=Empieza a usar npx hoy&amp;amp;summary=Mejora tu proceso de desarrollo con el uso del comando npx&amp;amp;source=dalerun.com&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en LinkedIn&quot;&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-				<guid isPermaLink="true">http://0.0.0.0:4000//empieza-a-usar-NPX/</guid>
+				<guid isPermaLink="true">https://www.dalerun.com//empieza-a-usar-NPX/</guid>
 			</item>
 		
 			<item>
 				<title>Variables en javascript</title>
-				<link>http://0.0.0.0:4000//variables-en-js/</link>
+				<link>https://www.dalerun.com//variables-en-js/</link>
 				<pubDate>Sun, 02 Dec 2018 00:00:00 -0600</pubDate>
 				<description>&lt;p&gt;Las variables son un elemento esencial de un programa. Hasta el código más pequeño necesita hacer buen uso de variables para ser claro y funcional.&lt;/p&gt;
 
@@ -663,13 +654,13 @@
 
 &lt;div class=&quot;row&quot;&gt;
     &lt;ul class=&quot;inline-list social-icons&quot;&gt;
-        &lt;li&gt;&lt;a class=&quot;icon-twitter share-post-item&quot; href=&quot;https://twitter.com/intent/tweet?text=Variables en javascript&amp;amp;url=http://0.0.0.0:4000/variables-en-js/&amp;amp;via=&amp;amp;related=&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class=&quot;icon-facebook share-post-item&quot; href=&quot;https://facebook.com/sharer.php?u=http://0.0.0.0:4000/variables-en-js/&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-twitter share-post-item&quot; href=&quot;https://twitter.com/intent/tweet?text=Variables en javascript&amp;amp;url=https://www.dalerun.com/variables-en-js/&amp;amp;via=&amp;amp;related=&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;icon-facebook share-post-item&quot; href=&quot;https://facebook.com/sharer.php?u=https://www.dalerun.com/variables-en-js/&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en Facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a class=&quot;icon-linkedin share-post-item&quot; href=&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=/variables-en-js/&amp;amp;title=Variables en javascript&amp;amp;summary=El uso correcto de variables en el código es fundamental para un desarrollador&amp;amp;source=dalerun.com&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Compártelo en LinkedIn&quot;&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
 </description>
-				<guid isPermaLink="true">http://0.0.0.0:4000//variables-en-js/</guid>
+				<guid isPermaLink="true">https://www.dalerun.com//variables-en-js/</guid>
 			</item>
 		
 	</channel>
