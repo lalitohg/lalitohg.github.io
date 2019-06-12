@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.dalerun.com//</id>
 	<title>Dále run</title>
-	<updated>2019-05-30T00:38:48-05:00</updated>
+	<updated>2019-06-12T17:25:57-05:00</updated>
 
 	<subtitle>»Dále run« explica términos y herramientas de desarollo en español. Así es más fácil</subtitle>
 
@@ -26,6 +26,118 @@
 
 	<generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator>
 
+	
+		<entry>
+			<id>https://www.dalerun.com//instalacion-minima-de-babel-7/</id>
+			<title>Instalación mínima de Babel 7</title>
+			<link href="https://www.dalerun.com//instalacion-minima-de-babel-7/" rel="alternate" type="text/html" title="Instalación mínima de Babel 7" />
+			<updated>2019-06-12T00:00:00-05:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Eduardo Hernández Guerrero</name>
+					
+					
+					
+						<uri>http://dalerun.com/</uri>
+					
+				</author>
+			
+			<summary>Con Babel puedes usar la versión más reciente de JavaScript y traducir tu proyecto para hacerlo compatible con navegadores más antiguos.</summary>
+			<content type="html" xml:base="https://www.dalerun.com//instalacion-minima-de-babel-7/">&lt;p&gt;La versión número 7 de babel ya está disponible desde hace algún tiempo y si vas a iniciar algún proyecto Javascript no puedes dejar pasar la oportunidad de probar esta versión.&lt;/p&gt;
+
+&lt;p&gt;Lo más común es instalar Babel y algunos &lt;strong&gt;plugins&lt;/strong&gt; específicos para que otras herramientas puedan tomar tu código ES6 y entenderlo para manipularlo o para exportarlo junto con cualquier otro recurso que necesite tu proyecto.&lt;/p&gt;
+
+&lt;p&gt;Veamos como instalar Babel 7 con los &lt;strong&gt;plugins&lt;/strong&gt; mínimos necesarios para traducir tu código ES6 a versiones compatibles con navegadores más viejos.&lt;/p&gt;
+
+&lt;h2 id=&quot;instalación--mínima&quot;&gt;Instalación  mínima&lt;/h2&gt;
+
+&lt;p&gt;Ahora con la versión 7 de babel los nombres de muchos &lt;strong&gt;plugins&lt;/strong&gt; han cambiado un poco y hay una nueva versión del core de Babel. En general, los nombres de paquetes han cambiado de babel-&lt;paquete&gt; a @babel/&lt;paquete&gt;.&lt;/paquete&gt;&lt;/paquete&gt;&lt;/p&gt;
+
+&lt;p&gt;Para tener lo mínimo necesario para traducir código ES6 a versiones compatibles primero hay que instalar unos cuantos módulos:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm i -D @babel/core @babel/cli @babel/preset-env @babel/register&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm i @babel/polyfill core-js&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Esto es suficiente para que puedas pasar tu código ES6 a una versión compatible con ES5 o anteriores.&lt;/p&gt;
+
+&lt;p&gt;Aquí hay que notar que en versiones anteriores es común encontrar varios &lt;strong&gt;preset&lt;/strong&gt;, y ahora solamente necesitas instalar @babel/preset-env y eso es todo.&lt;/p&gt;
+
+&lt;h2 id=&quot;configuración-mínima&quot;&gt;Configuración mínima&lt;/h2&gt;
+
+&lt;p&gt;Lo mejor es tener un archivo de configuración que puedas modificar según tus necesidades.&lt;/p&gt;
+
+&lt;p&gt;Como mínimo necesitas crear un archivo llamado babel.config.js y agregar el siguiente contenido:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;presets&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;s2&quot;&gt;&quot;@babel/env&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;targets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;edge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;17&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;firefox&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;32&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;chrome&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;50&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;safari&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;6.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;useBuiltIns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;usage&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;corejs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;presets&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Nota: Las versiones de la sección &lt;strong&gt;“targets”&lt;/strong&gt; son un ejemplo arbitrario. Esto si lo vas a tener que ajustar según las necesidades reales de tu proyecto. Además, puede ser un ejemplo completamente obsoleto para cuando leas este artículo.&lt;/p&gt;
+
+&lt;h2 id=&quot;probando-el-ambiente&quot;&gt;Probando el ambiente&lt;/h2&gt;
+
+&lt;p&gt;Ahora solamente verificamos que nuestra nueva instalación de Babel 7 está lista para ser usada por otros procesos.&lt;/p&gt;
+
+&lt;p&gt;Empecemos creando un archivo llamado &lt;strong&gt;index.js&lt;/strong&gt; en la raíz del proyecto y pongamos algo de código ES6 dentro:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Hola'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Ahora vamos a dejar que Babel haga lo suyo y que nos muestre el código transformado ejecutando:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npx babel index.js&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Debemos ver una salida en consola como esto:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;s2&quot;&gt;&quot;use strict&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;cb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Hola'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Listo. Con esto comprobamos que Babel es capaz de tomar un código escrito en ES6 y transformarlo en su equivalente ES5 o anteriores. La configuración depende de las necesidades específicas de tu proyecto y las herramientas con las que Babel tenga que interactuar, como webpack, mocha, istambul, etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-sigue&quot;&gt;¿Qué sigue?&lt;/h2&gt;
+
+&lt;p&gt;Con esta configuración básica es suficiente para que puedas iniciar tu proyecto JavaScript completamente en la versión ES6 o más recientes. En otros artículos voy a describir cómo podemos complementar esta configuración básica para integrar otras herramientas de uso común como mocha (ejecutar pruebas unitarias) o webpack (para empacar tu proyecto en un único script, por ejemplo).&lt;/p&gt;
+
+&lt;p&gt;Espero que te sirva esta información y como siempre, si tienes algo que te gustaría comentar, puedes usar la &lt;a href=&quot;https://www.dalerun.com/contacto&quot;&gt;página de contacto&lt;/a&gt; y si te interesa enterarte del nuevo contenido que se va publicando puedes &lt;a href=&quot;https://www.dalerun.com/subscribirte&quot;&gt;subscribirte&lt;/a&gt;.&lt;/p&gt;
+</content>
+
+			
+			
+				<category term="javascript" />
+			
+				<category term="babel" />
+			
+
+			<published>2019-06-12T00:00:00-05:00</published>
+		</entry>
 	
 		<entry>
 			<id>https://www.dalerun.com//conoce-los-terminos-comunes-en-git/</id>

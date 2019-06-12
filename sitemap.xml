@@ -7,7 +7,7 @@
 	<url>
 	<loc>https://www.dalerun.com//404.html</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -22,7 +22,7 @@
 	<url>
 	<loc>https://www.dalerun.com//blog/archive/</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -39,7 +39,7 @@
 	<url>
 	<loc>https://www.dalerun.com//atom.xml</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -56,7 +56,7 @@
 	<url>
 	<loc>https://www.dalerun.com//contacto/</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -71,7 +71,7 @@
 	<url>
 	<loc>https://www.dalerun.com//feed.xml</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -86,7 +86,7 @@
 	<url>
 	<loc>https://www.dalerun.com//humans.txt</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -101,7 +101,7 @@
 	<url>
 	<loc>https://www.dalerun.com//blog/</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -116,7 +116,7 @@
 	<url>
 	<loc>https://www.dalerun.com//</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -131,7 +131,7 @@
 	<url>
 	<loc>https://www.dalerun.com//info/</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -146,7 +146,7 @@
 	<url>
 	<loc>https://www.dalerun.com//redirect-page/</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -161,7 +161,7 @@
 	<url>
 	<loc>https://www.dalerun.com//robots.txt</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -180,7 +180,7 @@
 	<url>
 	<loc>https://www.dalerun.com//search/</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -195,7 +195,7 @@
 	<url>
 	<loc>https://www.dalerun.com//sitemap.xml</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -212,7 +212,7 @@
 	<url>
 	<loc>https://www.dalerun.com//subscribirte/</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -227,7 +227,7 @@
 	<url>
 	<loc>https://www.dalerun.com//blog/page2/</loc>
 	
-		<lastmod>2019-05-30T00:38:48-05:00</lastmod>
+		<lastmod>2019-06-12T17:25:57-05:00</lastmod>
 	
 	
 		<changefreq>monthly</changefreq>
@@ -239,7 +239,22 @@
 	
 
 
-<!-- Posts: 6 links with priority=0.5, changefreq=monthly -->
+<!-- Posts: 7 links with priority=0.5, changefreq=monthly -->
+
+	
+	<url>
+	<loc>https://www.dalerun.com//instalacion-minima-de-babel-7/</loc>
+	
+		<lastmod>2019-06-12T00:00:00-05:00</lastmod>
+	
+	
+		<changefreq>monthly</changefreq>
+	
+	
+		<priority>0.5</priority>
+	
+	</url>
+	
 
 	
 	<url>
