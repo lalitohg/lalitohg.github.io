@@ -1,590 +1,285 @@
-<!doctype html>
-<html class="no-js" lang="es">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tipos de bases de datos</title>
-
-    <link rel="stylesheet" type="text/css" href="https://www.dalerun.com//assets/css/styles_feeling_responsive.css">
-
-  
-
-	<script src="https://www.dalerun.com//assets/js/modernizr.min.js"></script>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-	<script>
-		WebFont.load({
-			google: {
-				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
-			}
-		});
-	</script>
-
-	<noscript>
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
-	</noscript>
-
-
-	<!-- Search Engine Optimization -->
-	<meta name="description" content="Existen distintos tipos de bases de datos y hay más de un proveedor ofreciendo una solución de cada tipo, así que vale la pena revisar de forma general las opciones disponibles.">
-	<meta name="google-site-verification" content="">
-	<meta name="msvalidate.01" content="" >
-	
-	<link rel="author" href="">
-	
-	
-	<link rel="canonical" href="https://www.dalerun.com//tipos-de-bases-de-datos/">
-
-
-	<!-- Facebook Open Graph -->
-	<meta property="og:title" content="Tipos de bases de datos">
-	<meta property="og:description" content="Existen distintos tipos de bases de datos y hay más de un proveedor ofreciendo una solución de cada tipo, así que vale la pena revisar de forma general las opciones disponibles.">
-	<meta property="og:url" content="https://www.dalerun.com//tipos-de-bases-de-datos/">
-	<meta property="og:locale" content="es_MX">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Dále run">
-	<meta property="og:image" content="https://www.dalerun.com/images/tobias-fischer-185901-unsplash.jpg">
-	<meta property="article:author" content="https://www.facebook.com/eduardo.hernandezguerrero.58">
-
-
-	
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="codeninjalalo">
-	<meta name="twitter:creator" content="codeninjalalo">
-	<meta name="twitter:title" content="Tipos de bases de datos">
-	<meta name="twitter:description" content="Existen distintos tipos de bases de datos y hay más de un proveedor ofreciendo una solución de cada tipo, así que vale la pena revisar de forma general las opciones disponibles.">
-	<meta name="twitter:image" content="https://www.dalerun.com/images/tobias-fischer-185901-unsplash.jpg">
-	
-
-	<link type="text/plain" rel="author" href="https://www.dalerun.com//humans.txt">
-
-	
-
-	
-
-	<link rel="icon" sizes="32x32" href="https://www.dalerun.com//assets/img/favicon-32x32.png">
-
-	<link rel="icon" sizes="192x192" href="https://www.dalerun.com//assets/img/touch-icon-192x192.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://www.dalerun.com//assets/img/apple-touch-icon-180x180-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.dalerun.com//assets/img/apple-touch-icon-152x152-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.dalerun.com//assets/img/apple-touch-icon-144x144-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.dalerun.com//assets/img/apple-touch-icon-120x120-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.dalerun.com//assets/img/apple-touch-icon-114x114-precomposed.png">
-
-	
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.dalerun.com//assets/img/apple-touch-icon-76x76-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.dalerun.com//assets/img/apple-touch-icon-72x72-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" href="https://www.dalerun.com//assets/img/apple-touch-icon-precomposed.png">	
-
-	<meta name="msapplication-TileImage" content="https://www.dalerun.com//assets/img/msapplication_tileimage.png">
-
-	<meta name="msapplication-TileColor" content="#fabb00">
-
-
-	
-
-</head>
-<body id="top-of-page" class="post">
-	
-	
-<div id="navigation" class="sticky">
-  <nav class="top-bar" role="navigation" data-topbar>
-    <ul class="title-area">
-      <li class="name">
-      <h1 class="show-for-small-only"><a href="https://www.dalerun.com/" class="icon-home"> Dále run</a></h1>
-    </li>
-       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
-    </ul>
-    <section class="top-bar-section">
-
-      <ul class="right">
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a  href="https://www.dalerun.com//search/">Buscar</a></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a  href="https://www.dalerun.com//contacto/">Contacto</a></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a  href="https://www.dalerun.com//subscribirte/">Subscribirte</a></li>
-
-            
-            
-          
-        
-        
-      </ul>
-
-      <ul class="left">
-        
-
-              
-
-          
-          
-
-            
-            
-              <li><a  href="https://www.dalerun.com//">Inicio</a></li>
-              <li class="divider"></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-
-            
-            
-
-              <li class="has-dropdown">
-                <a  href="https://www.dalerun.com//blog/">Blog</a>
-
-                  <ul class="dropdown">
-                    
-
-                      
-
-                      <li><a  href="https://www.dalerun.com//blog/archive/">Archivo</a></li>
-                    
-                  </ul>
-
-              </li>
-              <li class="divider"></li>
-            
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
-        
-      </ul>
-    </section>
-  </nav>
-</div><!-- /#navigation -->
-
-	
-
-	
-
-
-
-
-	<div class="row t30">
-	<div class="medium-8 columns medium-offset-2 end">
-		<article itemscope itemtype="http://schema.org/Article">
-			<header>
-				
-				<figure>
-					<img src="https://www.dalerun.com/images/tobias-fischer-185901-unsplash.jpg" width="970" alt="Tipos de bases de datos" itemprop="image">
-
-					
-				</figure>
-				
-
-				<div itemprop="name">
-					<p class="subheadline">No todas las bases de datos son iguales</p>
-					<h1>Tipos de bases de datos</h1>
-				</div>
-			</header>
-
-
-			
-			<p class="teaser" itemprop="description">
-				Existen distintos tipos de bases de datos y hay más de un proveedor ofreciendo una solución de cada tipo, así que vale la pena revisar de forma general las opciones disponibles.
-			</p>
-			
-
-			<div itemprop="articleSection">
-			<p>Si le preguntas a un experto en el tema de la cerveza te dirá que es un error pensar que solamente puedes elegir entre la clara y la obscura. Algo similar pasaría con un experto en vino si le dices que sólo existen el tinto y el blanco.</p>
-
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.131b48b25a50eff60b34.css">code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 2.18.24"/><style data-styled="eRnGfb chXYij bbXCFQ eURyMG hkfMLs bxPIHO iwfyLn cnbeOt fbGfHa jKvNwM eCwGRV cjpAmT fLXykm bgTXuI dIkKGb xudZF eljrwt cEuSYE kcmIPB iFjAGq gjkHtu bYGEVA cJSxMU eHJGcr" data-styled-version="4.4.1">
+/* sc-component-id: Header__HeaderWrapper-h7migc-0 */
+.eRnGfb{top:0;left:0;margin:0 auto;display:block;width:100%;z-index:1000;background-color:rgba(32,35,42,0.85);font-weight:700;} @media (min-width:700px){.eRnGfb{position:fixed;}}
+/* sc-component-id: Header__HeaderNav-h7migc-1 */
+.chXYij{font-weight:700;margin-left:auto;margin-right:auto;height:60px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;max-width:770px;z-index:1000;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;overflow-x:auto;overflow-y:hidden;white-space:nowrap;padding:0px 20px;}
+/* sc-component-id: Header__HeaderLinksContainer-h7migc-2 */
+.hkfMLs{display:none;-webkit-box-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;} @media (min-width:700px){.hkfMLs{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}
+/* sc-component-id: Header__HeaderLink-h7migc-3 */
+.bxPIHO{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#ffffff;border:0;margin:0;padding:8px 10px;min-width:42px;z-index:10;} .bxPIHO + .Header__HeaderLink-h7migc-3{margin-left:0.7rem;}
+/* sc-component-id: Header__HeaderLinkTitle-h7migc-4 */
+.bbXCFQ{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#ffffff;border:0;margin:0;padding:8px 10px;min-width:42px;z-index:10;padding-left:0;} .bbXCFQ + .Header__HeaderLinkTitle-h7migc-4{margin-left:0.7rem;}
+/* sc-component-id: Header__HeaderLinkTitleContent-h7migc-5 */
+.eURyMG{display:block;padding-left:0;}
+/* sc-component-id: Header__BurgerButton-h7migc-9 */
+.iwfyLn{z-index:30;top:0px;position:relative;color:#ffffff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;background:transparent;border:none;cursor:pointer;padding:8px 12px;outline:none;-webkit-tap-highlight-color:transparent;} @media (min-width:700px){.iwfyLn{display:none;}}
+/* sc-component-id: Header__BurgerContent-h7migc-10 */
+.cnbeOt{width:24px;height:2px;background:#ffffff;position:absolute;left:0;background:#ffffff;-webkit-transition:all 250ms cubic-bezier(0.86,0,0.07,1);transition:all 250ms cubic-bezier(0.86,0,0.07,1);} .cnbeOt::before{content:'';top:-8px;width:24px;height:2px;background:#ffffff;position:absolute;left:0;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);-webkit-transition:all 250ms cubic-bezier(0.86,0,0.07,1);transition:all 250ms cubic-bezier(0.86,0,0.07,1);} .cnbeOt::after{top:8px;content:'';width:24px;height:2px;background:white;position:absolute;left:0;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);-webkit-transition:all 250ms cubic-bezier(0.86,0,0.07,1);transition:all 250ms cubic-bezier(0.86,0,0.07,1);}
+/* sc-component-id: Footer__FooterWrapper-sc-26us4e-0 */
+.eHJGcr{text-align:left;padding-top:30px;padding-bottom:50px;background-color:#3E4047;color:#ffffff;padding-left:20px;padding-right:20px;margin:0 auto;} .eHJGcr nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;max-width:900px;margin:0 auto;} .eHJGcr nav .footer-col{-webkit-flex:1 auto;-ms-flex:1 auto;flex:1 auto;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin-bottom:1em;padding-right:1em;} .eHJGcr a{color:#ffffff;font-weight:bold;} .eHJGcr a:hover{color:#CFCFD1;} .eHJGcr .footer-col > p{margin:0;} .eHJGcr .footer-title{margin:0 0 1rem;} .eHJGcr .footer-item{padding:0.25rem 0;color:#ffffff;} .eHJGcr .footer-heart{color:red;} .eHJGcr .footer-item-text{padding:0.1rem 0;color:#ffffff;} .eHJGcr .footer-header{-webkit-order:1;-ms-flex-order:1;order:1;margin:0 0.25rem;margin-right:0.25rem;padding:0.25rem;} @media (max-width:564px){.eHJGcr .footer-col:first-child{width:100%;}}
+/* sc-component-id: sc-global-2133546994 */
+*{box-sizing:border-box;margin:0;padding:0;} body{font-family:"Lato",sans-serif;color:#3E4047;background-color:#f4f8fb;} img{max-width:100%;height:auto;vertical-align:middle;border:0;} a{-webkit-text-decoration:none;text-decoration:none;color:#3E4047;} hr{border:0;border-top:1px solid #ECECED;margin:50px 0 5px 0;} ul,ol{padding-left:2em;margin:1em 0 0 0;} *::selection{background-color:#ffdc4e;}
+/* sc-component-id: Commons__StyledLink-sc-4jkj7v-0 */
+.cJSxMU{box-shadow:0 2px 0 0 #ffdc4e;} .cJSxMU:hover{-webkit-filter:brightness(150%);filter:brightness(150%);box-shadow:none;}
+/* sc-component-id: Commons__Text-sc-4jkj7v-1 */
+.bYGEVA{line-height:1.6;margin:1em 0 0 0;}
+/* sc-component-id: layout__SiteContent-sc-726pf8-0 */
+.fbGfHa{margin:0 0;} @media (min-width:700px){.fbGfHa{margin:60px 0;}}
+/* sc-component-id: Wrapper-sc-1i6tdq5-0 */
+.fLXykm{position:relative;border-radius:5px;width:80%;max-width:770px;word-wrap:break-word;background-color:#ffffff;margin:0px auto 30px auto;top:30px;padding:50px;box-shadow:0 0 0 0,0 6px 12px rgba(0,0,0,0.1);} @media (max-width:780px){.fLXykm{width:90%;padding:25px;}}
+/* sc-component-id: Hero__HeroContainer-muomhw-0 */
+.jKvNwM{position:relative;display:table;width:100%;height:400px;overflow:hidden;background-repeat:no-repeat;background-position:center;background-size:cover;}
+/* sc-component-id: Hero__TitleContainer-muomhw-1 */
+.eCwGRV{display:table-cell;vertical-align:middle;text-align:center;width:100%;}
+/* sc-component-id: Hero__HeroTitle-muomhw-2 */
+.cjpAmT{font-weight:700;font-size:3rem;margin:10px 60px;color:#ffffff;text-shadow:1px 1px 4px rgba(16,16,16,1);}
+/* sc-component-id: TagList__ListContainer-uooful-0 */
+.xudZF{display:inline;color:#697980;}
+/* sc-component-id: TagList__TagListItem-uooful-1 */
+.eljrwt{text-transform:uppercase;color:#697980;} .eljrwt:not(:first-child){margin-left:0.3rem;} .eljrwt:hover{border-bottom:1px dotted #57595d;} .eljrwt:before{content:'#';}
+/* sc-component-id: Bio__BioWrapper-sc-1f5ffr1-0 */
+.iFjAGq .author-image{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:block;position:absolute;top:-40px;left:50%;margin-left:-40px;width:80px;height:80px;border-radius:100%;overflow:hidden;padding:6px;z-index:2;box-shadow:#ececec 0 0 0 1px;background-color:#ffffff;} .iFjAGq .author-image .img{position:relative;display:block;width:100%;height:100%;background-size:cover;background-position:center center;border-radius:100%;} .iFjAGq .author-profile .author-image{position:relative;left:auto;top:auto;width:120px;height:120px;padding:3px;margin:-100px auto 0 auto;box-shadow:none;}
+/* sc-component-id: Bio__BioText-sc-1f5ffr1-1 */
+.gjkHtu{line-height:1.6;margin:1em 0 0 0;} .gjkHtu a{box-shadow:0 2px 0 0 #ffdc4e;} .gjkHtu a:hover{-webkit-filter:brightness(150%);filter:brightness(150%);box-shadow:none;}
+/* sc-component-id: ContentHeader__Header-sc-1cvyxd6-0 */
+.dIkKGb{margin-bottom:2rem;color:#57595d;font-size:0.9em;}
+/* sc-component-id: Content__ContentBody-sc-1fey3p2-0 */
+.cEuSYE{line-height:1.6;} .cEuSYE > h2{padding-top:3rem;margin-top:3rem;border-top:1px solid #ececec;} .cEuSYE > h3{padding-top:3rem;} .cEuSYE > p{margin:1em 0 0 0;} .cEuSYE a{box-shadow:0 2px 0 0 #ffdc4e;} .cEuSYE a:hover{-webkit-filter:brightness(150%);filter:brightness(150%);box-shadow:none;} .cEuSYE a.anchor,.cEuSYE a.gatsby-resp-image-link{box-shadow:none;} .cEuSYE > blockquote{box-sizing:border-box;background-color:#f7f7f7;border-left:5px solid rgb(244,213,36);margin:30px 0px;padding:5px 20px;border-radius:0 8px 8px 0;} .cEuSYE > blockquote p{margin:0.8em 0;font-style:italic;} .cEuSYE .gatsby-highlight{border-radius:5px;font-size:15px;line-height:1.7;border-radius:10px;overflow:auto;tab-size:1.5em;margin:1.5em 0em 1.5em 0;} .cEuSYE .gatsby-highlight > pre{border:0;margin:0;padding:1;} .cEuSYE .gatsby-highlight-code-line{background-color:#022a4b;display:block;margin-right:-1em;margin-left:-1em;padding-right:1em;padding-left:0.75em;border-left:0.25em solid #ffdc4e;} .cEuSYE h1 > code.language-text,.cEuSYE h2 > code.language-text,.cEuSYE h3 > code.language-text,.cEuSYE h4 > code.language-text,.cEuSYE h5 > code.language-text,.cEuSYE h6 > code.language-text,.cEuSYE a > code.language-text,.cEuSYE p > code.language-text,.cEuSYE li > code.language-text,.cEuSYE em > code.language-text,.cEuSYE strong > code.language-text{background:#fff9d9;color:#222222cc;padding:0 3px;font-size:0.94em;border-radius:0.3rem;word-wrap:break-word;} .cEuSYE code{white-space:pre-wrap;word-wrap:break-word;} .cEuSYE table{margin-top:1em;border-collapse:collapse;border-radius:0.5em;overflow:hidden;} .cEuSYE table th,.cEuSYE table td{padding:0.5em;background:#f7f7f7;border-bottom:2px solid #ffffff;}
+/* sc-component-id: Article__ArticleWrapper-sc-1ieqwvb-0 */
+.bgTXuI{padding:0 30px 30px;} @media only screen and (max-width:500px){.bgTXuI{padding:0;}}
+/* sc-component-id: Article__ArticleFooter-sc-1ieqwvb-1 */
+.kcmIPB{position:relative;margin:6rem 0 0;padding:3rem 0 0;border-top:1px solid #ececec;}</style><title data-react-helmet="true">Tipos de bases de datos | Dále Run</title><link data-react-helmet="true" href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;display=swap" rel="stylesheet"/><link data-react-helmet="true" rel="canonical" href="https://dalerun.com/tipos-de-bases-de-datos"/><meta data-react-helmet="true" name="description" content="Si le preguntas a un experto en el tema de la cerveza te dirá que es un error pensar que solamente puedes elegir entre la clara y la obscura…"/><meta data-react-helmet="true" property="og:url" content="https://dalerun.com/tipos-de-bases-de-datos"/><meta data-react-helmet="true" property="og:type" content="article"/><meta data-react-helmet="true" property="og:title" content="Tipos de bases de datos | Dále Run"/><meta data-react-helmet="true" property="og:description" content="Si le preguntas a un experto en el tema de la cerveza te dirá que es un error pensar que solamente puedes elegir entre la clara y la obscura…"/><meta data-react-helmet="true" property="og:image" content="https://dalerun.com/site-cover.png"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="codeninjalalo"/><meta data-react-helmet="true" name="twitter:title" content="Tipos de bases de datos | Dále Run"/><meta data-react-helmet="true" name="twitter:description" content="Si le preguntas a un experto en el tema de la cerveza te dirá que es un error pensar que solamente puedes elegir entre la clara y la obscura…"/><meta data-react-helmet="true" name="twitter:image" content="https://dalerun.com/site-cover.png"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="icon" href="/icons/icon-48x48.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#222222"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4223c2eac7782eb8296691ba4df26d03"/><link as="script" rel="preload" href="/webpack-runtime-0ca32662b7640fdc34ac.js"/><link as="script" rel="preload" href="/app-6edc3c2ee766f478822f.js"/><link as="script" rel="preload" href="/styles-d51cd31b28a7e87a52a7.js"/><link as="script" rel="preload" href="/commons-c83ef18ebdfd0c807c8d.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-27d65b3514090bde2cba.js"/><link as="fetch" rel="preload" href="/page-data/tipos-de-bases-de-datos/page-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><header class="Header__HeaderWrapper-h7migc-0 eRnGfb"><nav class="Header__HeaderNav-h7migc-1 chXYij"><a aria-label="View home page" class="Header__HeaderLink-h7migc-3 Header__HeaderLinkTitle-h7migc-4 bbXCFQ" href="/"><span class="Header__HeaderLinkTitleContent-h7migc-5 eURyMG">Dále Run</span></a><div class="Header__HeaderLinksContainer-h7migc-2 hkfMLs"><a aria-label="View Blog page" class="Header__HeaderLink-h7migc-3 bxPIHO" href="/">Blog</a><a aria-label="View Subscribirte page" class="Header__HeaderLink-h7migc-3 bxPIHO" href="/subscribirte">Subscribirte</a></div><button aria-label="open menu" class="Header__BurgerButton-h7migc-9 iwfyLn"><div class="Header__BurgerContent-h7migc-10 cnbeOt"></div></button></nav></header><div class="layout__SiteContent-sc-726pf8-0 fbGfHa"><div style="background-image:url(&quot;/static/56b0c3a9b8728448b6d03392fb97879c/a54c6/site-cover.png&quot;)" class="Hero__HeroContainer-muomhw-0 jKvNwM"><div class="Hero__TitleContainer-muomhw-1 eCwGRV"><h1 class="Hero__HeroTitle-muomhw-2 cjpAmT">Tipos de bases de datos</h1></div></div><main role="main" class="Wrapper-sc-1i6tdq5-0 fLXykm"><article class="Article__ArticleWrapper-sc-1ieqwvb-0 bgTXuI"><section><header class="ContentHeader__Header-sc-1cvyxd6-0 dIkKGb"><div class="TagList__ListContainer-uooful-0 xudZF"><a class="TagList__TagListItem-uooful-1 eljrwt" href="/tags/bases de datos">bases de datos</a>, <a class="TagList__TagListItem-uooful-1 eljrwt" href="/tags/fundamentos">fundamentos</a></div></header><div class="Content__ContentBody-sc-1fey3p2-0 cEuSYE"><p>Si le preguntas a un experto en el tema de la cerveza te dirá que es un error pensar que solamente puedes elegir entre la clara y la obscura. Algo similar pasaría con un experto en vino si le dices que sólo existen el tinto y el blanco.</p>
 <p>Pues en el camino a convertirte en un experto en bases de datos vas a descubrir que hay más de un tipo de bases de datos; de hecho, es un error muy común pensar que sólo existen las bases de datos relacionales y las no relacionales; o también se dice que hay bases de datos SQL y las no SQL.</p>
-
 <p>Vamos directamente al listado de opciones que tenemos hoy en día:</p>
-
 <ul>
-  <li>Relacionales o SQL</li>
-  <li>Documentales</li>
-  <li>Key-value</li>
-  <li>Familia de columnas</li>
-  <li>Grafos</li>
+<li>Relacionales o SQL</li>
+<li>Documentales</li>
+<li>Key-value</li>
+<li>Familia de columnas</li>
+<li>Grafos</li>
 </ul>
-
 <p>No está mal. Digo, no es una lista enorme. Ahora vamos a ver de forma general cada uno de los tipos que hay</p>
-
-<h2 id="bases-de-datos-relacionales">Bases de datos relacionales</h2>
-
+<h2>Bases de datos relacionales</h2>
 <p>Las bases de datos relacionales son las que tienen más tiempo sirviendo como la opción de cabecera. Hasta hace algunos años, de hecho, eran la única opción seria si querías desarrollar algo y no tener problemas al lanzar una aplicación muy grande.</p>
-
-<h3 id="cómo-guardan-la-información">¿Cómo guardan la información?</h3>
-
-<p><img src="/images/dbtypes_rel.png" alt=" " /></p>
-
+<h3>¿Cómo guardan la información?</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7a5fbfcd7b7549062759fb8e314925a2/b7c40/dbtypes_rel.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAACDElEQVQoz2VRy27TQBT1Z/AB/F0rsUdCCBYlDSkKoC6ogFZCArFh0bRJK0pTQh5N8WNiN7bHHs+MH3nYaevEiZNCF2bsFCRAOnM1Gt1zzzl3uNPqx9E6Rxuv+8Hs7XHh5eFjggnBGCIikDFwY8mZSjQU/QQcPIvznLN3zwtiWcdneMzxJx/8dQ7Vtpxe+Oao8LzyyDRMZBqKCltwKNoR8GJgj6UgAeWnixznllbcYCbraEl+f/GEo/VXw9Fsu7rx4vAhIYQSpowbWr8Jh0190IYDfpCASmGe45zSaka2UnKrVsLFO9rXbcu53Dna3DzIa9BUNShrSLAnTJYnYdsY1PE1v7u2yKfK3ihWYEYW6Vi0fAFfscup6Z90sEBClpZV5pmBZQbOhNkW9/P/KgN3xrbS8ebn/Z9y/wdPoyb0gTcH3iKtvbRKdij5iVTZmOY4e3fV8ae3mdPBbtxGwZ5QbyjGmep8k2Bdgu2u3e7SloIZRHwpBolSXktynL+/chHdqIhmtu1I7l1XZVT88qCjCZRQC1vsrywLYWwZhq5qGm+NgJ8I1Xf9rbvwcx55YwBtnk4ysreodUnx+L7UbRNkIUNnBxnQMhn1XFNVAYcsnWBH38mUJxFPrtgumeXftk3/E1/mdVMxPdl0FNOVMwCdAuiING3NOmd/cEtevirejWjHgj39G0xwtuz5H78AT8wb9NDIJzoAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/7a5fbfcd7b7549062759fb8e314925a2/dc2fe/dbtypes_rel.png"
+        srcset="/static/7a5fbfcd7b7549062759fb8e314925a2/fc8b9/dbtypes_rel.png 163w,
+/static/7a5fbfcd7b7549062759fb8e314925a2/d53b1/dbtypes_rel.png 325w,
+/static/7a5fbfcd7b7549062759fb8e314925a2/dc2fe/dbtypes_rel.png 650w,
+/static/7a5fbfcd7b7549062759fb8e314925a2/b7c40/dbtypes_rel.png 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>Este tipo de bases de datos almacena la información en forma de <strong>tablas</strong> que contienen <strong>columnas</strong> y <strong>filas</strong>. Las columnas representan los campos de información que cada registro debe tener y las filas representan los registros almacenados en cada tabla.</p>
-
 <p>Cada tabla representa una entidad de nuestra aplicación, es decir, cada cosa de la que nos interesa guardar información.</p>
-
 <p>Un detalle  muy característico de este tipo de bases de datos es que tienes que mezclar la información de las tablas mediante operaciones <strong>JOIN</strong> para poder componer de nuevo la información que existe entre dos o más tablas que almacenan información relacionada.</p>
-
-<h3 id="cómo-se-diseñan-los-datos">¿Cómo se diseñan los datos?</h3>
-
+<h3>¿Cómo se diseñan los datos?</h3>
 <p>Para diseñar la estructura de datos de tu aplicación con una de estas bases de datos lo más importante es tener en mente el <strong>principio de normalización</strong>, que básicamente nos dice que:</p>
-
 <blockquote>
-  <p>debemos mantener en una sóla tabla los datos de una sóla entidad.</p>
+<p>debemos mantener en una sóla tabla los datos de una sóla entidad.</p>
 </blockquote>
-
 <p>Esto significa, por ejemplo, que si estamos almacenando datos de dueños de mascotas, necesitamos una tabla llamada mascotas que solamente guarda información de los animales registrados; por otro lado, necesitamos una tabla llamada dueños con la información de las personas que son dueñas de las mascotas.</p>
-
 <p>Y aquí viene lo bueno ¿cómo sabemos quién es dueño de qué mascota? Y ¿cómo permitimos que la misma persona tenga registrado a más de un animalito?</p>
-
 <p>Para eso usamos otra tabla que puede llamarse dueños_mascotas que almacene la relación que existe entre una persona en la tabla dueños y un animalito en la tabla mascotas.</p>
-
 <p>Es una explicación muy simplificada y breve pero espero que ilustre el tema.</p>
-
-<h3 id="soluciones-de-este-tipo">Soluciones de este tipo</h3>
-
+<h3>Soluciones de este tipo</h3>
 <p>Aquí es donde probablemente tenemos las opciones con más tiempo en el mercado y cada una ofrece alguna ventaja o característica distintiva. Solamente por mencionar las más populares tenemos <a href="https://www.postgresql.org/">PostgreSQL</a>, <a href="">MySQL</a>, <a href="https://mariadb.org/">MariaDB</a>, <a href="https://www.microsoft.com/en-us/sql-server/">MSSQL Server</a>, <a href="https://www.sqlite.org/index.html">SQLite</a></p>
-
-<h2 id="bases-de-datos-de-familia-de-columnas">Bases de datos de familia de columnas</h2>
-
+<h2>Bases de datos de familia de columnas</h2>
 <p>Estas bases de datos permiten consultas muy rápidas sobre colecciones de datos inmensas y generalmente son la opción a elegir cuando se almacenan datos de forma tabular con una estructura irregular en soluciones de big data.</p>
-
-<h3 id="cómo-guardan-la-información-1">¿Cómo guardan la información?</h3>
-
-<p><img src="/images/dbtypes_fam.png" alt=" " /></p>
-
+<h3>¿Cómo guardan la información?</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f20f98aeb001fdc57e3b48f81939f42d/b7c40/dbtypes_fam.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAB9UlEQVQoz31Qv2/UMBjN3pGdCYmNkYGVkZmRjT+kQiw9xEARQ0GqRBESSGVAgg7lVDXXkORysWM7v+zYzc+76wmq45ILAomFL7mhC+Lp0+dny5/f89Nw2UbMvXxzu3p1a/HyhjzZRUw4tskYC8PQcRzolBLLsmzLYrSDaZo+JSYRGi7WcYAvD+/lr+8uDu7kX/dZfO5hl3MupUQICSGiKPJ6wEO+79u2HQa+SRIN5zWjJDl5IYbP+PFTZh0RGngYw1VCCO4JPFSWZVEUeZ5DB56eK8QLDZc/RTD5vbc139HqgVYNHzFRupMxqIHyeDyO47iqqrZt67puesBSr5ZBeqEhUPaZMN8J4218dhAgXapUJgk4BEGl1MY/zIPgRnk6m2WpQnEOym1IneX+zWz3+uL5Nfll4BBumQZ4hsx0Xcc9RqORYRiox6muQygG5l1gPKTfPz8sPzyYH97PnffEFx5GoBYEAQzAnyEz1gMIOLLhL2Fg+6oLjBJPHu/ER4/jT9vU+OixCGMEylmWgVswmmWd26IngKqaXgWW+M6fva1vA239RJsNtxGT5tlpIvjqx7JdN+um3vQrAr0LbA62axwp4hrUHXkTHRPq+tKh3AtVlE7jdPaPyuaRKlFyoXnl2s2bSfELyoXKYVt3J1ntpKv/FCqav4xpGdSOsDM+AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/f20f98aeb001fdc57e3b48f81939f42d/dc2fe/dbtypes_fam.png"
+        srcset="/static/f20f98aeb001fdc57e3b48f81939f42d/fc8b9/dbtypes_fam.png 163w,
+/static/f20f98aeb001fdc57e3b48f81939f42d/d53b1/dbtypes_fam.png 325w,
+/static/f20f98aeb001fdc57e3b48f81939f42d/dc2fe/dbtypes_fam.png 650w,
+/static/f20f98aeb001fdc57e3b48f81939f42d/b7c40/dbtypes_fam.png 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>En estas bases de datos los registros se almacenan en tablas dispersas cuyas filas pueden contener una cantidad arbitraria de columnas y que están indexadas de forma natural por un dato que sirve como <strong>key</strong> para la fila, o sea, todas las filas deben tener un mismo dato que sirva para identificar cada registro.</p>
-
-<h3 id="cómo-se-diseñan-los-datos-1">¿Cómo se diseñan los datos?</h3>
-
+<h3>¿Cómo se diseñan los datos?</h3>
 <p>Aquí debemos considerar que las columnas contienen piezas de información relacionada que pertenecen a cada fila.</p>
-
 <p>Las columnas dentro de la fila pueden asociarse entre sí pero se mantienen agrupadas dentro de su fila correspondiente.</p>
-
-<h3 id="soluciones-de-este-tipo-1">Soluciones de este tipo</h3>
-
+<h3>Soluciones de este tipo</h3>
 <p>El ejemplo más popular de este tipo es tal vez <a href="http://cassandra.apache.org/">CassandraDB</a> aunque no es la única. También podemos encontrarnos con otras como <a href="https://hbase.apache.org/">HBase</a>, <a href="http://druid.io/technology">Druid</a> o <a href="https://cloud.google.com/bigtable/">Bigtable</a>.</p>
-
-<h2 id="bases-de-datos-key-value">Bases de datos key-value</h2>
-
+<h2>Bases de datos key-value</h2>
 <p>Este tipo de base de datos están basadas en la simplicidad y generalmente están orientadas a responder consultas tan rápido como sea posible al mismo tiempo que tratan de ser muy tolerantes a las fallas.</p>
-
-<h3 id="cómo-guardan-la-información-2">¿Cómo guardan la información?</h3>
-
-<p><img src="/images/dbtypes_key.png" alt=" " /></p>
-
+<h3>¿Cómo guardan la información?</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/29a89ed33f2329a25f550447d9fe65eb/b7c40/dbtypes_key.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAAB2UlEQVQoz21S23LaMBDN/39H+9A2gMcXLAJxWoIbXHwRtq62sY0FFDJMSopJ+tCbVKDtdKpZvRzt2T27OhdR3QTlpztUgdtwwldhvY8WT5PysesmHSfQbnxwh2RCJJqwenjrs54Lg/w+nO+jen8BxcFjS855lmWEUpgLVK0cp6drLdPUDdNqtTt9F8ab7wETKWfFbJbwwi93UDSK/IGvKGMEY0RoWGyn4vNg6PaM1wO7fW13gPby3fAGiy1MEplSFjOUlpO/yYxzhBJEWCDR5Zf+yDdNowt6ANimdum44+TjISIpSpKyKHBa/SFL2ZiQOJ7CWI0Hl8/924ll6jZQR9f1/vt4uvnhU4FRwuRoOPPLR0WOfnXO85xzJjuH1U6RRyeyDa4s7c3wJDtG6H+y0zSVJRNMA1nyKNswgG0Num2788IZSdnPIck5Y3U9/5cs2xKCE0yiUi3sWi5MfzXotq6Aaej6QG57/S1gNSV4IQTOzjNL2fJ7GeOUUEQIzBeoWjsOMLRLw7JNC3Ta7b4bxuuvAZ0TjLKUy87+maxM4rGVR5eeMkmjTFLsPH7vpRsZY76eFA9wcfDz7ZjUYyL8bCMdokwiL6wb+XaMIyqr/kZUiOYMPqkQp7SfqXAjJTpDEB0AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/29a89ed33f2329a25f550447d9fe65eb/dc2fe/dbtypes_key.png"
+        srcset="/static/29a89ed33f2329a25f550447d9fe65eb/fc8b9/dbtypes_key.png 163w,
+/static/29a89ed33f2329a25f550447d9fe65eb/d53b1/dbtypes_key.png 325w,
+/static/29a89ed33f2329a25f550447d9fe65eb/dc2fe/dbtypes_key.png 650w,
+/static/29a89ed33f2329a25f550447d9fe65eb/b7c40/dbtypes_key.png 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>Estas bases de datos se conforman por grandes estructuras de datos distribuidas llamadas <strong>tablas hash</strong> que almacenan y recuperan los valores organizados por identificadores llamados <strong>keys</strong>.</p>
-
-<h3 id="cómo-se-diseñan-los-datos-2">¿Cómo se diseñan los datos?</h3>
-
+<h3>¿Cómo se diseñan los datos?</h3>
 <p>Toda la estrategia de diseño se basa en encontrar el dato que servirá como <strong>key</strong> para poder relacionar el resto de los datos de una entidad.</p>
-
 <p>Los datos almacenados deben mantenerse en estructuras tan simples como sea posible tomando en cuenta que las entidades no se relacionan entre sí, a diferencia de lo que se hace al modelar bases de datos relacionales.</p>
-
-<h3 id="soluciones-de-este-tipo-2">Soluciones de este tipo</h3>
-
+<h3>Soluciones de este tipo</h3>
 <p>Por lo general estas bases de datos ofrecen una gran facilidad de funcionamiento y configuración con una gran resistencia a fallas y un manejo muy rápido de grandes colecciones de datos. Algunas soluciones de este tipo son <a href="https://redis.io/">Redis</a>, <a href="https://aws.amazon.com/es/dynamodb/">DynamoDb</a> y <a href="https://memcached.org/">Memcached</a> por mencionar unas pocas.</p>
-
-<h2 id="bases-de-datos-documentales">Bases de datos documentales</h2>
-
+<h2>Bases de datos documentales</h2>
 <p>Estas bases de datos pueden ser muy diferentes entre sí ya que el tipo de datos que almacena cada una puede ser muy diferente. Se están convirtiendo en el estándar alternativo a las bases de datos relacionales para guardar grandes cantidades de datos de una aplicación.</p>
-
-<h3 id="cómo-guardan-la-información-3">¿Cómo guardan la información?</h3>
-
-<p><img src="/images/dbtypes_doc.png" alt=" " /></p>
-
+<h3>¿Cómo guardan la información?</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2ad2f0d051f7a5ff20d809efaf8c1465/b7c40/dbtypes_doc.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABm0lEQVQoz32S2Y6jMBBF8/8/NdKkCQRsAw3BYLPZGAIYCFvmeSrMqJWXbusKlWyOarl1cuVm4NCwkHHFhk1Mm5yv7pVrr3rC05eI3Kwgw/7NJgH+jBBr3Wo/vWALNUrpvu+7ru9aUJwJlE9etf8jIUDlFnApi4wz1jZ1lNd2sbzgi02AnOf5cZx5XgatUdK4kLzaPPX05PZBO5fmeZYmCauVpMXdzuf/MOQEbDoOBFprzFtP/cHFw0q6C71/RPdbpgbdq7oedU+L5ifYioTJ+kvc2ungyhWL3Y2LSgohKymFmwhUrt/Cv1D0O1RONsEPvnpiseEoj2gc3Ch8EauJ3H8qG5erGbdQs5m0Jh+gZ57EYRhC/vi9bJgyQOM0jQfdw8DYHXr21A4mQefnqHECxllSKTUMfZQDfEz7bKJRd+uyLPMDtC7zNAJ8TPuwylc7EjtY9ekSxlgK+bl0wCpYBiMoaSp42bCiBvGiibPK4e0XDFa9eqaC+GFAU+IHiJZwczp24Onki5PP7yJifd8wEC4XO5vsbARBDDd/AeClQAc/ZXs5AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/2ad2f0d051f7a5ff20d809efaf8c1465/dc2fe/dbtypes_doc.png"
+        srcset="/static/2ad2f0d051f7a5ff20d809efaf8c1465/fc8b9/dbtypes_doc.png 163w,
+/static/2ad2f0d051f7a5ff20d809efaf8c1465/d53b1/dbtypes_doc.png 325w,
+/static/2ad2f0d051f7a5ff20d809efaf8c1465/dc2fe/dbtypes_doc.png 650w,
+/static/2ad2f0d051f7a5ff20d809efaf8c1465/b7c40/dbtypes_doc.png 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>Aquí cada base de datos toma un enfoque diferente pero de forma simple podemos decir que en estas bases de datos la información se almacena en forma de documentos como si usaramos un archivero.</p>
-
 <p>Cada documento puede tener una estructura distinta entre sí y se pueden ordenar los datos de forma jerárquica prácticamente de la misma forma en la que organizamos los datos dentro de nuestros programas.</p>
-
 <p>Algunas bases de datos almacenan la información en formato <em>XML</em>, otras usan <em>JSON</em>, etc. La forma más común de identificar los documentos es por medio de un campo de <strong>ID</strong>.</p>
-
-<h3 id="cómo-se-diseñan-los-datos-3">¿Cómo se diseñan los datos?</h3>
-
+<h3>¿Cómo se diseñan los datos?</h3>
 <p>Aquí la estrategia para diseñar la base de datos consiste principalmente en identificar cómo se van a hacer las consultas de las entidades dentro de la aplicación. Si por ejemplo, en nuestra aplicación vamos a mostrar la información de facturas en una pantalla, lo más conveniente sería poner en cada documento la información completa de la factura junto con la información que necesitamos del cliente y de cada artículo vendido. Aquí se vale que los datos se repitan de forma redundante, ya que la idea detrás de la mayoría de estas bases de datos es que el almacenamiento suele ser más barato que el procesamiento.</p>
-
-<h3 id="soluciones-de-este-tipo-3">Soluciones de este tipo</h3>
-
+<h3>Soluciones de este tipo</h3>
 <p>Este tipo de bases de datos están gozando de mucha popularidad y hay muchas y muy buenas implementaciones con muy buen desempeño. Algunas opciones de este tipo son <a href="https://www.mongodb.com/">MongoDB</a>, <a href="http://couchdb.apache.org/">CouchDB</a> o <a href="http://basex.org/">Basex</a>.</p>
-
-<h2 id="bases-de-datos-de-grafos">Bases de datos de grafos.</h2>
-
+<h2>Bases de datos de grafos.</h2>
 <p>Estas bases de datos se han vuelto cada vez más populares con la creciente demanda que hay de analizar grandes cantidades de datos. Permiten hacer consultas de información que simplemente no conviene o no se pueden resolver de forma práctica con la tecnología de bases de datos relacionales.</p>
-
-<h3 id="cómo-guardan-la-información-4">¿Cómo guardan la información?</h3>
-
-<p><img src="/images/dbtypes_gra.png" alt=" " /></p>
-
+<h3>¿Cómo guardan la información?</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ddd1655700a40b7bd8169acb00cc27d3/b7c40/dbtypes_gra.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAABpklEQVQoz3VS2W7iQBDk/39n92FPCQGBNR5jTzBgz336CvESwPCatsluyEOkUqunpequKnsUm1NszyHfR7RE4jmxHXYXwMqcQtoAoMGuWxdX7K+IPXHtmfaINsAaJT2zpdLWZZELsyDNJLUPWY1IobTR2sDSed58+7P7nagNs0owJXimylC+ALlbkso7R0gOdYzFj2X+PWQp1ZwRLTkQxms3XduAtzHx1hhAwkpQNALZkXrBxEhtHpnD/gIKH/01orXUFobzVEX6GMnDCiqANxFroElu5AHnaWonqZtnFeyKzREWI9EOOIyx+jLFAXte6RPmNQDJA/h9I0MHi3+FZLLxK3OG5y3I/6tD0c62ZZwbLYXVCjMf6ffLPT+g+yAvMK/gIGQBk8HCBRqwsyD7JJM0zzglW+GROn4gw4dhXEImG6aXooVrX2frn4gu8nqelVAfNo7oMlcF4vt32YPIDtHKGr3bbpiQs63vObsyoE9I/o1UbzJxXSgOoTzcHN2TzxBDyp3xVUyL2HTDD9Mlro/gLYUh5ORfFnfkYQpOlryFVO/nn+EVxnI8GxMRUIYAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/ddd1655700a40b7bd8169acb00cc27d3/dc2fe/dbtypes_gra.png"
+        srcset="/static/ddd1655700a40b7bd8169acb00cc27d3/fc8b9/dbtypes_gra.png 163w,
+/static/ddd1655700a40b7bd8169acb00cc27d3/d53b1/dbtypes_gra.png 325w,
+/static/ddd1655700a40b7bd8169acb00cc27d3/dc2fe/dbtypes_gra.png 650w,
+/static/ddd1655700a40b7bd8169acb00cc27d3/b7c40/dbtypes_gra.png 960w"
+        sizes="(max-width: 650px) 100vw, 650px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>Estas bases de datos almacenan la información en una estructura de datos llamada <strong>grafo</strong>, que consiste en encapsular los datos en <strong>nodos</strong> junto con las relaciones que tienen los nodos entre sí.</p>
-
-<h3 id="cómo-se-diseñan-los-datos-4">¿Cómo se diseñan los datos?</h3>
-
+<h3>¿Cómo se diseñan los datos?</h3>
 <p>Cuando se trata de bases de datos de este tipo, lo que más importa es definir qué relaciones tienen los nodos entre sí e ir agregando más y más nodos y sus relaciones a medida que se van encontrando nuevas formas de relacionar los datos.</p>
-
-<h3 id="soluciones-de-este-tipo-4">Soluciones de este tipo</h3>
-
+<h3>Soluciones de este tipo</h3>
 <p>Existen varias bases de datos de este tipo con diferentes características a tomar en cuenta. Algunas de las más populares son: <a href="https://neo4j.com/">Neo4J</a>, <a href="https://orientdb.com/">OrientDB</a> y <a href="https://www.arangodb.com/">ArangoDB</a>.</p>
-
-<h2 id="conclusión">Conclusión</h2>
-
+<h2>Conclusión</h2>
 <p>Cómo puedes ver hay muchas tecnologías diferentes para resolver el problema de almacenar los datos de nuestra aplicación y no hay una respuesta inmediata a la pregunta ¿qué base de datos es mejor?. Hay que considerar las limitaciones y las ventajas que cada tipo de base de datos ofrece así como también las características que cada proveedor mantiene en sus productos. Pero eso será material para otro artículo.</p>
-
-<p>Espero que esta información te sea útil y recuerda que puedes <a href="https://www.dalerun.com/subscribirte">subscribirte</a> para no perderte de las actualizaciones del blog, y como siempre, puedes dejarme un saludo o decir lo que quieras a través de la página de <a href="https://www.dalerun.com/contacto">contacto</a>.</p>
-
-<div class="row">
-    <ul class="inline-list social-icons">
-        <li><a class="icon-twitter share-post-item" href="https://twitter.com/intent/tweet?text=Tipos de bases de datos&amp;url=https://www.dalerun.com/tipos-de-bases-de-datos/&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Compártelo en Twitter"></a></li>
-        <li><a class="icon-facebook share-post-item" href="https://facebook.com/sharer.php?u=https://www.dalerun.com/tipos-de-bases-de-datos/" rel="nofollow" target="_blank" title="Compártelo en Facebook"></a></li>
-        <li><a class="icon-linkedin share-post-item" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=/tipos-de-bases-de-datos/&amp;title=Tipos de bases de datos&amp;summary=Existen distintos tipos de bases de datos y hay más de un proveedor ofreciendo una solución de cada tipo, así que vale la pena revisar de forma general las opciones disponibles.&amp;source=dalerun.com" rel="nofollow" target="_blank" title="Compártelo en LinkedIn"></a></li>
-    </ul>
-</div>
-
-			</div>
-
-			
-						<div id="page-meta" class="t30">
-				<p>
-					<!-- Look the author details up from the site config. -->
-					
-					<!-- Output author details if some exist. -->
-					
-					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="http://dalerun.com/" target="_blank"> Eduardo Hernández Guerrero</a></span>
-				</span>
-				
-
-				
-				<time class="icon-calendar pr20" datetime="2019-02-22T00:00:00-06:00" itemprop="datePublished"> 2019-02-22</time>
-				
-
-				</span>
-				<br />
-				<span class="pr20"><span class="icon-price-tag pr10"> bases de datos</span> <span class="icon-price-tag pr10"> fundamentos</span> </span>
-			</p>
-
-			
-			<div id="post-nav" class="row">
-				
-				<div class="small-5 columns"><a class="button small radius prev" href="https://www.dalerun.com//empieza-a-usar-NPX/">&laquo; Empieza a usar npx hoy</a></div><!-- /.small-4.columns -->
-				
-				<div class="small-2 columns text-center"><a class="radius button small" href="https://www.dalerun.com//blog/archive/" title="Blog Archivo">Archivo</a></div><!-- /.small-4.columns -->
-				
-				<div class="small-5 columns text-right"><a class="button small radius next" href="https://www.dalerun.com//tres-formas-de-optimizar-el-uso-de-la-linea-de-comandos/">Tres formas de optimizar el uso de la línea de comandos &raquo;</a></div><!-- /.small-4.columns -->
-				
-			</div>
-			
-			</div><!--  /.page-meta -->
-
-			
-
-			
-		</article>
-	</div><!-- /.medium-8.columns -->
-
-
-	
-
-
-	
-</div><!-- /.row -->
-
-
-	
-	    <div id="up-to-top" class="row">
-      <div class="small-12 columns" style="text-align: right;">
-        <a class="iconfont" href="#top-of-page">&#xf108;</a>
-      </div><!-- /.small-12.columns -->
-    </div><!-- /.row -->
-
-
-    <footer id="footer-content" class="bg-grau">
-      <div id="footer">
-        <div class="row">
-          <div class="medium-6 large-5 columns">
-            <h5 class="shadow-black">Acerca de este sitio</h5>
-
-            <p class="shadow-black">
-              »Dále run« explica términos y herramientas de desarollo en español. Así es más fácil
-              <a href="https://www.dalerun.com//info/">Más ›</a>
-            </p>
-          </div><!-- /.large-6.columns -->
-
-
-          <div class="small-6 medium-3 large-3 large-offset-1 columns">
-            
-              
-                <h5 class="shadow-black">Servicios</h5>
-              
-            
-              
-            
-              
-            
-              
-            
-
-              <ul class="no-bullet shadow-black">
-              
-                
-                  <li >
-                    <a href="https://www.dalerun.com/"  title=""></a>
-                  </li>
-              
-                
-                  <li >
-                    <a href="https://www.dalerun.com//contacto/"  title="Contacto">Contacto</a>
-                  </li>
-              
-                
-                  <li >
-                    <a href="https://www.dalerun.com//feed.xml"  title="Suscríbete al RSS Feed">RSS</a>
-                  </li>
-              
-                
-                  <li >
-                    <a href="https://www.dalerun.com//sitemap.xml"  title="Mapa del sitio">sitemap.xml</a>
-                  </li>
-              
-              </ul>
-          </div><!-- /.large-4.columns -->
-
-
-          <div class="small-6 medium-3 large-3 columns">
-            
-
-            <ul class="no-bullet shadow-black">
-            
-            </ul>
-          </div><!-- /.large-3.columns -->
-        </div><!-- /.row -->
-
-      </div><!-- /#footer -->
-
-
-      <div id="subfooter">
-        <nav class="row">
-          <section id="subfooter-left" class="small-12 medium-6 columns credits">
-            Powered by: <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> | <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive Template</a>.</p>
-          </section>
-
-          <section id="subfooter-right" class="small-12 medium-6 columns">
-            <ul class="inline-list social-icons">
-            
-              <li><a href="https://github.com/lalitohg" target="_blank" class="icon-github" title="lalitohg"></a></li>
-            
-              <li><a href="https://twitter.com/codeninjalalo" target="_blank" class="icon-twitter" title="Últimas noticias en twitter"></a></li>
-            
-              <li><a href="https://www.linkedin.com/in/eduardo-hern%C3%A1ndez-568195a2/" target="_blank" class="icon-linkedin" title="LinkledIn"></a></li>
-            
-              <li><a href="http://www.facebook.com/eduardo.hernandezguerrero.58" target="_blank" class="icon-facebook" title="Facebook"></a></li>
-            
-            </ul>
-          </section>
-        </nav>
-      </div><!-- /#subfooter -->
-    </footer>
-
-	
-
-	
-
-
-<script src="https://www.dalerun.com//assets/js/javascript.min.js"></script>
-
-
-
-
-
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-135040717-1', 'auto');
-  ga('set', 'anonymizeIp', true);
-  ga('send', 'pageview');
-
-</script>
-
-
-
-
-
-
-
-
-</body>
-</html>
-
+<p>Espero que esta información te sea útil y recuerda que puedes <a href="%7B%7B%20site.url%20%7D%7D/subscribirte">subscribirte</a> para no perderte de las actualizaciones del blog, y como siempre, puedes dejarme un saludo o decir lo que quieras a través de la página de <a href="%7B%7B%20site.url%20%7D%7D/contacto">contacto</a>.</p></div></section><footer class="Article__ArticleFooter-sc-1ieqwvb-1 kcmIPB"><div class="Bio__BioWrapper-sc-1f5ffr1-0 iFjAGq"><figure class="author-image"><div alt="Eduardo Hernández Guerrero" style="background-image:url(&quot;/static/65ed3638782aa51a7ec8dfe8a55d8641/6d110/avatar.jpg&quot;)" class="img"></div></figure><section><h4>About the author</h4><p class="Commons__Text-sc-4jkj7v-1 Bio__BioText-sc-1f5ffr1-1 gjkHtu">
+  Eduardo es un nerd apasionado por la tecnología. Se ha dedicado a investigar y poner en práctica distintos lenguajes de programación desde los 16 años de edad y actualmente trabaja como ingeniero de software para empresas de USA y Canadá. Siempre disfruta compartiendo los resultados de sus experimentos tecnológicos con todos los que conoce y aprender algo más en el proceso.
+  </p></section></div></footer></article></main><main role="main" class="Wrapper-sc-1i6tdq5-0 fLXykm"><div id="disqus_thread"></div><p class="Commons__Text-sc-4jkj7v-1 bYGEVA">Read next:</p><ul><li><a class="Commons__StyledLink-sc-4jkj7v-0 cJSxMU" href="/tres-tips-para-escribir-mejor-codigo">Tres tips para escribir mejor código</a></li><li><a class="Commons__StyledLink-sc-4jkj7v-0 cJSxMU" href="/empieza-a-usar-npx-hoy">Empieza a usar npx hoy</a></li></ul></main></div><footer class="Footer__FooterWrapper-sc-26us4e-0 eHJGcr"><nav><div class="footer-col"><h5 class="footer-title">Eduardo Hernández Guerrero<!-- --> © <!-- -->2020</h5><p class="footer-item-text">Built with<!-- --> <a class="footer-link" href="https://www.gatsbyjs.org">Gatsby</a>.</p><p class="footer-item-text">Theme using<!-- --> <a class="footer-link" href="https://github.com/maxpou/gatsby-starter-morning-dew">gatsby-starter-morning-dew</a>.</p><p class="footer-item-text">Hosted with<!-- --> <span class="footer-heart" role="img" aria-label="Love">❤</span> <!-- -->by<!-- --> <a class="footer-link" href="https://github.com">GitHub</a>.</p></div><div class="footer-col"><h5 class="footer-title">Explorar</h5><span class="footer-item"><a class="footer-link" href="/">Blog</a></span><span class="footer-item"><a class="footer-link" href="/subscribirte">Subscribirte</a></span></div><div class="footer-col"><h5 class="footer-title">Sígueme</h5><span class="footer-item"><a class="footer-link" href="https://github.com/lalitohg">GitHub</a></span><span class="footer-item"><a class="footer-link" href="https://www.linkedin.com/in/eduardo-hern%C3%A1ndez-568195a2">LinkedIn</a></span><span class="footer-item"><a class="footer-link" href="https://twitter.com/codeninjalalo">Twitter</a></span><span class="footer-item"><a class="footer-link" href="https://web.facebook.com/eduardo.hernandezguerrero.58">Facebook</a></span></div></nav></footer></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-135040717-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/tipos-de-bases-de-datos";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-6edc3c2ee766f478822f.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-cf2fd0f92da7499f18b1.js"],"component---src-templates-blog-list-template-js":["/component---src-templates-blog-list-template-js-d785c32f2c511056413d.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-27d65b3514090bde2cba.js"],"component---src-templates-page-js":["/component---src-templates-page-js-c8c1bd0ab36f6e53b52d.js"],"component---src-templates-tags-js":["/component---src-templates-tags-js-6289afb09b36706b2972.js"],"component---src-pages-404-js":["/component---src-pages-404-js-3d66c7b9b8cef8e90368.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-27d65b3514090bde2cba.js" async=""></script><script src="/commons-c83ef18ebdfd0c807c8d.js" async=""></script><script src="/styles-d51cd31b28a7e87a52a7.js" async=""></script><script src="/app-6edc3c2ee766f478822f.js" async=""></script><script src="/webpack-runtime-0ca32662b7640fdc34ac.js" async=""></script></body></html>

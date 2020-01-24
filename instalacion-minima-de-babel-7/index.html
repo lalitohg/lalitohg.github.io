@@ -1,528 +1,123 @@
-<!doctype html>
-<html class="no-js" lang="es">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Instalación mínima de Babel 7</title>
-
-    <link rel="stylesheet" type="text/css" href="https://www.dalerun.com//assets/css/styles_feeling_responsive.css">
-
-  
-
-	<script src="https://www.dalerun.com//assets/js/modernizr.min.js"></script>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-	<script>
-		WebFont.load({
-			google: {
-				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
-			}
-		});
-	</script>
-
-	<noscript>
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
-	</noscript>
-
-
-	<!-- Search Engine Optimization -->
-	<meta name="description" content="Con Babel puedes usar la versión más reciente de JavaScript y traducir tu proyecto para hacerlo compatible con navegadores más antiguos.">
-	<meta name="google-site-verification" content="">
-	<meta name="msvalidate.01" content="" >
-	
-	<link rel="author" href="">
-	
-	
-	<link rel="canonical" href="https://www.dalerun.com//instalacion-minima-de-babel-7/">
-
-
-	<!-- Facebook Open Graph -->
-	<meta property="og:title" content="Instalación mínima de Babel 7">
-	<meta property="og:description" content="Con Babel puedes usar la versión más reciente de JavaScript y traducir tu proyecto para hacerlo compatible con navegadores más antiguos.">
-	<meta property="og:url" content="https://www.dalerun.com//instalacion-minima-de-babel-7/">
-	<meta property="og:locale" content="es_MX">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Dále run">
-	<meta property="og:image" content="https://www.dalerun.com/images/babel.png">
-	<meta property="article:author" content="https://www.facebook.com/eduardo.hernandezguerrero.58">
-
-
-	
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="codeninjalalo">
-	<meta name="twitter:creator" content="codeninjalalo">
-	<meta name="twitter:title" content="Instalación mínima de Babel 7">
-	<meta name="twitter:description" content="Con Babel puedes usar la versión más reciente de JavaScript y traducir tu proyecto para hacerlo compatible con navegadores más antiguos.">
-	<meta name="twitter:image" content="https://www.dalerun.com/images/babel.png">
-	
-
-	<link type="text/plain" rel="author" href="https://www.dalerun.com//humans.txt">
-
-	
-
-	
-
-	<link rel="icon" sizes="32x32" href="https://www.dalerun.com//assets/img/favicon-32x32.png">
-
-	<link rel="icon" sizes="192x192" href="https://www.dalerun.com//assets/img/touch-icon-192x192.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://www.dalerun.com//assets/img/apple-touch-icon-180x180-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.dalerun.com//assets/img/apple-touch-icon-152x152-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.dalerun.com//assets/img/apple-touch-icon-144x144-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.dalerun.com//assets/img/apple-touch-icon-120x120-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.dalerun.com//assets/img/apple-touch-icon-114x114-precomposed.png">
-
-	
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.dalerun.com//assets/img/apple-touch-icon-76x76-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.dalerun.com//assets/img/apple-touch-icon-72x72-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" href="https://www.dalerun.com//assets/img/apple-touch-icon-precomposed.png">	
-
-	<meta name="msapplication-TileImage" content="https://www.dalerun.com//assets/img/msapplication_tileimage.png">
-
-	<meta name="msapplication-TileColor" content="#fabb00">
-
-
-	
-
-</head>
-<body id="top-of-page" class="post">
-	
-	
-<div id="navigation" class="sticky">
-  <nav class="top-bar" role="navigation" data-topbar>
-    <ul class="title-area">
-      <li class="name">
-      <h1 class="show-for-small-only"><a href="https://www.dalerun.com/" class="icon-home"> Dále run</a></h1>
-    </li>
-       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
-    </ul>
-    <section class="top-bar-section">
-
-      <ul class="right">
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a  href="https://www.dalerun.com//search/">Buscar</a></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a  href="https://www.dalerun.com//contacto/">Contacto</a></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a  href="https://www.dalerun.com//subscribirte/">Subscribirte</a></li>
-
-            
-            
-          
-        
-        
-      </ul>
-
-      <ul class="left">
-        
-
-              
-
-          
-          
-
-            
-            
-              <li><a  href="https://www.dalerun.com//">Inicio</a></li>
-              <li class="divider"></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-
-            
-            
-
-              <li class="has-dropdown">
-                <a  href="https://www.dalerun.com//blog/">Blog</a>
-
-                  <ul class="dropdown">
-                    
-
-                      
-
-                      <li><a  href="https://www.dalerun.com//blog/archive/">Archivo</a></li>
-                    
-                  </ul>
-
-              </li>
-              <li class="divider"></li>
-            
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
-        
-      </ul>
-    </section>
-  </nav>
-</div><!-- /#navigation -->
-
-	
-
-	
-
-
-
-
-	<div class="row t30">
-	<div class="medium-8 columns medium-offset-2 end">
-		<article itemscope itemtype="http://schema.org/Article">
-			<header>
-				
-				<figure>
-					<img src="https://www.dalerun.com/images/babel.png" width="970" alt="Instalación mínima de Babel 7" itemprop="image">
-
-					
-				</figure>
-				
-
-				<div itemprop="name">
-					<p class="subheadline">Comienza a usar Babel 7 para transpilar tus proyectos JavaScript.</p>
-					<h1>Instalación mínima de Babel 7</h1>
-				</div>
-			</header>
-
-
-			
-			<p class="teaser" itemprop="description">
-				Con Babel puedes usar la versión más reciente de JavaScript y traducir tu proyecto para hacerlo compatible con navegadores más antiguos.
-			</p>
-			
-
-			<div itemprop="articleSection">
-			<p>La versión número 7 de babel ya está disponible desde hace algún tiempo y si vas a iniciar algún proyecto Javascript no puedes dejar pasar la oportunidad de probar esta versión.</p>
-
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.131b48b25a50eff60b34.css">code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 2.18.24"/><style data-styled="eRnGfb chXYij bbXCFQ eURyMG hkfMLs bxPIHO iwfyLn cnbeOt fbGfHa jKvNwM eCwGRV cjpAmT fLXykm bgTXuI dIkKGb xudZF eljrwt cEuSYE kcmIPB iFjAGq gjkHtu bYGEVA cJSxMU eHJGcr" data-styled-version="4.4.1">
+/* sc-component-id: Header__HeaderWrapper-h7migc-0 */
+.eRnGfb{top:0;left:0;margin:0 auto;display:block;width:100%;z-index:1000;background-color:rgba(32,35,42,0.85);font-weight:700;} @media (min-width:700px){.eRnGfb{position:fixed;}}
+/* sc-component-id: Header__HeaderNav-h7migc-1 */
+.chXYij{font-weight:700;margin-left:auto;margin-right:auto;height:60px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;max-width:770px;z-index:1000;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;overflow-x:auto;overflow-y:hidden;white-space:nowrap;padding:0px 20px;}
+/* sc-component-id: Header__HeaderLinksContainer-h7migc-2 */
+.hkfMLs{display:none;-webkit-box-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;} @media (min-width:700px){.hkfMLs{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}
+/* sc-component-id: Header__HeaderLink-h7migc-3 */
+.bxPIHO{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#ffffff;border:0;margin:0;padding:8px 10px;min-width:42px;z-index:10;} .bxPIHO + .Header__HeaderLink-h7migc-3{margin-left:0.7rem;}
+/* sc-component-id: Header__HeaderLinkTitle-h7migc-4 */
+.bbXCFQ{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#ffffff;border:0;margin:0;padding:8px 10px;min-width:42px;z-index:10;padding-left:0;} .bbXCFQ + .Header__HeaderLinkTitle-h7migc-4{margin-left:0.7rem;}
+/* sc-component-id: Header__HeaderLinkTitleContent-h7migc-5 */
+.eURyMG{display:block;padding-left:0;}
+/* sc-component-id: Header__BurgerButton-h7migc-9 */
+.iwfyLn{z-index:30;top:0px;position:relative;color:#ffffff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;background:transparent;border:none;cursor:pointer;padding:8px 12px;outline:none;-webkit-tap-highlight-color:transparent;} @media (min-width:700px){.iwfyLn{display:none;}}
+/* sc-component-id: Header__BurgerContent-h7migc-10 */
+.cnbeOt{width:24px;height:2px;background:#ffffff;position:absolute;left:0;background:#ffffff;-webkit-transition:all 250ms cubic-bezier(0.86,0,0.07,1);transition:all 250ms cubic-bezier(0.86,0,0.07,1);} .cnbeOt::before{content:'';top:-8px;width:24px;height:2px;background:#ffffff;position:absolute;left:0;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);-webkit-transition:all 250ms cubic-bezier(0.86,0,0.07,1);transition:all 250ms cubic-bezier(0.86,0,0.07,1);} .cnbeOt::after{top:8px;content:'';width:24px;height:2px;background:white;position:absolute;left:0;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);-webkit-transition:all 250ms cubic-bezier(0.86,0,0.07,1);transition:all 250ms cubic-bezier(0.86,0,0.07,1);}
+/* sc-component-id: Footer__FooterWrapper-sc-26us4e-0 */
+.eHJGcr{text-align:left;padding-top:30px;padding-bottom:50px;background-color:#3E4047;color:#ffffff;padding-left:20px;padding-right:20px;margin:0 auto;} .eHJGcr nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;max-width:900px;margin:0 auto;} .eHJGcr nav .footer-col{-webkit-flex:1 auto;-ms-flex:1 auto;flex:1 auto;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin-bottom:1em;padding-right:1em;} .eHJGcr a{color:#ffffff;font-weight:bold;} .eHJGcr a:hover{color:#CFCFD1;} .eHJGcr .footer-col > p{margin:0;} .eHJGcr .footer-title{margin:0 0 1rem;} .eHJGcr .footer-item{padding:0.25rem 0;color:#ffffff;} .eHJGcr .footer-heart{color:red;} .eHJGcr .footer-item-text{padding:0.1rem 0;color:#ffffff;} .eHJGcr .footer-header{-webkit-order:1;-ms-flex-order:1;order:1;margin:0 0.25rem;margin-right:0.25rem;padding:0.25rem;} @media (max-width:564px){.eHJGcr .footer-col:first-child{width:100%;}}
+/* sc-component-id: sc-global-2133546994 */
+*{box-sizing:border-box;margin:0;padding:0;} body{font-family:"Lato",sans-serif;color:#3E4047;background-color:#f4f8fb;} img{max-width:100%;height:auto;vertical-align:middle;border:0;} a{-webkit-text-decoration:none;text-decoration:none;color:#3E4047;} hr{border:0;border-top:1px solid #ECECED;margin:50px 0 5px 0;} ul,ol{padding-left:2em;margin:1em 0 0 0;} *::selection{background-color:#ffdc4e;}
+/* sc-component-id: Commons__StyledLink-sc-4jkj7v-0 */
+.cJSxMU{box-shadow:0 2px 0 0 #ffdc4e;} .cJSxMU:hover{-webkit-filter:brightness(150%);filter:brightness(150%);box-shadow:none;}
+/* sc-component-id: Commons__Text-sc-4jkj7v-1 */
+.bYGEVA{line-height:1.6;margin:1em 0 0 0;}
+/* sc-component-id: layout__SiteContent-sc-726pf8-0 */
+.fbGfHa{margin:0 0;} @media (min-width:700px){.fbGfHa{margin:60px 0;}}
+/* sc-component-id: Wrapper-sc-1i6tdq5-0 */
+.fLXykm{position:relative;border-radius:5px;width:80%;max-width:770px;word-wrap:break-word;background-color:#ffffff;margin:0px auto 30px auto;top:30px;padding:50px;box-shadow:0 0 0 0,0 6px 12px rgba(0,0,0,0.1);} @media (max-width:780px){.fLXykm{width:90%;padding:25px;}}
+/* sc-component-id: Hero__HeroContainer-muomhw-0 */
+.jKvNwM{position:relative;display:table;width:100%;height:400px;overflow:hidden;background-repeat:no-repeat;background-position:center;background-size:cover;}
+/* sc-component-id: Hero__TitleContainer-muomhw-1 */
+.eCwGRV{display:table-cell;vertical-align:middle;text-align:center;width:100%;}
+/* sc-component-id: Hero__HeroTitle-muomhw-2 */
+.cjpAmT{font-weight:700;font-size:3rem;margin:10px 60px;color:#ffffff;text-shadow:1px 1px 4px rgba(16,16,16,1);}
+/* sc-component-id: TagList__ListContainer-uooful-0 */
+.xudZF{display:inline;color:#697980;}
+/* sc-component-id: TagList__TagListItem-uooful-1 */
+.eljrwt{text-transform:uppercase;color:#697980;} .eljrwt:not(:first-child){margin-left:0.3rem;} .eljrwt:hover{border-bottom:1px dotted #57595d;} .eljrwt:before{content:'#';}
+/* sc-component-id: Bio__BioWrapper-sc-1f5ffr1-0 */
+.iFjAGq .author-image{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:block;position:absolute;top:-40px;left:50%;margin-left:-40px;width:80px;height:80px;border-radius:100%;overflow:hidden;padding:6px;z-index:2;box-shadow:#ececec 0 0 0 1px;background-color:#ffffff;} .iFjAGq .author-image .img{position:relative;display:block;width:100%;height:100%;background-size:cover;background-position:center center;border-radius:100%;} .iFjAGq .author-profile .author-image{position:relative;left:auto;top:auto;width:120px;height:120px;padding:3px;margin:-100px auto 0 auto;box-shadow:none;}
+/* sc-component-id: Bio__BioText-sc-1f5ffr1-1 */
+.gjkHtu{line-height:1.6;margin:1em 0 0 0;} .gjkHtu a{box-shadow:0 2px 0 0 #ffdc4e;} .gjkHtu a:hover{-webkit-filter:brightness(150%);filter:brightness(150%);box-shadow:none;}
+/* sc-component-id: ContentHeader__Header-sc-1cvyxd6-0 */
+.dIkKGb{margin-bottom:2rem;color:#57595d;font-size:0.9em;}
+/* sc-component-id: Content__ContentBody-sc-1fey3p2-0 */
+.cEuSYE{line-height:1.6;} .cEuSYE > h2{padding-top:3rem;margin-top:3rem;border-top:1px solid #ececec;} .cEuSYE > h3{padding-top:3rem;} .cEuSYE > p{margin:1em 0 0 0;} .cEuSYE a{box-shadow:0 2px 0 0 #ffdc4e;} .cEuSYE a:hover{-webkit-filter:brightness(150%);filter:brightness(150%);box-shadow:none;} .cEuSYE a.anchor,.cEuSYE a.gatsby-resp-image-link{box-shadow:none;} .cEuSYE > blockquote{box-sizing:border-box;background-color:#f7f7f7;border-left:5px solid rgb(244,213,36);margin:30px 0px;padding:5px 20px;border-radius:0 8px 8px 0;} .cEuSYE > blockquote p{margin:0.8em 0;font-style:italic;} .cEuSYE .gatsby-highlight{border-radius:5px;font-size:15px;line-height:1.7;border-radius:10px;overflow:auto;tab-size:1.5em;margin:1.5em 0em 1.5em 0;} .cEuSYE .gatsby-highlight > pre{border:0;margin:0;padding:1;} .cEuSYE .gatsby-highlight-code-line{background-color:#022a4b;display:block;margin-right:-1em;margin-left:-1em;padding-right:1em;padding-left:0.75em;border-left:0.25em solid #ffdc4e;} .cEuSYE h1 > code.language-text,.cEuSYE h2 > code.language-text,.cEuSYE h3 > code.language-text,.cEuSYE h4 > code.language-text,.cEuSYE h5 > code.language-text,.cEuSYE h6 > code.language-text,.cEuSYE a > code.language-text,.cEuSYE p > code.language-text,.cEuSYE li > code.language-text,.cEuSYE em > code.language-text,.cEuSYE strong > code.language-text{background:#fff9d9;color:#222222cc;padding:0 3px;font-size:0.94em;border-radius:0.3rem;word-wrap:break-word;} .cEuSYE code{white-space:pre-wrap;word-wrap:break-word;} .cEuSYE table{margin-top:1em;border-collapse:collapse;border-radius:0.5em;overflow:hidden;} .cEuSYE table th,.cEuSYE table td{padding:0.5em;background:#f7f7f7;border-bottom:2px solid #ffffff;}
+/* sc-component-id: Article__ArticleWrapper-sc-1ieqwvb-0 */
+.bgTXuI{padding:0 30px 30px;} @media only screen and (max-width:500px){.bgTXuI{padding:0;}}
+/* sc-component-id: Article__ArticleFooter-sc-1ieqwvb-1 */
+.kcmIPB{position:relative;margin:6rem 0 0;padding:3rem 0 0;border-top:1px solid #ececec;}</style><title data-react-helmet="true">Instalación mínima de Babel 7 | Dále Run</title><link data-react-helmet="true" href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;display=swap" rel="stylesheet"/><link data-react-helmet="true" rel="canonical" href="https://dalerun.com/instalacion-minima-de-babel-7"/><meta data-react-helmet="true" name="description" content="La versión número 7 de babel ya está disponible desde hace algún tiempo y si vas a iniciar algún proyecto Javascript no puedes dejar pasar…"/><meta data-react-helmet="true" property="og:url" content="https://dalerun.com/instalacion-minima-de-babel-7"/><meta data-react-helmet="true" property="og:type" content="article"/><meta data-react-helmet="true" property="og:title" content="Instalación mínima de Babel 7 | Dále Run"/><meta data-react-helmet="true" property="og:description" content="La versión número 7 de babel ya está disponible desde hace algún tiempo y si vas a iniciar algún proyecto Javascript no puedes dejar pasar…"/><meta data-react-helmet="true" property="og:image" content="https://dalerun.com/site-cover.png"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="codeninjalalo"/><meta data-react-helmet="true" name="twitter:title" content="Instalación mínima de Babel 7 | Dále Run"/><meta data-react-helmet="true" name="twitter:description" content="La versión número 7 de babel ya está disponible desde hace algún tiempo y si vas a iniciar algún proyecto Javascript no puedes dejar pasar…"/><meta data-react-helmet="true" name="twitter:image" content="https://dalerun.com/site-cover.png"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="icon" href="/icons/icon-48x48.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#222222"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4223c2eac7782eb8296691ba4df26d03"/><link as="script" rel="preload" href="/webpack-runtime-0ca32662b7640fdc34ac.js"/><link as="script" rel="preload" href="/app-6edc3c2ee766f478822f.js"/><link as="script" rel="preload" href="/styles-d51cd31b28a7e87a52a7.js"/><link as="script" rel="preload" href="/commons-c83ef18ebdfd0c807c8d.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-27d65b3514090bde2cba.js"/><link as="fetch" rel="preload" href="/page-data/instalacion-minima-de-babel-7/page-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><header class="Header__HeaderWrapper-h7migc-0 eRnGfb"><nav class="Header__HeaderNav-h7migc-1 chXYij"><a aria-label="View home page" class="Header__HeaderLink-h7migc-3 Header__HeaderLinkTitle-h7migc-4 bbXCFQ" href="/"><span class="Header__HeaderLinkTitleContent-h7migc-5 eURyMG">Dále Run</span></a><div class="Header__HeaderLinksContainer-h7migc-2 hkfMLs"><a aria-label="View Blog page" class="Header__HeaderLink-h7migc-3 bxPIHO" href="/">Blog</a><a aria-label="View Subscribirte page" class="Header__HeaderLink-h7migc-3 bxPIHO" href="/subscribirte">Subscribirte</a></div><button aria-label="open menu" class="Header__BurgerButton-h7migc-9 iwfyLn"><div class="Header__BurgerContent-h7migc-10 cnbeOt"></div></button></nav></header><div class="layout__SiteContent-sc-726pf8-0 fbGfHa"><div style="background-image:url(&quot;/static/56b0c3a9b8728448b6d03392fb97879c/a54c6/site-cover.png&quot;)" class="Hero__HeroContainer-muomhw-0 jKvNwM"><div class="Hero__TitleContainer-muomhw-1 eCwGRV"><h1 class="Hero__HeroTitle-muomhw-2 cjpAmT">Instalación mínima de Babel 7</h1></div></div><main role="main" class="Wrapper-sc-1i6tdq5-0 fLXykm"><article class="Article__ArticleWrapper-sc-1ieqwvb-0 bgTXuI"><section><header class="ContentHeader__Header-sc-1cvyxd6-0 dIkKGb"><div class="TagList__ListContainer-uooful-0 xudZF"><a class="TagList__TagListItem-uooful-1 eljrwt" href="/tags/javascript">javascript</a>, <a class="TagList__TagListItem-uooful-1 eljrwt" href="/tags/babel">babel</a></div></header><div class="Content__ContentBody-sc-1fey3p2-0 cEuSYE"><p>La versión número 7 de babel ya está disponible desde hace algún tiempo y si vas a iniciar algún proyecto Javascript no puedes dejar pasar la oportunidad de probar esta versión.</p>
 <p>Lo más común es instalar Babel y algunos <strong>plugins</strong> específicos para que otras herramientas puedan tomar tu código ES6 y entenderlo para manipularlo o para exportarlo junto con cualquier otro recurso que necesite tu proyecto.</p>
-
 <p>Veamos como instalar Babel 7 con los <strong>plugins</strong> mínimos necesarios para traducir tu código ES6 a versiones compatibles con navegadores más viejos.</p>
-
-<h2 id="instalación--mínima">Instalación  mínima</h2>
-
-<p>Ahora con la versión 7 de babel los nombres de muchos <strong>plugins</strong> han cambiado un poco y hay una nueva versión del core de Babel. En general, los nombres de paquetes han cambiado de babel-<paquete> a @babel/<paquete>.</paquete></paquete></p>
-
+<h2>Instalación  mínima</h2>
+<p>Ahora con la versión 7 de babel los nombres de muchos <strong>plugins</strong> han cambiado un poco y hay una nueva versión del core de Babel. En general, los nombres de paquetes han cambiado de babel-<strong>paquete</strong> a @babel/<strong>paquete</strong>.</p>
 <p>Para tener lo mínimo necesario para traducir código ES6 a versiones compatibles primero hay que instalar unos cuantos módulos:</p>
-
-<p><code class="highlighter-rouge">npm i -D @babel/core @babel/cli @babel/preset-env @babel/register</code></p>
-
-<p><code class="highlighter-rouge">npm i @babel/polyfill core-js</code></p>
-
+<p><code class="language-text">npm i -D @babel/core @babel/cli @babel/preset-env @babel/register</code></p>
+<p><code class="language-text">npm i @babel/polyfill core-js</code></p>
 <p>Esto es suficiente para que puedas pasar tu código ES6 a una versión compatible con ES5 o anteriores.</p>
-
 <p>Aquí hay que notar que en versiones anteriores es común encontrar varios <strong>preset</strong>, y ahora solamente necesitas instalar @babel/preset-env y eso es todo.</p>
-
-<h2 id="configuración-mínima">Configuración mínima</h2>
-
+<h2>Configuración mínima</h2>
 <p>Lo mejor es tener un archivo de configuración que puedas modificar según tus necesidades.</p>
-
 <p>Como mínimo necesitas crear un archivo llamado babel.config.js y agregar el siguiente contenido:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> presets <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+        <span class="token string">"@babel/env"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            targets<span class="token operator">:</span> <span class="token punctuation">{</span>
+                edge<span class="token operator">:</span> <span class="token string">"17"</span><span class="token punctuation">,</span>
+                firefox<span class="token operator">:</span> <span class="token string">"32"</span><span class="token punctuation">,</span>
+                chrome<span class="token operator">:</span> <span class="token string">"50"</span><span class="token punctuation">,</span>
+                safari<span class="token operator">:</span> <span class="token string">"6.0"</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            useBuiltIns<span class="token operator">:</span> <span class="token string">"usage"</span><span class="token punctuation">,</span>
+            corejs<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kr">const</span> <span class="nx">presets</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">[</span>
-        <span class="s2">"@babel/env"</span><span class="p">,</span>
-        <span class="p">{</span>
-            <span class="na">targets</span><span class="p">:</span> <span class="p">{</span>
-                <span class="na">edge</span><span class="p">:</span> <span class="s2">"17"</span><span class="p">,</span>
-                <span class="na">firefox</span><span class="p">:</span> <span class="s2">"32"</span><span class="p">,</span>
-                <span class="na">chrome</span><span class="p">:</span> <span class="s2">"50"</span><span class="p">,</span>
-                <span class="na">safari</span><span class="p">:</span> <span class="s2">"6.0"</span><span class="p">,</span>
-            <span class="p">},</span>
-            <span class="na">useBuiltIns</span><span class="p">:</span> <span class="s2">"usage"</span><span class="p">,</span>
-            <span class="na">corejs</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-        <span class="p">},</span>
-    <span class="p">],</span>
-<span class="p">];</span>
-
-<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">presets</span> <span class="p">};</span></code></pre></figure>
-
-<p>Nota: Las versiones de la sección <strong>“targets”</strong> son un ejemplo arbitrario. Esto si lo vas a tener que ajustar según las necesidades reales de tu proyecto. Además, puede ser un ejemplo completamente obsoleto para cuando leas este artículo.</p>
-
-<h2 id="probando-el-ambiente">Probando el ambiente</h2>
-
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span> presets <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<p>Nota: Las versiones de la sección <strong>"targets"</strong> son un ejemplo arbitrario. Esto si lo vas a tener que ajustar según las necesidades reales de tu proyecto. Además, puede ser un ejemplo completamente obsoleto para cuando leas este artículo.</p>
+<h2>Probando el ambiente</h2>
 <p>Ahora solamente verificamos que nuestra nueva instalación de Babel 7 está lista para ser usada por otros procesos.</p>
-
 <p>Empecemos creando un archivo llamado <strong>index.js</strong> en la raíz del proyecto y pongamos algo de código ES6 dentro:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">cb</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">cb</span><span class="token punctuation">(</span><span class="token string">'Hola'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="nx">cb</span><span class="p">(</span><span class="s1">'Hola'</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="nx">foo</span><span class="p">((</span><span class="nx">param</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">param</span><span class="p">)});</span></code></pre></figure>
-
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">param</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>param<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <p>Ahora vamos a dejar que Babel haga lo suyo y que nos muestre el código transformado ejecutando:</p>
+<p><code class="language-text">npx babel index.js</code></p>
+<p>Debemos ver una salida en consola como esto: </p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token string">"use strict"</span><span class="token punctuation">;</span>
 
-<p><code class="highlighter-rouge">npx babel index.js</code></p>
+<span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">cb</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">cb</span><span class="token punctuation">(</span><span class="token string">'Hola'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
 
-<p>Debemos ver una salida en consola como esto:</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="s2">"use strict"</span><span class="p">;</span>
-
-<span class="kd">function</span> <span class="nx">foo</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="nx">cb</span><span class="p">(</span><span class="s1">'Hola'</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="nx">foo</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">param</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">param</span><span class="p">);</span>
-<span class="p">});</span></code></pre></figure>
-
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">param</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>param<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <p>Listo. Con esto comprobamos que Babel es capaz de tomar un código escrito en ES6 y transformarlo en su equivalente ES5 o anteriores. La configuración depende de las necesidades específicas de tu proyecto y las herramientas con las que Babel tenga que interactuar, como webpack, mocha, istambul, etc.</p>
-
-<h2 id="qué-sigue">¿Qué sigue?</h2>
-
+<h2>¿Qué sigue?</h2>
 <p>Con esta configuración básica es suficiente para que puedas iniciar tu proyecto JavaScript completamente en la versión ES6 o más recientes. En otros artículos voy a describir cómo podemos complementar esta configuración básica para integrar otras herramientas de uso común como mocha (ejecutar pruebas unitarias) o webpack (para empacar tu proyecto en un único script, por ejemplo).</p>
-
-<p>Espero que te sirva esta información y como siempre, si tienes algo que te gustaría comentar, puedes usar la <a href="https://www.dalerun.com/contacto">página de contacto</a> y si te interesa enterarte del nuevo contenido que se va publicando puedes <a href="https://www.dalerun.com/subscribirte">subscribirte</a>.</p>
-
-			</div>
-
-			
-						<div id="page-meta" class="t30">
-				<p>
-					<!-- Look the author details up from the site config. -->
-					
-					<!-- Output author details if some exist. -->
-					
-					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="http://dalerun.com/" target="_blank"> Eduardo Hernández Guerrero</a></span>
-				</span>
-				
-
-				
-				<time class="icon-calendar pr20" datetime="2019-06-12T00:00:00-05:00" itemprop="datePublished"> 2019-06-12</time>
-				
-
-				</span>
-				<br />
-				<span class="pr20"><span class="icon-price-tag pr10"> javascript</span> <span class="icon-price-tag pr10"> babel</span> </span>
-			</p>
-
-			
-			<div id="post-nav" class="row">
-				
-				<div class="small-5 columns"><a class="button small radius prev" href="https://www.dalerun.com//conoce-los-terminos-comunes-en-git/">&laquo; Conoce los términos comunes empleados con GIT.</a></div><!-- /.small-4.columns -->
-				
-				<div class="small-2 columns text-center"><a class="radius button small" href="https://www.dalerun.com//blog/archive/" title="Blog Archivo">Archivo</a></div><!-- /.small-4.columns -->
-				
-				<div class="small-5 columns text-right"></div><!-- /.small-4.columns -->
-				
-			</div>
-			
-			</div><!--  /.page-meta -->
-
-			
-
-			
-		</article>
-	</div><!-- /.medium-8.columns -->
-
-
-	
-
-
-	
-</div><!-- /.row -->
-
-
-	
-	    <div id="up-to-top" class="row">
-      <div class="small-12 columns" style="text-align: right;">
-        <a class="iconfont" href="#top-of-page">&#xf108;</a>
-      </div><!-- /.small-12.columns -->
-    </div><!-- /.row -->
-
-
-    <footer id="footer-content" class="bg-grau">
-      <div id="footer">
-        <div class="row">
-          <div class="medium-6 large-5 columns">
-            <h5 class="shadow-black">Acerca de este sitio</h5>
-
-            <p class="shadow-black">
-              »Dále run« explica términos y herramientas de desarollo en español. Así es más fácil
-              <a href="https://www.dalerun.com//info/">Más ›</a>
-            </p>
-          </div><!-- /.large-6.columns -->
-
-
-          <div class="small-6 medium-3 large-3 large-offset-1 columns">
-            
-              
-                <h5 class="shadow-black">Servicios</h5>
-              
-            
-              
-            
-              
-            
-              
-            
-
-              <ul class="no-bullet shadow-black">
-              
-                
-                  <li >
-                    <a href="https://www.dalerun.com/"  title=""></a>
-                  </li>
-              
-                
-                  <li >
-                    <a href="https://www.dalerun.com//contacto/"  title="Contacto">Contacto</a>
-                  </li>
-              
-                
-                  <li >
-                    <a href="https://www.dalerun.com//feed.xml"  title="Suscríbete al RSS Feed">RSS</a>
-                  </li>
-              
-                
-                  <li >
-                    <a href="https://www.dalerun.com//sitemap.xml"  title="Mapa del sitio">sitemap.xml</a>
-                  </li>
-              
-              </ul>
-          </div><!-- /.large-4.columns -->
-
-
-          <div class="small-6 medium-3 large-3 columns">
-            
-
-            <ul class="no-bullet shadow-black">
-            
-            </ul>
-          </div><!-- /.large-3.columns -->
-        </div><!-- /.row -->
-
-      </div><!-- /#footer -->
-
-
-      <div id="subfooter">
-        <nav class="row">
-          <section id="subfooter-left" class="small-12 medium-6 columns credits">
-            Powered by: <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> | <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive Template</a>.</p>
-          </section>
-
-          <section id="subfooter-right" class="small-12 medium-6 columns">
-            <ul class="inline-list social-icons">
-            
-              <li><a href="https://github.com/lalitohg" target="_blank" class="icon-github" title="lalitohg"></a></li>
-            
-              <li><a href="https://twitter.com/codeninjalalo" target="_blank" class="icon-twitter" title="Últimas noticias en twitter"></a></li>
-            
-              <li><a href="https://www.linkedin.com/in/eduardo-hern%C3%A1ndez-568195a2/" target="_blank" class="icon-linkedin" title="LinkledIn"></a></li>
-            
-              <li><a href="http://www.facebook.com/eduardo.hernandezguerrero.58" target="_blank" class="icon-facebook" title="Facebook"></a></li>
-            
-            </ul>
-          </section>
-        </nav>
-      </div><!-- /#subfooter -->
-    </footer>
-
-	
-
-	
-
-
-<script src="https://www.dalerun.com//assets/js/javascript.min.js"></script>
-
-
-
-
-
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-135040717-1', 'auto');
-  ga('set', 'anonymizeIp', true);
-  ga('send', 'pageview');
-
-</script>
-
-
-
-
-
-
-
-
-</body>
-</html>
-
+<p>Espero que te sirva esta información y como siempre, si tienes algo que te gustaría comentar, puedes usar la <a href="%7B%7B%20site.url%20%7D%7D/contacto">página de contacto</a> y si te interesa enterarte del nuevo contenido que se va publicando puedes <a href="%7B%7B%20site.url%20%7D%7D/subscribirte">subscribirte</a>.</p></div></section><footer class="Article__ArticleFooter-sc-1ieqwvb-1 kcmIPB"><div class="Bio__BioWrapper-sc-1f5ffr1-0 iFjAGq"><figure class="author-image"><div alt="Eduardo Hernández Guerrero" style="background-image:url(&quot;/static/65ed3638782aa51a7ec8dfe8a55d8641/6d110/avatar.jpg&quot;)" class="img"></div></figure><section><h4>About the author</h4><p class="Commons__Text-sc-4jkj7v-1 Bio__BioText-sc-1f5ffr1-1 gjkHtu">
+  Eduardo es un nerd apasionado por la tecnología. Se ha dedicado a investigar y poner en práctica distintos lenguajes de programación desde los 16 años de edad y actualmente trabaja como ingeniero de software para empresas de USA y Canadá. Siempre disfruta compartiendo los resultados de sus experimentos tecnológicos con todos los que conoce y aprender algo más en el proceso.
+  </p></section></div></footer></article></main><main role="main" class="Wrapper-sc-1i6tdq5-0 fLXykm"><div id="disqus_thread"></div><p class="Commons__Text-sc-4jkj7v-1 bYGEVA">Read next:</p><ul><li><a class="Commons__StyledLink-sc-4jkj7v-0 cJSxMU" href="/conoce-los-terminos-comunes-empleados-con-git">Conoce los términos comunes empleados con GIT.</a></li><li><a class="Commons__StyledLink-sc-4jkj7v-0 cJSxMU" href="/tres-tips-para-escribir-mejor-codigo">Tres tips para escribir mejor código</a></li></ul></main></div><footer class="Footer__FooterWrapper-sc-26us4e-0 eHJGcr"><nav><div class="footer-col"><h5 class="footer-title">Eduardo Hernández Guerrero<!-- --> © <!-- -->2020</h5><p class="footer-item-text">Built with<!-- --> <a class="footer-link" href="https://www.gatsbyjs.org">Gatsby</a>.</p><p class="footer-item-text">Theme using<!-- --> <a class="footer-link" href="https://github.com/maxpou/gatsby-starter-morning-dew">gatsby-starter-morning-dew</a>.</p><p class="footer-item-text">Hosted with<!-- --> <span class="footer-heart" role="img" aria-label="Love">❤</span> <!-- -->by<!-- --> <a class="footer-link" href="https://github.com">GitHub</a>.</p></div><div class="footer-col"><h5 class="footer-title">Explorar</h5><span class="footer-item"><a class="footer-link" href="/">Blog</a></span><span class="footer-item"><a class="footer-link" href="/subscribirte">Subscribirte</a></span></div><div class="footer-col"><h5 class="footer-title">Sígueme</h5><span class="footer-item"><a class="footer-link" href="https://github.com/lalitohg">GitHub</a></span><span class="footer-item"><a class="footer-link" href="https://www.linkedin.com/in/eduardo-hern%C3%A1ndez-568195a2">LinkedIn</a></span><span class="footer-item"><a class="footer-link" href="https://twitter.com/codeninjalalo">Twitter</a></span><span class="footer-item"><a class="footer-link" href="https://web.facebook.com/eduardo.hernandezguerrero.58">Facebook</a></span></div></nav></footer></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-135040717-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/instalacion-minima-de-babel-7";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-6edc3c2ee766f478822f.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-cf2fd0f92da7499f18b1.js"],"component---src-templates-blog-list-template-js":["/component---src-templates-blog-list-template-js-d785c32f2c511056413d.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-27d65b3514090bde2cba.js"],"component---src-templates-page-js":["/component---src-templates-page-js-c8c1bd0ab36f6e53b52d.js"],"component---src-templates-tags-js":["/component---src-templates-tags-js-6289afb09b36706b2972.js"],"component---src-pages-404-js":["/component---src-pages-404-js-3d66c7b9b8cef8e90368.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-27d65b3514090bde2cba.js" async=""></script><script src="/commons-c83ef18ebdfd0c807c8d.js" async=""></script><script src="/styles-d51cd31b28a7e87a52a7.js" async=""></script><script src="/app-6edc3c2ee766f478822f.js" async=""></script><script src="/webpack-runtime-0ca32662b7640fdc34ac.js" async=""></script></body></html>

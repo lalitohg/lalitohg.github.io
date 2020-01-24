@@ -1,610 +1,205 @@
-<!doctype html>
-<html class="no-js" lang="es">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Variables en javascript</title>
-
-    <link rel="stylesheet" type="text/css" href="https://www.dalerun.com//assets/css/styles_feeling_responsive.css">
-
-  
-
-	<script src="https://www.dalerun.com//assets/js/modernizr.min.js"></script>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-	<script>
-		WebFont.load({
-			google: {
-				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
-			}
-		});
-	</script>
-
-	<noscript>
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
-	</noscript>
-
-
-	<!-- Search Engine Optimization -->
-	<meta name="description" content="El uso correcto de variables en el código es fundamental para un desarrollador">
-	<meta name="google-site-verification" content="">
-	<meta name="msvalidate.01" content="" >
-	
-	<link rel="author" href="">
-	
-	
-	<link rel="canonical" href="https://www.dalerun.com//variables-en-js/">
-
-
-	<!-- Facebook Open Graph -->
-	<meta property="og:title" content="Variables en javascript">
-	<meta property="og:description" content="El uso correcto de variables en el código es fundamental para un desarrollador">
-	<meta property="og:url" content="https://www.dalerun.com//variables-en-js/">
-	<meta property="og:locale" content="es_MX">
-	<meta property="og:type" content="website">
-	<meta property="og:site_name" content="Dále run">
-	<meta property="og:image" content="https://www.dalerun.com/images/office-header-30530-1024x300.jpg">
-	<meta property="article:author" content="https://www.facebook.com/eduardo.hernandezguerrero.58">
-
-
-	
-	<!-- Twitter -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="codeninjalalo">
-	<meta name="twitter:creator" content="codeninjalalo">
-	<meta name="twitter:title" content="Variables en javascript">
-	<meta name="twitter:description" content="El uso correcto de variables en el código es fundamental para un desarrollador">
-	<meta name="twitter:image" content="https://www.dalerun.com/images/office-header-30530-1024x300.jpg">
-	
-
-	<link type="text/plain" rel="author" href="https://www.dalerun.com//humans.txt">
-
-	
-
-	
-
-	<link rel="icon" sizes="32x32" href="https://www.dalerun.com//assets/img/favicon-32x32.png">
-
-	<link rel="icon" sizes="192x192" href="https://www.dalerun.com//assets/img/touch-icon-192x192.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://www.dalerun.com//assets/img/apple-touch-icon-180x180-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.dalerun.com//assets/img/apple-touch-icon-152x152-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.dalerun.com//assets/img/apple-touch-icon-144x144-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.dalerun.com//assets/img/apple-touch-icon-120x120-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.dalerun.com//assets/img/apple-touch-icon-114x114-precomposed.png">
-
-	
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.dalerun.com//assets/img/apple-touch-icon-76x76-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.dalerun.com//assets/img/apple-touch-icon-72x72-precomposed.png">
-
-	<link rel="apple-touch-icon-precomposed" href="https://www.dalerun.com//assets/img/apple-touch-icon-precomposed.png">	
-
-	<meta name="msapplication-TileImage" content="https://www.dalerun.com//assets/img/msapplication_tileimage.png">
-
-	<meta name="msapplication-TileColor" content="#fabb00">
-
-
-	
-
-</head>
-<body id="top-of-page" class="post">
-	
-	
-<div id="navigation" class="sticky">
-  <nav class="top-bar" role="navigation" data-topbar>
-    <ul class="title-area">
-      <li class="name">
-      <h1 class="show-for-small-only"><a href="https://www.dalerun.com/" class="icon-home"> Dále run</a></h1>
-    </li>
-       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
-    </ul>
-    <section class="top-bar-section">
-
-      <ul class="right">
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a  href="https://www.dalerun.com//search/">Buscar</a></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a  href="https://www.dalerun.com//contacto/">Contacto</a></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-            
-            
-              <li class="divider"></li>
-              <li><a  href="https://www.dalerun.com//subscribirte/">Subscribirte</a></li>
-
-            
-            
-          
-        
-        
-      </ul>
-
-      <ul class="left">
-        
-
-              
-
-          
-          
-
-            
-            
-              <li><a  href="https://www.dalerun.com//">Inicio</a></li>
-              <li class="divider"></li>
-
-            
-            
-          
-        
-
-              
-
-          
-          
-
-            
-            
-
-              <li class="has-dropdown">
-                <a  href="https://www.dalerun.com//blog/">Blog</a>
-
-                  <ul class="dropdown">
-                    
-
-                      
-
-                      <li><a  href="https://www.dalerun.com//blog/archive/">Archivo</a></li>
-                    
-                  </ul>
-
-              </li>
-              <li class="divider"></li>
-            
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
-
-              
-
-          
-          
-        
-        
-      </ul>
-    </section>
-  </nav>
-</div><!-- /#navigation -->
-
-	
-
-	
-
-
-
-
-	<div class="row t30">
-	<div class="medium-8 columns medium-offset-2 end">
-		<article itemscope itemtype="http://schema.org/Article">
-			<header>
-				
-				<figure>
-					<img src="https://www.dalerun.com/images/office-header-30530-1024x300.jpg" width="970" alt="Variables en javascript" itemprop="image">
-
-					
-				</figure>
-				
-
-				<div itemprop="name">
-					<p class="subheadline">Qué son y como usar las variables en JS</p>
-					<h1>Variables en javascript</h1>
-				</div>
-			</header>
-
-
-			
-			<p class="teaser" itemprop="description">
-				El uso correcto de variables en el código es fundamental para un desarrollador
-			</p>
-			
-
-			<div itemprop="articleSection">
-			<p>Las variables son un elemento esencial de un programa. Hasta el código más pequeño necesita hacer buen uso de variables para ser claro y funcional.</p>
-
-<h2 id="qué-son">¿Qué son?</h2>
-
+<!DOCTYPE html><html lang="es"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.131b48b25a50eff60b34.css">code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 2.18.24"/><style data-styled="eRnGfb chXYij bbXCFQ eURyMG hkfMLs bxPIHO iwfyLn cnbeOt fbGfHa jKvNwM eCwGRV cjpAmT fLXykm bgTXuI dIkKGb dTvBBf xudZF eljrwt cEuSYE kcmIPB iFjAGq gjkHtu bYGEVA cJSxMU eHJGcr" data-styled-version="4.4.1">
+/* sc-component-id: Header__HeaderWrapper-h7migc-0 */
+.eRnGfb{top:0;left:0;margin:0 auto;display:block;width:100%;z-index:1000;background-color:rgba(32,35,42,0.85);font-weight:700;} @media (min-width:700px){.eRnGfb{position:fixed;}}
+/* sc-component-id: Header__HeaderNav-h7migc-1 */
+.chXYij{font-weight:700;margin-left:auto;margin-right:auto;height:60px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;max-width:770px;z-index:1000;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;overflow-x:auto;overflow-y:hidden;white-space:nowrap;padding:0px 20px;}
+/* sc-component-id: Header__HeaderLinksContainer-h7migc-2 */
+.hkfMLs{display:none;-webkit-box-align:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;} @media (min-width:700px){.hkfMLs{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}}
+/* sc-component-id: Header__HeaderLink-h7migc-3 */
+.bxPIHO{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#ffffff;border:0;margin:0;padding:8px 10px;min-width:42px;z-index:10;} .bxPIHO + .Header__HeaderLink-h7migc-3{margin-left:0.7rem;}
+/* sc-component-id: Header__HeaderLinkTitle-h7migc-4 */
+.bbXCFQ{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#ffffff;border:0;margin:0;padding:8px 10px;min-width:42px;z-index:10;padding-left:0;} .bbXCFQ + .Header__HeaderLinkTitle-h7migc-4{margin-left:0.7rem;}
+/* sc-component-id: Header__HeaderLinkTitleContent-h7migc-5 */
+.eURyMG{display:block;padding-left:0;}
+/* sc-component-id: Header__BurgerButton-h7migc-9 */
+.iwfyLn{z-index:30;top:0px;position:relative;color:#ffffff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;background:transparent;border:none;cursor:pointer;padding:8px 12px;outline:none;-webkit-tap-highlight-color:transparent;} @media (min-width:700px){.iwfyLn{display:none;}}
+/* sc-component-id: Header__BurgerContent-h7migc-10 */
+.cnbeOt{width:24px;height:2px;background:#ffffff;position:absolute;left:0;background:#ffffff;-webkit-transition:all 250ms cubic-bezier(0.86,0,0.07,1);transition:all 250ms cubic-bezier(0.86,0,0.07,1);} .cnbeOt::before{content:'';top:-8px;width:24px;height:2px;background:#ffffff;position:absolute;left:0;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);-webkit-transition:all 250ms cubic-bezier(0.86,0,0.07,1);transition:all 250ms cubic-bezier(0.86,0,0.07,1);} .cnbeOt::after{top:8px;content:'';width:24px;height:2px;background:white;position:absolute;left:0;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);-webkit-transition:all 250ms cubic-bezier(0.86,0,0.07,1);transition:all 250ms cubic-bezier(0.86,0,0.07,1);}
+/* sc-component-id: Footer__FooterWrapper-sc-26us4e-0 */
+.eHJGcr{text-align:left;padding-top:30px;padding-bottom:50px;background-color:#3E4047;color:#ffffff;padding-left:20px;padding-right:20px;margin:0 auto;} .eHJGcr nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-align-items:flex-start;-webkit-box-align:flex-start;-ms-flex-align:flex-start;align-items:flex-start;max-width:900px;margin:0 auto;} .eHJGcr nav .footer-col{-webkit-flex:1 auto;-ms-flex:1 auto;flex:1 auto;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;margin-bottom:1em;padding-right:1em;} .eHJGcr a{color:#ffffff;font-weight:bold;} .eHJGcr a:hover{color:#CFCFD1;} .eHJGcr .footer-col > p{margin:0;} .eHJGcr .footer-title{margin:0 0 1rem;} .eHJGcr .footer-item{padding:0.25rem 0;color:#ffffff;} .eHJGcr .footer-heart{color:red;} .eHJGcr .footer-item-text{padding:0.1rem 0;color:#ffffff;} .eHJGcr .footer-header{-webkit-order:1;-ms-flex-order:1;order:1;margin:0 0.25rem;margin-right:0.25rem;padding:0.25rem;} @media (max-width:564px){.eHJGcr .footer-col:first-child{width:100%;}}
+/* sc-component-id: sc-global-2133546994 */
+*{box-sizing:border-box;margin:0;padding:0;} body{font-family:"Lato",sans-serif;color:#3E4047;background-color:#f4f8fb;} img{max-width:100%;height:auto;vertical-align:middle;border:0;} a{-webkit-text-decoration:none;text-decoration:none;color:#3E4047;} hr{border:0;border-top:1px solid #ECECED;margin:50px 0 5px 0;} ul,ol{padding-left:2em;margin:1em 0 0 0;} *::selection{background-color:#ffdc4e;}
+/* sc-component-id: Commons__StyledLink-sc-4jkj7v-0 */
+.cJSxMU{box-shadow:0 2px 0 0 #ffdc4e;} .cJSxMU:hover{-webkit-filter:brightness(150%);filter:brightness(150%);box-shadow:none;}
+/* sc-component-id: Commons__Text-sc-4jkj7v-1 */
+.bYGEVA{line-height:1.6;margin:1em 0 0 0;}
+/* sc-component-id: Commons__Bull-sc-4jkj7v-2 */
+.dTvBBf{display:inline-block;color:#697980;margin:0 4px;} .dTvBBf::before{content:'•';}
+/* sc-component-id: layout__SiteContent-sc-726pf8-0 */
+.fbGfHa{margin:0 0;} @media (min-width:700px){.fbGfHa{margin:60px 0;}}
+/* sc-component-id: Wrapper-sc-1i6tdq5-0 */
+.fLXykm{position:relative;border-radius:5px;width:80%;max-width:770px;word-wrap:break-word;background-color:#ffffff;margin:0px auto 30px auto;top:30px;padding:50px;box-shadow:0 0 0 0,0 6px 12px rgba(0,0,0,0.1);} @media (max-width:780px){.fLXykm{width:90%;padding:25px;}}
+/* sc-component-id: Hero__HeroContainer-muomhw-0 */
+.jKvNwM{position:relative;display:table;width:100%;height:400px;overflow:hidden;background-repeat:no-repeat;background-position:center;background-size:cover;}
+/* sc-component-id: Hero__TitleContainer-muomhw-1 */
+.eCwGRV{display:table-cell;vertical-align:middle;text-align:center;width:100%;}
+/* sc-component-id: Hero__HeroTitle-muomhw-2 */
+.cjpAmT{font-weight:700;font-size:3rem;margin:10px 60px;color:#ffffff;text-shadow:1px 1px 4px rgba(16,16,16,1);}
+/* sc-component-id: TagList__ListContainer-uooful-0 */
+.xudZF{display:inline;color:#697980;}
+/* sc-component-id: TagList__TagListItem-uooful-1 */
+.eljrwt{text-transform:uppercase;color:#697980;} .eljrwt:not(:first-child){margin-left:0.3rem;} .eljrwt:hover{border-bottom:1px dotted #57595d;} .eljrwt:before{content:'#';}
+/* sc-component-id: Bio__BioWrapper-sc-1f5ffr1-0 */
+.iFjAGq .author-image{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:block;position:absolute;top:-40px;left:50%;margin-left:-40px;width:80px;height:80px;border-radius:100%;overflow:hidden;padding:6px;z-index:2;box-shadow:#ececec 0 0 0 1px;background-color:#ffffff;} .iFjAGq .author-image .img{position:relative;display:block;width:100%;height:100%;background-size:cover;background-position:center center;border-radius:100%;} .iFjAGq .author-profile .author-image{position:relative;left:auto;top:auto;width:120px;height:120px;padding:3px;margin:-100px auto 0 auto;box-shadow:none;}
+/* sc-component-id: Bio__BioText-sc-1f5ffr1-1 */
+.gjkHtu{line-height:1.6;margin:1em 0 0 0;} .gjkHtu a{box-shadow:0 2px 0 0 #ffdc4e;} .gjkHtu a:hover{-webkit-filter:brightness(150%);filter:brightness(150%);box-shadow:none;}
+/* sc-component-id: ContentHeader__Header-sc-1cvyxd6-0 */
+.dIkKGb{margin-bottom:2rem;color:#57595d;font-size:0.9em;}
+/* sc-component-id: Content__ContentBody-sc-1fey3p2-0 */
+.cEuSYE{line-height:1.6;} .cEuSYE > h2{padding-top:3rem;margin-top:3rem;border-top:1px solid #ececec;} .cEuSYE > h3{padding-top:3rem;} .cEuSYE > p{margin:1em 0 0 0;} .cEuSYE a{box-shadow:0 2px 0 0 #ffdc4e;} .cEuSYE a:hover{-webkit-filter:brightness(150%);filter:brightness(150%);box-shadow:none;} .cEuSYE a.anchor,.cEuSYE a.gatsby-resp-image-link{box-shadow:none;} .cEuSYE > blockquote{box-sizing:border-box;background-color:#f7f7f7;border-left:5px solid rgb(244,213,36);margin:30px 0px;padding:5px 20px;border-radius:0 8px 8px 0;} .cEuSYE > blockquote p{margin:0.8em 0;font-style:italic;} .cEuSYE .gatsby-highlight{border-radius:5px;font-size:15px;line-height:1.7;border-radius:10px;overflow:auto;tab-size:1.5em;margin:1.5em 0em 1.5em 0;} .cEuSYE .gatsby-highlight > pre{border:0;margin:0;padding:1;} .cEuSYE .gatsby-highlight-code-line{background-color:#022a4b;display:block;margin-right:-1em;margin-left:-1em;padding-right:1em;padding-left:0.75em;border-left:0.25em solid #ffdc4e;} .cEuSYE h1 > code.language-text,.cEuSYE h2 > code.language-text,.cEuSYE h3 > code.language-text,.cEuSYE h4 > code.language-text,.cEuSYE h5 > code.language-text,.cEuSYE h6 > code.language-text,.cEuSYE a > code.language-text,.cEuSYE p > code.language-text,.cEuSYE li > code.language-text,.cEuSYE em > code.language-text,.cEuSYE strong > code.language-text{background:#fff9d9;color:#222222cc;padding:0 3px;font-size:0.94em;border-radius:0.3rem;word-wrap:break-word;} .cEuSYE code{white-space:pre-wrap;word-wrap:break-word;} .cEuSYE table{margin-top:1em;border-collapse:collapse;border-radius:0.5em;overflow:hidden;} .cEuSYE table th,.cEuSYE table td{padding:0.5em;background:#f7f7f7;border-bottom:2px solid #ffffff;}
+/* sc-component-id: Article__ArticleWrapper-sc-1ieqwvb-0 */
+.bgTXuI{padding:0 30px 30px;} @media only screen and (max-width:500px){.bgTXuI{padding:0;}}
+/* sc-component-id: Article__ArticleFooter-sc-1ieqwvb-1 */
+.kcmIPB{position:relative;margin:6rem 0 0;padding:3rem 0 0;border-top:1px solid #ececec;}</style><style data-styled="tBtPR" data-styled-version="4.4.1">
+/* sc-component-id: Time__TimeContainer-sc-1gfv70c-0 */
+.tBtPR{color:#697980;}</style><title data-react-helmet="true">Variables en javascript | Dále Run</title><link data-react-helmet="true" href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;display=swap" rel="stylesheet"/><link data-react-helmet="true" rel="canonical" href="https://dalerun.com/variables-en-js"/><meta data-react-helmet="true" name="description" content="Las variables son un elemento esencial de un programa. Hasta el código más pequeño necesita hacer buen uso de variables para ser claro y…"/><meta data-react-helmet="true" property="og:url" content="https://dalerun.com/variables-en-js"/><meta data-react-helmet="true" property="og:type" content="article"/><meta data-react-helmet="true" property="og:title" content="Variables en javascript | Dále Run"/><meta data-react-helmet="true" property="og:description" content="Las variables son un elemento esencial de un programa. Hasta el código más pequeño necesita hacer buen uso de variables para ser claro y…"/><meta data-react-helmet="true" property="og:image" content="https://dalerun.comhttp://doma.in"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="codeninjalalo"/><meta data-react-helmet="true" name="twitter:title" content="Variables en javascript | Dále Run"/><meta data-react-helmet="true" name="twitter:description" content="Las variables son un elemento esencial de un programa. Hasta el código más pequeño necesita hacer buen uso de variables para ser claro y…"/><meta data-react-helmet="true" name="twitter:image" content="https://dalerun.comhttp://doma.in"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="icon" href="/icons/icon-48x48.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#222222"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4223c2eac7782eb8296691ba4df26d03"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4223c2eac7782eb8296691ba4df26d03"/><link as="script" rel="preload" href="/webpack-runtime-0ca32662b7640fdc34ac.js"/><link as="script" rel="preload" href="/app-6edc3c2ee766f478822f.js"/><link as="script" rel="preload" href="/styles-d51cd31b28a7e87a52a7.js"/><link as="script" rel="preload" href="/commons-c83ef18ebdfd0c807c8d.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-27d65b3514090bde2cba.js"/><link as="fetch" rel="preload" href="/page-data/variables-en-js/page-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><header class="Header__HeaderWrapper-h7migc-0 eRnGfb"><nav class="Header__HeaderNav-h7migc-1 chXYij"><a aria-label="View home page" class="Header__HeaderLink-h7migc-3 Header__HeaderLinkTitle-h7migc-4 bbXCFQ" href="/"><span class="Header__HeaderLinkTitleContent-h7migc-5 eURyMG">Dále Run</span></a><div class="Header__HeaderLinksContainer-h7migc-2 hkfMLs"><a aria-label="View Blog page" class="Header__HeaderLink-h7migc-3 bxPIHO" href="/">Blog</a><a aria-label="View Subscribirte page" class="Header__HeaderLink-h7migc-3 bxPIHO" href="/subscribirte">Subscribirte</a></div><button aria-label="open menu" class="Header__BurgerButton-h7migc-9 iwfyLn"><div class="Header__BurgerContent-h7migc-10 cnbeOt"></div></button></nav></header><div class="layout__SiteContent-sc-726pf8-0 fbGfHa"><div style="background-image:url(&quot;/static/56b0c3a9b8728448b6d03392fb97879c/a54c6/site-cover.png&quot;)" class="Hero__HeroContainer-muomhw-0 jKvNwM"><div class="Hero__TitleContainer-muomhw-1 eCwGRV"><h1 class="Hero__HeroTitle-muomhw-2 cjpAmT">Variables en javascript</h1></div></div><main role="main" class="Wrapper-sc-1i6tdq5-0 fLXykm"><article class="Article__ArticleWrapper-sc-1ieqwvb-0 bgTXuI"><section><header class="ContentHeader__Header-sc-1cvyxd6-0 dIkKGb"><time class="Time__TimeContainer-sc-1gfv70c-0 tBtPR">December 2, 2018</time><span class="Commons__Bull-sc-4jkj7v-2 dTvBBf"></span><div class="TagList__ListContainer-uooful-0 xudZF"><a class="TagList__TagListItem-uooful-1 eljrwt" href="/tags/javascript">javascript</a>, <a class="TagList__TagListItem-uooful-1 eljrwt" href="/tags/fundamentos">fundamentos</a>, <a class="TagList__TagListItem-uooful-1 eljrwt" href="/tags/programacion">programacion</a></div></header><div class="Content__ContentBody-sc-1fey3p2-0 cEuSYE"><p>Las variables son un elemento esencial de un programa. Hasta el código más pequeño necesita hacer buen uso de variables para ser claro y funcional.</p>
+<h2>¿Qué son?</h2>
 <p>Podemos pensar en las variables como contenedores que nos van a ayudar a identificar y almacenar la información que nuestros programas van a manipular.</p>
-
 <p>Siendo más técnicos, las variables son una relación entre un dato almacenado en la memoria del programa y un nombre que identifica a ese dato en el código del programa. Básicamente es como ponerle tu nombre al envase donde guardas tu comida para poder encontrarlo después dentro del refrigerador de la oficina</p>
-
-<p><img src="/images/office_fridge.jpeg" alt=" " /></p>
-
-<h2 id="para-qué-sirven">¿Para qué sirven?</h2>
-
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 299px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b194c8d7c57706b4a995013a9c07a88d/ee0c5/office_fridge.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.18729096989967%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAEyNkVCRP/EABoQAQACAwEAAAAAAAAAAAAAAAIBAwAREzH/2gAIAQEAAQUC6nOo1DGosRtnyuxQf//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AVf/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFH/8QAHBAAAQMFAAAAAAAAAAAAAAAAAAEhYQIQEjFR/9oACAEBAAY/ApFyblmWCs2f/8QAHRABAAICAgMAAAAAAAAAAAAAAQAhETFBUWGRsf/aAAgBAQABPyHYBpWSFgFwOY/R9QY2/EfVe68zBDEJ/9oADAMBAAIAAwAAABBoP//EABYRAQEBAAAAAAAAAAAAAAAAAAEAIf/aAAgBAwEBPxAcm//EABYRAAMAAAAAAAAAAAAAAAAAABARQf/aAAgBAgEBPxBQf//EABwQAQADAAIDAAAAAAAAAAAAAAEAESExUUFhcf/aAAgBAQABPxC0bBaxTGUU7Dvz1kANvsWxoQnSD8bFbjhcNga5FABk/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt=" "
+        title=" "
+        src="/static/b194c8d7c57706b4a995013a9c07a88d/ee0c5/office_fridge.jpg"
+        srcset="/static/b194c8d7c57706b4a995013a9c07a88d/e7722/office_fridge.jpg 163w,
+/static/b194c8d7c57706b4a995013a9c07a88d/ee0c5/office_fridge.jpg 299w"
+        sizes="(max-width: 299px) 100vw, 299px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>¿Para qué sirven?</h2>
 <p>La pregunta ahora tal vez sea ¿para qué sirven? Es decir, ya sé que son una forma de identificar pedazos de información dentro del código y también sé que ocupan un lugar dentro de la memoria del programa, aún así eso no me deja claro qué uso darles.</p>
-
 <p>Pues bien. Las variables sirven a más de un propósito dentro de tu código:</p>
-
 <ul>
-  <li>Te ayudan a separar la información dentro del código de forma que sea más manejable</li>
-  <li>hacen que la lectura de tu código sea más sencilla</li>
-  <li>te ayudan a depurar (hacer debug) tu código cuando algo no te queda claro de la ejecución de tu programa o tratas de arreglar un bug.</li>
+<li>Te ayudan a separar la información dentro del código de forma que sea más manejable</li>
+<li>hacen que la lectura de tu código sea más sencilla</li>
+<li>te ayudan a depurar (hacer debug) tu código cuando algo no te queda claro de la ejecución de tu programa o tratas de arreglar un bug.</li>
 </ul>
-
 <p>Veamos cómo nos ayudan las variables con este programa de ejemplo. El propósito del programa es almacenar un texto para luego transformarlo todo a minúsculas. Vamos a imaginar que pueden haber muchas más operaciones entre el momento de transformar el texto y el momento de mostrar la comparación entre el texto original y su transformación.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> originalText <span class="token operator">=</span> <span class="token string">"Hola mundo"</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> lowerCaseText <span class="token operator">=</span> originalText<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">originalText</span> <span class="o">=</span> <span class="s2">"Hola mundo"</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">lowerCaseText</span> <span class="o">=</span> <span class="nx">originalText</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
+<span class="token comment">//imagina que aqui hay como 50 lineas más de fabuloso código</span>
 
-<span class="c1">//imagina que aqui hay como 50 lineas más de fabuloso código</span>
+lowerCaseText <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
 
-<span class="nx">lowerCaseText</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Texto original"</span><span class="p">,</span> <span class="nx">originalText</span><span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Texto en minúsculas"</span><span class="p">,</span> <span class="nx">originalText</span><span class="p">);</span></code></pre></figure>
-
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Texto original"</span><span class="token punctuation">,</span> originalText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Texto en minúsculas"</span><span class="token punctuation">,</span> originalText<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <p>Con este ejemplo de código podemos ver como el uso de las variables nos está ayudando aún en un programa tan cortito.</p>
+<p>Primero. Nos está ayudando a tener disponible la información que necesitamos ya que <code class="language-text">originalText</code> y <code class="language-text">lowerCaseText</code> nos ofrecen una forma breve de recuperar la información que contienen incluso después de haber escrito muchas líneas de código en el programa.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> originalText <span class="token operator">=</span> <span class="token string">"Hola mundo"</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> lowerCaseText <span class="token operator">=</span> originalText<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-<p>Primero. Nos está ayudando a tener disponible la información que necesitamos ya que <code class="highlighter-rouge">originalText</code> y <code class="highlighter-rouge">lowerCaseText</code> nos ofrecen una forma breve de recuperar la información que contienen incluso después de haber escrito muchas líneas de código en el programa.</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">originalText</span> <span class="o">=</span> <span class="s2">"Hola mundo"</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">lowerCaseText</span> <span class="o">=</span> <span class="nx">originalText</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span>
-
-<span class="c1">//imagina que aqui hay como 50 lineas mas de fabuloso codigo</span></code></pre></figure>
-
+<span class="token comment">//imagina que aqui hay como 50 lineas mas de fabuloso codigo</span></code></pre></div>
 <p>Segundo. El código se vuelve más fácil de leer cuando la información que necesitamos está identificada de forma que sabemos que tipo de información está contenida en la variable. Aquí es importante mencionar que los nombres de las variables deben cumplir con ciertas guías para ser útiles. Veremos algunas más adelante.</p>
-
-<p>Por ahora, digamos que nombres de variables como <code class="highlighter-rouge">texto1</code> y <code class="highlighter-rouge">texto2</code> o <code class="highlighter-rouge">a</code> y <code class="highlighter-rouge">b</code> no logran describir ni al dato que contienen ni el uso que se les vamos a dar en el programa.</p>
-
-<p>Tercero. Intencionalmente he introducido un <strong>bug</strong> (<code class="highlighter-rouge">lowerCaseText = '';</code>). Si realmente éste ejemplo tuviera más de 50 líneas de código sería difícil saber en qué línea ocurrió el cambio si no pudiéramos buscar rápidamente todos los lugares donde se usa <code class="highlighter-rouge">lowerCaseText</code>.</p>
-
-<h2 id="tipos-de-variables">Tipos de variables.</h2>
-
+<p>Por ahora, digamos que nombres de variables como <code class="language-text">texto1</code> y <code class="language-text">texto2</code> o <code class="language-text">a</code> y <code class="language-text">b</code> no logran describir ni al dato que contienen ni el uso que se les vamos a dar en el programa.</p>
+<p>Tercero. Intencionalmente he introducido un <strong>bug</strong> (<code class="language-text">lowerCaseText = &#39;&#39;;</code>). Si realmente éste ejemplo tuviera más de 50 líneas de código sería difícil saber en qué línea ocurrió el cambio si no pudiéramos buscar rápidamente todos los lugares donde se usa <code class="language-text">lowerCaseText</code>.</p>
+<h2>Tipos de variables.</h2>
 <p>Probablemente te has enterado que existen distintos tipos de variables en otros lenguajes de programación y javascript no es la excepción.</p>
-
 <p>En javascript la lista de tipos de datos es corta, en realidad.</p>
-
 <p>Vamos a dividir la lista en dos grupos. El grupo de los tipos que sólo pueden almacenar un valor a la vez y el grupo de los tipos que almacenan varios tipos de datos al mismo tiempo.</p>
-
-<p>Tipos que almacenan un valor a la vez:</p>
-
+<p>Tipos que almacenan un valor a la vez: </p>
 <ul>
-  <li><strong>string</strong>: Este tipo almacena texto de una longitud variable. El texto que va a contener se encierra entre comillas simples o dobles.</li>
-  <li><strong>number</strong>: Este tipo sirve para almacenar números. Pueden ser enteros o fracciones y pueden estar expresados en sistema decimal, binario, octal o hexadecimal (por si te lo preguntabas).</li>
-  <li><strong>boolean</strong>: Este tipo almacena valores lógicos que sólo pueden ser <em>true</em>(cierto) o <em>false</em>(falso).</li>
-  <li><strong>null</strong>. Este es curioso, de hecho. Sirve para indicar que no hay valor de ningún tipo. Parece contradictorio pero muchas veces es necesario indicar que una variable no tiene valor.
--<strong>NAN</strong>. Este tipo sirve para indicar que la variable no es un número; su nombre lo dice, Not A Number. Generalmente no lo usas en tu código sino que es el resultado de una operación matemática incorrecta como dividir una cantidad entre cero por ejemplo.</li>
+<li><strong>string</strong>: Este tipo almacena texto de una longitud variable. El texto que va a contener se encierra entre comillas simples o dobles.</li>
+<li><strong>number</strong>: Este tipo sirve para almacenar números. Pueden ser enteros o fracciones y pueden estar expresados en sistema decimal, binario, octal o hexadecimal (por si te lo preguntabas).</li>
+<li><strong>boolean</strong>: Este tipo almacena valores lógicos que sólo pueden ser <em>true</em>(cierto) o <em>false</em>(falso).</li>
+<li><strong>null</strong>. Este es curioso, de hecho. Sirve para indicar que no hay valor de ningún tipo. Parece contradictorio pero muchas veces es necesario indicar que una variable no tiene valor.</li>
+<li><strong>NAN</strong>. Este tipo sirve para indicar que la variable no es un número; su nombre lo dice, Not A Number. Generalmente no lo usas en tu código sino que es el resultado de una operación matemática incorrecta como dividir una cantidad entre cero por ejemplo.</li>
 </ul>
-
 <p>Y así se ven en el código</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">//string</span>
+<span class="token keyword">var</span> stringType <span class="token operator">=</span> <span class="token string">"El texto puede incluir signos de puntuación, números y ¡otros símbolos!"</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> stringType2 <span class="token operator">=</span> <span class="token string">"También puedes usar 'comillas simples' dentro de las dobles y viceversa"</span><span class="token punctuation">;</span>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="c1">//string</span>
-<span class="kd">var</span> <span class="nx">stringType</span> <span class="o">=</span> <span class="s2">"El texto puede incluir signos de puntuación, números y ¡otros símbolos!"</span><span class="p">;</span>
-<span class="kd">var</span> <span class="nx">stringType2</span> <span class="o">=</span> <span class="s2">"También puedes usar 'comillas simples' dentro de las dobles y viceversa"</span><span class="p">;</span>
+<span class="token comment">//number</span>
+<span class="token keyword">var</span> integer <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span> <span class="token comment">//un numero entero</span>
+<span class="token keyword">var</span> fractional <span class="token operator">=</span> <span class="token number">3.14159</span><span class="token punctuation">;</span> <span class="token comment">//numero fraccional</span>
+<span class="token keyword">var</span> binary <span class="token operator">=</span> <span class="token number">0b101</span><span class="token punctuation">;</span> <span class="token comment">//el binario empieza con 0b y luego la cantidad en binario</span>
+<span class="token keyword">var</span> octal <span class="token operator">=</span> <span class="token number">0123</span><span class="token punctuation">;</span> <span class="token comment">//el octal empieza con un 0 y luego la cantidad en octal</span>
+<span class="token keyword">var</span> hexadecimal <span class="token operator">=</span> <span class="token number">0x12ABCDEF</span><span class="token punctuation">;</span> <span class="token comment">//el hexadecimal empieza con 0x y luego la cantidad hexadecimal. Las letras de A a F son mayúsculas.</span>
 
-<span class="c1">//number</span>
-<span class="kd">var</span> <span class="nx">integer</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span> <span class="c1">//un numero entero</span>
-<span class="kd">var</span> <span class="nx">fractional</span> <span class="o">=</span> <span class="mf">3.14159</span><span class="p">;</span> <span class="c1">//numero fraccional</span>
-<span class="kd">var</span> <span class="nx">binary</span> <span class="o">=</span> <span class="mi">0</span><span class="nx">b101</span><span class="p">;</span> <span class="c1">//el binario empieza con 0b y luego la cantidad en binario</span>
-<span class="kd">var</span> <span class="nx">octal</span> <span class="o">=</span> <span class="mi">0123</span><span class="p">;</span> <span class="c1">//el octal empieza con un 0 y luego la cantidad en octal</span>
-<span class="kd">var</span> <span class="nx">hexadecimal</span> <span class="o">=</span> <span class="mh">0x12ABCDEF</span><span class="p">;</span> <span class="c1">//el hexadecimal empieza con 0x y luego la cantidad hexadecimal. Las letras de A a F son mayúsculas.</span>
-
-<span class="c1">//boolean</span>
-<span class="kd">var</span> <span class="nx">boolType</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// esto es cierto</span>
-<span class="kd">var</span> <span class="nx">boolType2</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">// esto es falso</span></code></pre></figure>
-
+<span class="token comment">//boolean</span>
+<span class="token keyword">var</span> boolType <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// esto es cierto</span>
+<span class="token keyword">var</span> boolType2 <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token comment">// esto es falso</span></code></pre></div>
 <p>Tipos que almacenan varios valores a la vez:</p>
-
 <ul>
-  <li><strong>object</strong>: Este tipo de dato sirve para almacenar juntos varios elementos de información. A cada elemento dentro del objeto se le da un nombre para identificarlo y cada elemento puede ser de cualquier tipo de dato (incluso de tipo object). Los elementos dentro del objeto no tienen un orden determinado al momento de almacenarlos ni al recuperarlos.</li>
-  <li><strong>array</strong>: Este tipo sirve para almacenar juntos varios elementos en secuencia. Los elementos almacenados dentro del array pueden ser de cualquier tipo (incluso de tipo array). Los elementos dentro del array están ordenados conforme se van agregando y se tiene acceso a ellos por medio de un índice que indica que posición ocupan dentro del array.</li>
+<li><strong>object</strong>: Este tipo de dato sirve para almacenar juntos varios elementos de información. A cada elemento dentro del objeto se le da un nombre para identificarlo y cada elemento puede ser de cualquier tipo de dato (incluso de tipo object). Los elementos dentro del objeto no tienen un orden determinado al momento de almacenarlos ni al recuperarlos.</li>
+<li><strong>array</strong>: Este tipo sirve para almacenar juntos varios elementos en secuencia. Los elementos almacenados dentro del array pueden ser de cualquier tipo (incluso de tipo array). Los elementos dentro del array están ordenados conforme se van agregando y se tiene acceso a ellos por medio de un índice que indica que posición ocupan dentro del array.</li>
 </ul>
-
 <p>Y así se ven en el código</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">objectType</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="na">name</span><span class="p">:</span> <span class="s2">"fulanito"</span><span class="p">,</span> <span class="c1">// el nombre es string</span>
-    <span class="na">age</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span> <span class="c1">// la edad es number</span>
-    <span class="na">hobbies</span><span class="p">:</span> <span class="p">[</span><span class="s2">"fisica cuantica"</span><span class="p">,</span> <span class="s2">"pokemon"</span><span class="p">],</span> <span class="c1">// pasatiempos es array</span>
-    <span class="na">address</span><span class="p">:</span> <span class="p">{</span> <span class="c1">// la dirección es object</span>
-        <span class="na">street</span><span class="p">:</span> <span class="s2">"fighter"</span><span class="p">,</span>
-        <span class="na">city</span><span class="p">:</span> <span class="s2">"shadaloo"</span>
-    <span class="p">}</span>
-<span class="p">};</span></code></pre></figure>
-
-<h2 id="cómo-se-usan">¿Cómo se usan?</h2>
-
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> objectType <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">"fulanito"</span><span class="token punctuation">,</span> <span class="token comment">// el nombre es string</span>
+    age<span class="token operator">:</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token comment">// la edad es number</span>
+    hobbies<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"fisica cuantica"</span><span class="token punctuation">,</span> <span class="token string">"pokemon"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// pasatiempos es array</span>
+    address<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token comment">// la dirección es object</span>
+        street<span class="token operator">:</span> <span class="token string">"fighter"</span><span class="token punctuation">,</span>
+        city<span class="token operator">:</span> <span class="token string">"shadaloo"</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre></div>
+<h2>¿Cómo se usan?</h2>
 <p>Ahora que sabemos qué son las variables vamos a ver cómo usarlas.</p>
-
 <p>Declaración y asignación.</p>
-
 <p>Declarar una variable significa crearla. A partir de ese momento se puede usar la variable como mejor nos convenga dentro del código.</p>
-
-<p>Para declarar una variable se usa la palabra especial <code class="highlighter-rouge">var</code> seguida de un espacio y el nombre que queremos darle a la variable.</p>
-
+<p>Para declarar una variable se usa la palabra especial <code class="language-text">var</code> seguida de un espacio y el nombre que queremos darle a la variable.</p>
 <p>Las variables no sirven de mucho si no contienen ninguna información. Asignar una variable o asignar un valor a una variable significa que vamos a guardar un valor dentro de la variable. También puedes asignar una variable a otra. Es decir, puedes guardar una variable como el valor de otra.</p>
-
 <p>Algunos ejemplos lo explican mejor.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> foo<span class="token punctuation">;</span> <span class="token comment">// declaramos la variable foo.</span>
+<span class="token keyword">var</span> bar <span class="token operator">=</span> <span class="token string">"Hola"</span><span class="token punctuation">;</span> <span class="token comment">// asignamos a bar el string  "Hola"</span>
 
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">foo</span><span class="p">;</span> <span class="c1">// declaramos la variable foo.</span>
-<span class="kd">var</span> <span class="nx">bar</span> <span class="o">=</span> <span class="s2">"Hola"</span><span class="p">;</span> <span class="c1">// asignamos a bar el string  "Hola"</span>
+foo <span class="token operator">=</span> bar<span class="token punctuation">;</span> <span class="token comment">// asignamos a foo la variable bar. Ahora foo es igual a "Hola" y bar = "Hola"</span>
 
-<span class="nx">foo</span> <span class="o">=</span> <span class="nx">bar</span><span class="p">;</span> <span class="c1">// asignamos a foo la variable bar. Ahora foo es igual a "Hola" y bar = "Hola"</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">foo</span><span class="p">);</span> <span class="c1">// Hola</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">bar</span><span class="p">);</span> <span class="c1">// Hola</span></code></pre></figure>
-
-<h2 id="cambio-de-tipo-de-valor">Cambio de tipo de valor.</h2>
-
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>foo<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Hola</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>bar<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Hola</span></code></pre></div>
+<h2>Cambio de tipo de valor.</h2>
 <p>Las variables en javascript pueden ser reasignadas con cualquier tipo de valor a diferencia de otros lenguajes. Una variable puede tener un valor string y luego ser reasignada con un valor number por ejemplo.</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="s2">"soy un string"</span><span class="p">;</span> <span class="c1">// se define la variable y se asigna un valor de tipo string</span>
-<span class="nx">foo</span> <span class="o">=</span> <span class="mi">123</span><span class="p">;</span> <span class="c1">// ahora se le asigna un valor de tipo numérico</span></code></pre></figure>
-
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> foo <span class="token operator">=</span> <span class="token string">"soy un string"</span><span class="token punctuation">;</span> <span class="token comment">// se define la variable y se asigna un valor de tipo string</span>
+foo <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span> <span class="token comment">// ahora se le asigna un valor de tipo numérico</span></code></pre></div>
 <p>La verdad yo no recomiendo hacer este tipo de cambios, ya que por buenas prácticas, las variables deben ayudarte a leer el código de forma clara. Si una variable cambia constantemente de tipo se vuelve más difícil predecir lo que el código hará después. Puedes simplemente declarar más variables del tipo adecuado a tus necesidades y así mantener un código más expresivo.</p>
-
-<h2 id="y-qué-nombre-le-ponemos">¿Y qué nombre le ponemos?</h2>
-
+<h2>¿Y qué nombre le ponemos?</h2>
 <p>Esa pregunta me ha causado bloqueos de escritor muchas veces durante mi carrera. Para evitar que te pase trata de hacer las cosas simples y deja que el código sea el que te cuente la historia. Por ejemplo:</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">lowerCaseTxt</span> <span class="o">=</span> <span class="nx">inputTxt</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">();</span></code></pre></figure>
-
-<p>Se entiende que <code class="highlighter-rouge">lowerCaseTxt</code> va a almacenar un texto en minúsculas, mientras que <code class="highlighter-rouge">inputTxt</code> contiene texto que fue introducido por el usuario.</p>
-
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> lowerCaseTxt <span class="token operator">=</span> inputTxt<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+<p>Se entiende que <code class="language-text">lowerCaseTxt</code> va a almacenar un texto en minúsculas, mientras que <code class="language-text">inputTxt</code> contiene texto que fue introducido por el usuario.</p>
 <p>Si le pongoun poco de imaginación es como si el código me contara lo que está pasando de forma casual:</p>
-
 <blockquote>
-  <p>“¿recuerdas ese texto que el usuario introdujo antes? Pues ahora hay que asegurarnos de que todo está en minúsculas y vamos a necesitar guardar ese texto en minúsculas para usarlo en otro momento.”</p>
+<p>“¿recuerdas ese texto que el usuario introdujo antes? Pues ahora hay que asegurarnos de que todo está en minúsculas y vamos a necesitar guardar ese texto en minúsculas para usarlo en otro momento.”</p>
 </blockquote>
-
 <p>Honestamente yo encuentro difícil leer algo como esto:</p>
-
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">txt2</span> <span class="o">=</span> <span class="nx">txt1</span><span class="p">.</span><span class="nx">toLowerCase</span><span class="p">()</span></code></pre></figure>
-
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">var</span> txt2 <span class="token operator">=</span> txt1<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
 <p>Podríamos pensar que no está tan mal pero leer otras cien líneas de código como este no se parece mucho a leer una historia como en el primer ejemplo. Siempre es mejor elegir nombres cortos que te digan rápidamente qué información está contenida en las variables.</p>
-
-<h2 id="conclusión">Conclusión.</h2>
-
-<p>Las variables son un recurso que te ayuda a escribir código legible, predecible, modificable y más fácil de probar. Usa las variables a tu favor para mantener tu código simple y expresivo, pero más importante, diviértete y que tengas mucho éxito.</p>
-
-<div class="row">
-    <ul class="inline-list social-icons">
-        <li><a class="icon-twitter share-post-item" href="https://twitter.com/intent/tweet?text=Variables en javascript&amp;url=https://www.dalerun.com/variables-en-js/&amp;via=&amp;related=" rel="nofollow" target="_blank" title="Compártelo en Twitter"></a></li>
-        <li><a class="icon-facebook share-post-item" href="https://facebook.com/sharer.php?u=https://www.dalerun.com/variables-en-js/" rel="nofollow" target="_blank" title="Compártelo en Facebook"></a></li>
-        <li><a class="icon-linkedin share-post-item" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=/variables-en-js/&amp;title=Variables en javascript&amp;summary=El uso correcto de variables en el código es fundamental para un desarrollador&amp;source=dalerun.com" rel="nofollow" target="_blank" title="Compártelo en LinkedIn"></a></li>
-    </ul>
-</div>
-
-			</div>
-
-			
-						<div id="page-meta" class="t30">
-				<p>
-					<!-- Look the author details up from the site config. -->
-					
-					<!-- Output author details if some exist. -->
-					
-					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="pr20 icon-edit"><a href="http://dalerun.com/" target="_blank"> Eduardo Hernández Guerrero</a></span>
-				</span>
-				
-
-				
-				<time class="icon-calendar pr20" datetime="2018-12-02T00:00:00-06:00" itemprop="datePublished"> 2018-12-02</time>
-				
-
-				</span>
-				<br />
-				<span class="pr20"><span class="icon-price-tag pr10"> javascript</span> <span class="icon-price-tag pr10"> fundamentos</span> <span class="icon-price-tag pr10"> programacion</span> </span>
-			</p>
-
-			
-			<div id="post-nav" class="row">
-				
-				<div class="small-2 columns text-center"><a class="radius button small" href="https://www.dalerun.com//blog/archive/" title="Blog Archivo">Archivo</a></div><!-- /.small-4.columns -->
-				
-				<div class="small-5 columns text-right"><a class="button small radius next" href="https://www.dalerun.com//empieza-a-usar-NPX/">Empieza a usar npx hoy &raquo;</a></div><!-- /.small-4.columns -->
-				
-			</div>
-			
-			</div><!--  /.page-meta -->
-
-			
-
-			
-		</article>
-	</div><!-- /.medium-8.columns -->
-
-
-	
-
-
-	
-</div><!-- /.row -->
-
-
-	
-	    <div id="up-to-top" class="row">
-      <div class="small-12 columns" style="text-align: right;">
-        <a class="iconfont" href="#top-of-page">&#xf108;</a>
-      </div><!-- /.small-12.columns -->
-    </div><!-- /.row -->
-
-
-    <footer id="footer-content" class="bg-grau">
-      <div id="footer">
-        <div class="row">
-          <div class="medium-6 large-5 columns">
-            <h5 class="shadow-black">Acerca de este sitio</h5>
-
-            <p class="shadow-black">
-              »Dále run« explica términos y herramientas de desarollo en español. Así es más fácil
-              <a href="https://www.dalerun.com//info/">Más ›</a>
-            </p>
-          </div><!-- /.large-6.columns -->
-
-
-          <div class="small-6 medium-3 large-3 large-offset-1 columns">
-            
-              
-                <h5 class="shadow-black">Servicios</h5>
-              
-            
-              
-            
-              
-            
-              
-            
-
-              <ul class="no-bullet shadow-black">
-              
-                
-                  <li >
-                    <a href="https://www.dalerun.com/"  title=""></a>
-                  </li>
-              
-                
-                  <li >
-                    <a href="https://www.dalerun.com//contacto/"  title="Contacto">Contacto</a>
-                  </li>
-              
-                
-                  <li >
-                    <a href="https://www.dalerun.com//feed.xml"  title="Suscríbete al RSS Feed">RSS</a>
-                  </li>
-              
-                
-                  <li >
-                    <a href="https://www.dalerun.com//sitemap.xml"  title="Mapa del sitio">sitemap.xml</a>
-                  </li>
-              
-              </ul>
-          </div><!-- /.large-4.columns -->
-
-
-          <div class="small-6 medium-3 large-3 columns">
-            
-
-            <ul class="no-bullet shadow-black">
-            
-            </ul>
-          </div><!-- /.large-3.columns -->
-        </div><!-- /.row -->
-
-      </div><!-- /#footer -->
-
-
-      <div id="subfooter">
-        <nav class="row">
-          <section id="subfooter-left" class="small-12 medium-6 columns credits">
-            Powered by: <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> | <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive Template</a>.</p>
-          </section>
-
-          <section id="subfooter-right" class="small-12 medium-6 columns">
-            <ul class="inline-list social-icons">
-            
-              <li><a href="https://github.com/lalitohg" target="_blank" class="icon-github" title="lalitohg"></a></li>
-            
-              <li><a href="https://twitter.com/codeninjalalo" target="_blank" class="icon-twitter" title="Últimas noticias en twitter"></a></li>
-            
-              <li><a href="https://www.linkedin.com/in/eduardo-hern%C3%A1ndez-568195a2/" target="_blank" class="icon-linkedin" title="LinkledIn"></a></li>
-            
-              <li><a href="http://www.facebook.com/eduardo.hernandezguerrero.58" target="_blank" class="icon-facebook" title="Facebook"></a></li>
-            
-            </ul>
-          </section>
-        </nav>
-      </div><!-- /#subfooter -->
-    </footer>
-
-	
-
-	
-
-
-<script src="https://www.dalerun.com//assets/js/javascript.min.js"></script>
-
-
-
-
-
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-135040717-1', 'auto');
-  ga('set', 'anonymizeIp', true);
-  ga('send', 'pageview');
-
-</script>
-
-
-
-
-
-
-
-
-</body>
-</html>
-
+<h2>Conclusión.</h2>
+<p>Las variables son un recurso que te ayuda a escribir código legible, predecible, modificable y más fácil de probar. Usa las variables a tu favor para mantener tu código simple y expresivo, pero más importante, diviértete y que tengas mucho éxito.</p></div></section><footer class="Article__ArticleFooter-sc-1ieqwvb-1 kcmIPB"><div class="Bio__BioWrapper-sc-1f5ffr1-0 iFjAGq"><figure class="author-image"><div alt="Eduardo Hernández Guerrero" style="background-image:url(&quot;/static/65ed3638782aa51a7ec8dfe8a55d8641/6d110/avatar.jpg&quot;)" class="img"></div></figure><section><h4>About the author</h4><p class="Commons__Text-sc-4jkj7v-1 Bio__BioText-sc-1f5ffr1-1 gjkHtu">
+  Eduardo es un nerd apasionado por la tecnología. Se ha dedicado a investigar y poner en práctica distintos lenguajes de programación desde los 16 años de edad y actualmente trabaja como ingeniero de software para empresas de USA y Canadá. Siempre disfruta compartiendo los resultados de sus experimentos tecnológicos con todos los que conoce y aprender algo más en el proceso.
+  </p></section></div></footer></article></main><main role="main" class="Wrapper-sc-1i6tdq5-0 fLXykm"><div id="disqus_thread"></div><p class="Commons__Text-sc-4jkj7v-1 bYGEVA">Read next:</p><ul><li><a class="Commons__StyledLink-sc-4jkj7v-0 cJSxMU" href="/conoce-los-terminos-comunes-empleados-con-git">Conoce los términos comunes empleados con GIT.</a></li></ul></main></div><footer class="Footer__FooterWrapper-sc-26us4e-0 eHJGcr"><nav><div class="footer-col"><h5 class="footer-title">Eduardo Hernández Guerrero<!-- --> © <!-- -->2020</h5><p class="footer-item-text">Built with<!-- --> <a class="footer-link" href="https://www.gatsbyjs.org">Gatsby</a>.</p><p class="footer-item-text">Theme using<!-- --> <a class="footer-link" href="https://github.com/maxpou/gatsby-starter-morning-dew">gatsby-starter-morning-dew</a>.</p><p class="footer-item-text">Hosted with<!-- --> <span class="footer-heart" role="img" aria-label="Love">❤</span> <!-- -->by<!-- --> <a class="footer-link" href="https://github.com">GitHub</a>.</p></div><div class="footer-col"><h5 class="footer-title">Explorar</h5><span class="footer-item"><a class="footer-link" href="/">Blog</a></span><span class="footer-item"><a class="footer-link" href="/subscribirte">Subscribirte</a></span></div><div class="footer-col"><h5 class="footer-title">Sígueme</h5><span class="footer-item"><a class="footer-link" href="https://github.com/lalitohg">GitHub</a></span><span class="footer-item"><a class="footer-link" href="https://www.linkedin.com/in/eduardo-hern%C3%A1ndez-568195a2">LinkedIn</a></span><span class="footer-item"><a class="footer-link" href="https://twitter.com/codeninjalalo">Twitter</a></span><span class="footer-item"><a class="footer-link" href="https://web.facebook.com/eduardo.hernandezguerrero.58">Facebook</a></span></div></nav></footer></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-135040717-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/variables-en-js";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-6edc3c2ee766f478822f.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-cf2fd0f92da7499f18b1.js"],"component---src-templates-blog-list-template-js":["/component---src-templates-blog-list-template-js-d785c32f2c511056413d.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-27d65b3514090bde2cba.js"],"component---src-templates-page-js":["/component---src-templates-page-js-c8c1bd0ab36f6e53b52d.js"],"component---src-templates-tags-js":["/component---src-templates-tags-js-6289afb09b36706b2972.js"],"component---src-pages-404-js":["/component---src-pages-404-js-3d66c7b9b8cef8e90368.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-27d65b3514090bde2cba.js" async=""></script><script src="/commons-c83ef18ebdfd0c807c8d.js" async=""></script><script src="/styles-d51cd31b28a7e87a52a7.js" async=""></script><script src="/app-6edc3c2ee766f478822f.js" async=""></script><script src="/webpack-runtime-0ca32662b7640fdc34ac.js" async=""></script></body></html>
