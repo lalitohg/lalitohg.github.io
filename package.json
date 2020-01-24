@@ -14,7 +14,7 @@
     "type": "git",
     "url": "https://github.com/lalitohg/lalitohg.github.io"
   },
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "author": "Eduardo Hernandez Guerrero",
   "main": "n/a",
   "scripts": {
